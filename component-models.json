@@ -194,6 +194,28 @@
     "fields": [
       {
         "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Background Color",
+        "description": "The quote background color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "White",
+            "value": "bg-white"
+          },
+          {
+            "name": "White Smoke",
+            "value": "bg-white-smoke"
+          },
+          {
+            "name": "Light Gray",
+            "value": "bg-light-gray"
+          }
+        ]
+      },
+      {
+        "component": "select",
         "name": "quoteType",
         "label": "Quote Type",
         "options": [
@@ -208,47 +230,6 @@
           {
             "name": "Hollow",
             "value": "hollow"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "backgroundType",
-        "label": "Background Type",
-        "options": [
-          {
-            "name": "default",
-            "value": "#ffffff"
-          },
-          {
-            "name": "White Smoke",
-            "value": "#f8f8f8"
-          },
-          {
-            "name": "Light Gray",
-            "value": "#d9d9d9"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Background Color",
-        "description": "The quote background color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Red",
-            "value": "bg-red"
-          },
-          {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
           }
         ]
       },
