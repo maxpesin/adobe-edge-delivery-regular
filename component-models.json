@@ -272,6 +272,28 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Text Alignment",
+        "value": "",
+        "description": "Horizontal alignment of the text",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "block-text__align-left"
+          },
+          {
+            "name": "Center",
+            "value": "block-text__align-center"
+          },
+          {
+            "name": "Right",
+            "value": "block-text__align-right"
+          }
+        ]
       }
     ]
   }
