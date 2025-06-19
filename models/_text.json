@@ -7,8 +7,8 @@
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/text/v1/text",
-            "template": {},
-            "config": {
+            "template": {
+              "config": {
                 "allowedFormats": [
                   "paragraph",
                   "heading1",
@@ -27,6 +27,7 @@
                   "align-right"
                 ]
               }
+            }
           }
         }
       }
