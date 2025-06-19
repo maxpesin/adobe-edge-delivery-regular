@@ -7,7 +7,26 @@
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/text/v1/text",
-            "template": {}
+            "template": {},
+            "config": {
+                "allowedFormats": [
+                  "paragraph",
+                  "heading1",
+                  "heading2",
+                  "heading3",
+                  "heading4",
+                  "heading5",
+                  "heading6",
+                  "bold",
+                  "italic",
+                  "unordered-list",
+                  "ordered-list",
+                  "link",
+                  "align-left",
+                  "align-center",
+                  "align-right"
+                ]
+              }
           }
         }
       }
