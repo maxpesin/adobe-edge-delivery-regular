@@ -294,7 +294,29 @@
             "value": "block-text__align-right"
           }
         ]
-      }
+      },
+      {
+          "component": "select",
+          "name": "classes2",
+          "label": "Text Vertical Alignment",
+          "value": "",
+          "description": "Vertical alignment of the content",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Top",
+              "value": "hero__align-top"
+            },
+            {
+              "name": "Middle",
+              "value": "hero__align-middle"
+            },
+            {
+              "name": "Bottom",
+              "value": "hero__align-bottom"
+            }
+          ]
+        }
     ]
   }
 ]
