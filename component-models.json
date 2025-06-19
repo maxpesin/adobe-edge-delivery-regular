@@ -212,17 +212,36 @@
         ]
       },
       {
+        "component": "select",
+        "name": "backgroundType",
+        "label": "Background Type",
+        "options": [
+          {
+            "name": "default",
+            "value": "#ffffff"
+          },
+          {
+            "name": "White Smoke",
+            "value": "#f8f8f8"
+          },
+          {
+            "name": "Light Gray",
+            "value": "#d9d9d9"
+          }
+        ]
+      },
+      {
         "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "quoteText",
+        "label": "Quote Text",
+        "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
+        "name": "quoteAuthor",
+        "label": "Quote Author",
         "value": ""
       }
     ]
