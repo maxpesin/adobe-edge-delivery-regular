@@ -43,7 +43,7 @@
         },
         {
           "component": "select",
-          "name": "classes",
+          "name": "classes1",
           "label": "Text Horizontal Alignment",
           "value": "",
           "description": "Horizontal alignment of the content",
@@ -65,7 +65,7 @@
         },
         {
           "component": "select",
-          "name": "classes",
+          "name": "classes2",
           "label": "Text Vertical Alignment",
           "value": "",
           "description": "Vertical alignment of the content",
