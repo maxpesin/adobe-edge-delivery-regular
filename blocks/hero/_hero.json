@@ -44,22 +44,44 @@
         {
           "component": "select",
           "name": "classes",
-          "label": "Text Alignment",
+          "label": "Text Horizontal Alignment",
           "value": "",
-          "description": "Horizontal alignment of the text",
+          "description": "Horizontal alignment of the content",
           "valueType": "string",
           "options": [
             {
               "name": "Left",
-              "value": "block-text__align-left"
+              "value": "hero__align-left"
             },
             {
               "name": "Center",
-              "value": "block-text__align-center"
+              "value": "hero__align-center"
             },
             {
               "name": "Right",
-              "value": "block-text__align-right"
+              "value": "hero__align-right"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes",
+          "label": "Text Vertical Alignment",
+          "value": "",
+          "description": "Vertical alignment of the content",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Top",
+              "value": "hero__align-top"
+            },
+            {
+              "name": "Middle",
+              "value": "hero__align-middle"
+            },
+            {
+              "name": "Bottom",
+              "value": "hero__align-bottom"
             }
           ]
         }
