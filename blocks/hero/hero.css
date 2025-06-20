@@ -17,7 +17,7 @@
   }
 }
 
-.hero.block:nth-child(2) {
+.hero > div:last-child {
   width: 100%;
   max-width: 1200px;
   margin: auto;
