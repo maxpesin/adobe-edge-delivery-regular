@@ -275,33 +275,15 @@
       },
       {
         "component": "select",
-        "name": "alignHorizontal",
-        "label": "Text Alignment",
-        "value": "",
-        "valueType": "string",
-        "options": [
-          { "name": "Left", "value": "block-text__align-left" },
-          { "name": "Center", "value": "block-text__align-center" },
-          { "name": "Right", "value": "block-text__align-right" }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "alignVertical",
-        "label": "Text Vertical Alignment",
-        "value": "",
-        "valueType": "string",
-        "options": [
-          { "name": "Top", "value": "hero__align-top" },
-          { "name": "Middle", "value": "hero__align-middle" },
-          { "name": "Bottom", "value": "hero__align-bottom" }
-        ]
-      },
-      {
-        "component": "computed",
         "name": "classes",
+        "label": "Layout & Alignment",
+        "value": "",
         "valueType": "string",
-        "compute": "`${alignHorizontal} ${alignVertical}`"
+        "options": [
+          { "name": "Left", "value": "hero__align-left" },
+          { "name": "Center", "value": "hero__align-center" },
+          { "name": "Right", "value": "hero__align-right" }
+        ]
       }
     ]
   }
