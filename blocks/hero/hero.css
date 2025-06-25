@@ -17,6 +17,7 @@
 .hero-container .hero-wrapper .hero > div:last-child {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 .hero-container .hero-wrapper .hero.hero-align--left {
   text-align: left;
@@ -28,12 +29,11 @@
   text-align: right;
 }
 .hero-container .hero-wrapper .hero h1, .hero-container .hero-wrapper .hero h2, .hero-container .hero-wrapper .hero h3, .hero-container .hero-wrapper .hero h4, .hero-container .hero-wrapper .hero h5, .hero-container .hero-wrapper .hero h6 {
-  font-family: proxima-nova, Arial, sans-serif;
   font-size: 48px;
   font-weight: 300;
   line-height: 58px;
   letter-spacing: 2px;
-  color: var(--background-color);
+  color: var(--color-trex-white);
 }
 .hero-container .hero-wrapper .hero picture {
   position: absolute;

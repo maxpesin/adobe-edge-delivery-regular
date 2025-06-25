@@ -10,9 +10,7 @@
         min-height: 300px;
 
         //TODO - Add media queries for responsive design
-        //TODO - Setup font-size: .hero
 
-        //sass blocks/hero/hero.scss blocks/hero/hero.css --no-source-map --style=compressed
         //sass blocks/hero/hero.scss blocks/hero/hero.css --no-source-map
 
 
@@ -39,7 +37,6 @@
         }
 
         h1,h2,h3,h4,h5,h6 {
-            // font-family: proxima-nova, Arial,sans-serif;
             font-size: 48px;
             font-weight: 300;
             line-height: 58px;
