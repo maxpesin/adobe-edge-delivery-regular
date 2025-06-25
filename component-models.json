@@ -281,13 +281,13 @@
         "valueType": "string",
         "options": [
           { "name": "Left",
-           "value": "hero_align--left"
+           "value": "hero__align--left"
           },
           { "name": "Center",
-           "value": "hero_align--center"
+           "value": "hero__align--center"
            },
           { "name": "Right",
-           "value": "hero_align--right"
+           "value": "hero__align--right"
           }
         ]
       }
