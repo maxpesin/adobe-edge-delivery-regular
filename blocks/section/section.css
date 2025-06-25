@@ -1,9 +1,9 @@
-.section.section-align--left {
+.section.section-text-align-left {
   text-align: left;
 }
-.section.section-align--center {
+.section.section-text-align-center {
   text-align: center;
 }
-.section.section-align--right {
+.section.section-text-align-right {
   text-align: right;
 }
