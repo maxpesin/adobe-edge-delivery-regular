@@ -9,7 +9,7 @@
   min-height: 60px;
   background: var(--color-trex-green);
 }
-@media (width >= var(--tablet-min-width)) {
+@media (width >= 768px) {
   .hero-container .hero-wrapper .hero {
     padding: 40px 32px;
     background-color: transparent;
@@ -19,7 +19,7 @@
 .hero-container .hero-wrapper .hero > div:first-child {
   display: none;
 }
-@media (width >= var(--tablet-min-width)) {
+@media (width >= 768px) {
   .hero-container .hero-wrapper .hero > div:first-child {
     display: block;
   }
