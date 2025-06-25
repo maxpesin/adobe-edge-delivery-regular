@@ -1,0 +1,113 @@
+
+:root {
+  /* Color Palette */
+  --color-foreground: #726658;
+  --color-link-2: #85bf42;
+  --color-trex-green: #00493d;
+  --color-light-green2: #bae99b;
+  --color-accent-green2: #8dc63f;
+  --color-medium-green: #479612;
+  --color-light-green: #badc8b;
+  --color-trex-white: #ffffff;
+  --color-smoke-white: #f5f8f6;
+  --color-grey: #b3b3b3;
+  --color-white-smoke: #f8f8f8;
+  --color-light-grey: #d9d9d9;
+  --color-trex-dark-grey: #555555;
+  --color-light-x11-grey: #bbbbbb;
+  --color-trex-dove-grey: #727272;
+  --color-black-1: #000000;
+  --color-black-transparency-50: rgba(0, 0, 0, 0.5);
+  --color-black-transparency-80: rgba(0, 0, 0, 0.8);
+  --color-shadow-transparency-15: rgba(51, 51, 51, 0.15);
+  --color-trex-dark-charcoal: #333333;
+  --color-background--utility: #ecede8;
+  --color-trex-white-smoke: #f6f6f6;
+  --color-trex-frost: #f3f9eb;
+  --color-light-shed-green: #8cc832;
+  --color-dark-gray: #acacac;
+  --color-dark-green: #1c3d29;
+  --color-very-light-shed-green: #ecece8;
+  --color-medium-gray: #d1d1d1;
+  --color-trex-dim-grey: #6f6f6f;
+  --color-trex-dark-red: #ad2b26;
+  --color-trex-red: #f00;
+  --medium-light-shed-gray: #999999;
+  --twilight-blue: #f5f6f1;
+  --trex-color-gray88: #e0e0e0;
+  --color-trex-mocha: #6f4e37;
+  --color-trex-rat-brown: #8f6000;
+  --color-trex-driftwood-gray: #696158;
+  --color-trex-smokey-quartz: #696258;
+  --color-trex-warm-slate: #3d3935;
+  --color-trex-soft-sand: #e4c9ab;
+  --color-trex-almond: #ffedc9;
+  --color-trex-limestone: #f7f5f2;
+  --color-trex-wheat-tint: #f9f3e0;
+  --color-trex-topaz: #8c8b8e;
+  --color-trex-ford-grey: #979797;
+  --trex-light-shade-grey: #dddddd;
+  --color-dark-grey: #222222;
+  --color-light-gray-2: #cccccc;
+  --color-light-gray-3: #d5d5d5;
+  --color-silver: #bcbcbc;
+  --color-whisper: #ebebeb;
+  --color-trex-medium-green: #336f4a;
+  --color-trex-nero: #262626;
+  --color-trex-heineken-green: #34704b;
+  --color-trex-pastel-green: #dcedc5;
+  --color-trex-light-green: #d9e8ae;
+  --color-trex-other-green: #8cc43d;
+  --trex-color-dark-shade-darkgreen: #003f35;
+  --trex-color-natural: #f5f2ee;
+  --trex-color-sage-bush: #cbd8ce;
+  --trex-color-solar-flare: #d3fca0;
+  --trex-color-bluebird: #47bcc1;
+  --color-trex-silver: #c3c4c6;
+  --color-trex-cool-white: #e0e6e8;
+  --color-arsenic: #394854;
+
+  /* Font Families */
+  --font-proxima-nova: "proxima-nova", Arial, sans-serif;
+  --font-utopia: "utopia-std", serif;
+  --font-bitter: "Bitter", serif;
+
+  /* Trex Professionals Site */
+  --color-trex-gray40: #666666;
+  --color-trex-black: #111111;
+  --color-trex-platinum: #e0e6e8;
+  --color-trex-whisper: #eeeeee;
+
+  /* Breakpoints */
+  --tablet-min-width: 768px;
+  --tablet-max-width: 991.5px;
+  --mobile-max-width: 767.5px;
+  --page-gutters: 7.2vw;
+  --desktop-min-width: 1024px;
+  --desktop-big-min-width: 1200px;
+  --desktop-bigger-min-width: 1400px;
+  --desktop-biggest-min-width: 1600px;
+
+  /* Z-Index */
+  --zindex-first: 999;
+  --zindex-second: 998;
+  --zindex-third: 997;
+  --zindex-fourth: 996;
+  --zindex-fifth: 995;
+  --zindex-sixth: 994;
+  --zindex-seventh: 993;
+  --zindex-checkout-header: 9999;
+  /* OneTrust Cookie Banner */
+  --zindex-onetrust-banner: 2147483645;
+
+  /* Animation Speed */
+  --collapseble-animation-speed: 0.25s;
+  --hero-expanding-hover-dur: 0.3s;
+  --hero-expanding-hover-ease: cubic-bezier(0.440, 0.140, 0.530, 0.886);
+
+  /* Spacing */
+  --globalspacing-m: 24px;
+  --globalspacing-xs: 8px;
+  --globalspacing-s: 16px;
+  --verticalspacingsections: 48px;
+}

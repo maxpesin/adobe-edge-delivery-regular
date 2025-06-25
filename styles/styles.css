@@ -12,7 +12,7 @@
 
 :root {
   /* colors */
-  --background-color: white;
+  /* --background-color: white; */
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
@@ -48,7 +48,7 @@
 }
 
 @font-face {
-  font-family: roboto-fallback;
+  font-family: var(--font-proxima-nova);
   size-adjust: 99.529%;
   src: local('Arial');
 }
@@ -73,7 +73,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--color-trex-white);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -182,7 +182,7 @@ button {
   text-align: center;
   text-decoration: none;
   background-color: var(--link-color);
-  color: var(--background-color);
+  color: var(--color-trex-white);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
