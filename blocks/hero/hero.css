@@ -23,15 +23,15 @@
   margin: auto;
 }
 
-.hero.hero__align-left {
+.hero.hero__align--left {
   justify-content: flex-start;
 }
 
-.hero.hero__align-center {
+.hero.hero__align--center {
   justify-content: center;
 }
 
-.hero.hero__align-right {
+.hero.hero__align--right {
   justify-content: flex-end;
 }
 

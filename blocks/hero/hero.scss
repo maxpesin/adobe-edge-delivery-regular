@@ -1,0 +1,61 @@
+.hero-container .hero-wrapper {
+    max-width: unset;
+    padding: 0;
+
+    .hero {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 40px 24px;
+        min-height: 300px;
+
+        //TODO - Add media queries for responsive design
+
+        @media (width >= 900px) {
+            padding: 40px 32px;
+        }
+
+        > div:last-child {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        &.hero__align {
+            &--left {
+                justify-content: flex-start;
+            }
+            &--center {
+                justify-content: center;
+            }
+            &--right {
+                justify-content: flex-end;
+            }
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 58px;
+            letter-spacing: 2px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--background-color);
+        }
+
+        picture {
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            object-fit: cover;
+            box-sizing: border-box;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
