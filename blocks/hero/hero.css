@@ -29,7 +29,6 @@
   text-align: right;
 }
 .hero-container .hero-wrapper .hero h1, .hero-container .hero-wrapper .hero h2, .hero-container .hero-wrapper .hero h3, .hero-container .hero-wrapper .hero h4, .hero-container .hero-wrapper .hero h5, .hero-container .hero-wrapper .hero h6 {
-  font-family: var(--font-proxima-nova);
   font-size: 48px;
   font-weight: 300;
   line-height: 58px;
@@ -47,4 +46,16 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.hero-container .hero-wrapper .hero img:after {
+  background: linear-gradient(180deg, transparent, #000 52%, transparent);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.25;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
