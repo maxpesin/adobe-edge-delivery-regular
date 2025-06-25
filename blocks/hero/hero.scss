@@ -1,3 +1,5 @@
+//sass blocks/hero/hero.scss blocks/hero/hero.css --no-source-map
+
 .hero-container .hero-wrapper {
     max-width: unset;
     padding: 0;
@@ -6,16 +8,24 @@
         display: flex;
         align-items: center;
         position: relative;
-        padding: 40px 24px;
-        min-height: 300px;
+        // padding: 40px 24px;
+        min-height: 60px;
+        background: var(--color-trex-green);
 
         //TODO - Add media queries for responsive design
 
-        //sass blocks/hero/hero.scss blocks/hero/hero.css --no-source-map
-
-
-        @media (width >= 900px) {
+        @media (width >= var(--tablet-min-width)) {
             padding: 40px 32px;
+            background-color: transparent;
+            min-height: 300px;
+        }
+
+        > div:first-child {
+            display: none;
+
+            @media (width >= var(--tablet-min-width)) {
+                display: block;
+            }
         }
 
         > div:last-child {

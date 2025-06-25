@@ -10,6 +10,24 @@
  * governing permissions and limitations under the License.
  */
 
+
+/* @include min-screen(md) {
+    padding-left: calc((100% - 720px) / 2);
+}
+
+@include min-screen(lg) {
+    padding-left: calc((100% - 960px) / 2);
+}
+
+@include min-screen(xl) {
+    padding-left: calc((100% - 1140px) / 2);
+}
+
+@media min-screen(xxl) {
+    padding-left: calc((100% - 1320px) / 2);
+} */
+ 
+
 @import url('variables.css');
 
 /* fallback fonts */
