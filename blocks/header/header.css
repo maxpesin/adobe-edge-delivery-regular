@@ -241,7 +241,7 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     top: 150%;
     padding: 16px;
-    background-color: var(--light-color);
+    background-color: var(--color-white-smoke);
     white-space: initial;
   }
 
@@ -254,7 +254,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+    border-bottom: 8px solid var(--color-white-smoke);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {

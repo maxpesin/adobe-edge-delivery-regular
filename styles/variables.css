@@ -6,8 +6,17 @@
   --color-trex-green: #00493d;
   --color-light-green2: #bae99b;
   --color-accent-green2: #8dc63f;
+  --color-light-shed-green: #8cc832;
+  --color-dark-green: #1c3d29;
   --color-medium-green: #479612;
+  --color-trex-medium-green: #336f4a;
   --color-light-green: #badc8b;
+  --color-trex-heineken-green: #34704b;
+  --color-trex-pastel-green: #dcedc5;
+  --color-trex-light-green: #d9e8ae;
+  --color-trex-other-green: #8cc43d;
+  --trex-color-solar-flare: #d3fca0;
+  --trex-color-dark-shade-darkgreen: #003f35;
   --color-trex-white: #ffffff;
   --color-smoke-white: #f5f8f6;
   --color-grey: #b3b3b3;
@@ -24,9 +33,7 @@
   --color-background--utility: #ecede8;
   --color-trex-white-smoke: #f6f6f6;
   --color-trex-frost: #f3f9eb;
-  --color-light-shed-green: #8cc832;
   --color-dark-gray: #acacac;
-  --color-dark-green: #1c3d29;
   --color-very-light-shed-green: #ecece8;
   --color-medium-gray: #d1d1d1;
   --color-trex-dim-grey: #6f6f6f;
@@ -52,16 +59,9 @@
   --color-light-gray-3: #d5d5d5;
   --color-silver: #bcbcbc;
   --color-whisper: #ebebeb;
-  --color-trex-medium-green: #336f4a;
   --color-trex-nero: #262626;
-  --color-trex-heineken-green: #34704b;
-  --color-trex-pastel-green: #dcedc5;
-  --color-trex-light-green: #d9e8ae;
-  --color-trex-other-green: #8cc43d;
-  --trex-color-dark-shade-darkgreen: #003f35;
   --trex-color-natural: #f5f2ee;
   --trex-color-sage-bush: #cbd8ce;
-  --trex-color-solar-flare: #d3fca0;
   --trex-color-bluebird: #47bcc1;
   --color-trex-silver: #c3c4c6;
   --color-trex-cool-white: #e0e6e8;
@@ -71,6 +71,26 @@
   --font-proxima-nova: "proxima-nova", Arial, sans-serif;
   --font-utopia: "utopia-std", serif;
   --font-bitter: "Bitter", serif;
+
+  /* Fonts Default */
+  --body-font-family: var(--font-proxima-nova), roboto-fallback, sans-serif;
+  --heading-font-family: var(--font-proxima-nova), roboto-condensed-fallback, sans-serif;
+
+  /* Font Sizes */
+  --body-font-size-m: 22px;
+  --body-font-size-s: 19px;
+  --body-font-size-xs: 17px;
+
+  /* Heading Sizes */
+  --heading-font-size-xxl: 55px;
+  --heading-font-size-xl: 44px;
+  --heading-font-size-l: 34px;
+  --heading-font-size-m: 27px;
+  --heading-font-size-s: 24px;
+  --heading-font-size-xs: 22px;
+
+  /* Nav Height */
+  --nav-height: 64px;
 
   /* Trex Professionals Site */
   --color-trex-gray40: #666666;
