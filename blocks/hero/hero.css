@@ -33,7 +33,7 @@
   font-weight: 300;
   line-height: 58px;
   letter-spacing: 2px;
-  color: var(--color-trex-white);
+  color: var(--color-white);
 }
 .hero-container .hero-wrapper .hero picture {
   position: absolute;
@@ -43,7 +43,7 @@
   box-sizing: border-box;
 }
 .hero-container .hero-wrapper .hero picture:after {
-  background: linear-gradient(180deg, transparent, #000 52%, transparent);
+  background: linear-gradient(180deg, transparent, var(--color-black) 52%, transparent);
   content: "";
   height: 100%;
   left: 0;
@@ -52,9 +52,7 @@
   right: 0;
   top: 0;
   width: 100%;
-  z-index: -1;
 }
-
 .hero-container .hero-wrapper .hero img {
   object-fit: cover;
   width: 100%;

@@ -45,7 +45,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--color-trex-white);
+  background-color: var(--color-white);
   color: var(--color-trex-dark-charcoal);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -154,7 +154,7 @@ button {
   text-align: center;
   text-decoration: none;
   background-color: var(--color-trex-green);
-  color: var(--color-trex-white);
+  color: var(--color-white);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
