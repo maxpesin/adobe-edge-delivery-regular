@@ -8,13 +8,11 @@
         display: flex;
         align-items: center;
         position: relative;
-        // padding: 40px 24px;
+        padding: 40px 15px;
         min-height: 60px;
         background: var(--color-trex-green);
 
-        //TODO - Add media queries for responsive design
-
-        @media (width >= var(--tablet-min-width)) {
+        @media (width >= 768px) {
             padding: 40px 32px;
             background-color: transparent;
             min-height: 300px;
@@ -23,7 +21,7 @@
         > div:first-child {
             display: none;
 
-            @media (width >= var(--tablet-min-width)) {
+            @media (width >= 768px) {
                 display: block;
             }
         }
@@ -47,11 +45,20 @@
         }
 
         h1,h2,h3,h4,h5,h6 {
-            font-size: 48px;
-            font-weight: 300;
-            line-height: 58px;
-            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 56px;
+            margin-bottom: 7px;
             color: var(--color-white);
+
+            @media (width >= var(--tablet-min-width)) {
+                font-size: 48px;
+                font-weight: 300;
+                line-height: 58px;
+                letter-spacing: 2px;
+                margin-bottom: 0;
+            }
         }
 
         picture {
