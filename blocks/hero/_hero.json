@@ -56,6 +56,9 @@
             },
             { "name": "Right",
             "value": "hero__align--right"
+            },
+                        { "name": "TEST",
+            "value": "hero__align--TEST"
             }
           ]
         }
