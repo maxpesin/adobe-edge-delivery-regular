@@ -27,24 +27,28 @@
 }
 .hero-container .hero-wrapper .hero > div:last-child {
   width: 100%;
-  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /* @include min-screen(md) {
-      padding-left: calc((100% - 720px) / 2);
+}
+@media (width >= 768px) {
+  .hero-container .hero-wrapper .hero > div:last-child {
+    max-width: 720px;
   }
-
-  @include min-screen(lg) {
-      padding-left: calc((100% - 960px) / 2);
+}
+@media (width >= 992px) {
+  .hero-container .hero-wrapper .hero > div:last-child {
+    max-width: 960px;
   }
-
-  @include min-screen(xl) {
-      padding-left: calc((100% - 1140px) / 2);
+}
+@media (width >= 1200px) {
+  .hero-container .hero-wrapper .hero > div:last-child {
+    max-width: 1140px;
   }
-
-  @media min-screen(xxl) {
-      padding-left: calc((100% - 1320px) / 2);
-  } */
+}
+@media (width >= 1400px) {
+  .hero-container .hero-wrapper .hero > div:last-child {
+    max-width: 1320px;
+  }
 }
 .hero-container .hero-wrapper .hero.hero-align--left {
   text-align: left;
