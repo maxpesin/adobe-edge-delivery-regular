@@ -1,0 +1,15 @@
+// sass blocks/section/section.scss blocks/section/section.css --no-source-map
+
+.section {
+    &.section-align {
+        &--left {
+            text-align: left;
+        }
+        &--center {
+            text-align: center;
+        }
+        &--right {
+            text-align: right;
+        }
+    }
+}

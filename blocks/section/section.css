@@ -1,0 +1,9 @@
+.section.section-align--left {
+  text-align: left;
+}
+.section.section-align--center {
+  text-align: center;
+}
+.section.section-align--right {
+  text-align: right;
+}
