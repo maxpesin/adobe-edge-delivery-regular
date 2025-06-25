@@ -255,6 +255,27 @@
         ]
       },
       {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Layout & Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Text Align Left",
+            "value": "section-text-align-left"
+          },
+          {
+            "name": "Text Align Center",
+            "value": "section-text-align-center"
+          },
+          {
+            "name": "Text Align Right",
+            "value": "section-text-align-right"
+          }
+        ]
+      },
+      {
         "component": "richtext",
         "valueType": "string",
         "name": "quoteText",
