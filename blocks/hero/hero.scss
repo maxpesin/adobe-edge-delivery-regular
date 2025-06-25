@@ -10,6 +10,8 @@
         min-height: 300px;
 
         //TODO - Add media queries for responsive design
+        //sass blocks/hero/hero.scss blocks/hero/hero.css --no-source-map --style=compressed
+
 
         @media (width >= 900px) {
             padding: 40px 32px;
@@ -21,7 +23,7 @@
             // margin: auto;
         }
 
-        &.hero__align {
+        &.hero-align {
             &--left {
                 text-align: left;
             }

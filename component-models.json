@@ -280,18 +280,9 @@
         "value": "",
         "valueType": "string",
         "options": [
-          { "name": "Left",
-           "value": "hero_align--left"
-          },
-          { "name": "Center",
-           "value": "hero_align--center"
-           },
-          { "name": "Right",
-           "value": "hero_align--right"
-          },
-                        { "name": "TEST",
-            "value": "hero_align--TEST"
-            }
+          { "name": "Left", "value": "hero-align--left" },
+          { "name": "Center", "value": "hero-align--center" },
+          { "name": "Right", "value": "hero-align--right" }
         ]
       }
     ]
