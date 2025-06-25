@@ -1,0 +1,20 @@
+// _breakpoints.scss
+
+// Extra small screens / phones
+$breakpoint-xs: 0;
+$breakpoint-bv: 501px;
+$breakpoint-xs-max: 575px;
+
+// Small screens
+$breakpoint-sm: 576px;
+$breakpoint-sm-max: 767px;
+
+// Medium screens / tablets
+$breakpoint-md: 768px;
+$breakpoint-md-max: 991px;
+
+// Large screens / desktops
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxxl: 1600px;

@@ -1,4 +1,6 @@
 //sass blocks/hero/hero.scss blocks/hero/hero.css --no-source-map
+@use "../../styles/breakpoints.scss" as *;
+
 
 .hero-container .hero-wrapper {
     max-width: unset;
@@ -8,11 +10,11 @@
         display: flex;
         align-items: center;
         position: relative;
-        padding: 40px 15px;
+        padding: 0 15px;
         min-height: 60px;
         background: var(--color-trex-green);
 
-        @media (width >= 768px) {
+        @media (width >= $breakpoint-md) {
             padding: 40px 32px;
             background-color: transparent;
             min-height: 300px;
@@ -21,7 +23,7 @@
         > div:first-child {
             display: none;
 
-            @media (width >= 768px) {
+            @media (width >= $breakpoint-md) {
                 display: block;
             }
         }
@@ -30,6 +32,22 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
+
+            /* @include min-screen(md) {
+    padding-left: calc((100% - 720px) / 2);
+}
+
+@include min-screen(lg) {
+    padding-left: calc((100% - 960px) / 2);
+}
+
+@include min-screen(xl) {
+    padding-left: calc((100% - 1140px) / 2);
+}
+
+@media min-screen(xxl) {
+    padding-left: calc((100% - 1320px) / 2);
+} */
         }
 
         &.hero-align {
@@ -52,7 +70,7 @@
             margin-bottom: 7px;
             color: var(--color-white);
 
-            @media (width >= var(--tablet-min-width)) {
+            @media (width >= $breakpoint-md) {
                 font-size: 48px;
                 font-weight: 300;
                 line-height: 58px;

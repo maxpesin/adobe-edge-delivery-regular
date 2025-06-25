@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 40px 15px;
+  padding: 0 15px;
   min-height: 60px;
   background: var(--color-trex-green);
 }
@@ -29,6 +29,21 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  /* @include min-screen(md) {
+      padding-left: calc((100% - 720px) / 2);
+  }
+
+  @include min-screen(lg) {
+      padding-left: calc((100% - 960px) / 2);
+  }
+
+  @include min-screen(xl) {
+      padding-left: calc((100% - 1140px) / 2);
+  }
+
+  @media min-screen(xxl) {
+      padding-left: calc((100% - 1320px) / 2);
+  } */
 }
 .hero-container .hero-wrapper .hero.hero-align--left {
   text-align: left;
@@ -47,7 +62,7 @@
   margin-bottom: 7px;
   color: var(--color-white);
 }
-@media (width >= var(--tablet-min-width)) {
+@media (width >= 768px) {
   .hero-container .hero-wrapper .hero h1, .hero-container .hero-wrapper .hero h2, .hero-container .hero-wrapper .hero h3, .hero-container .hero-wrapper .hero h4, .hero-container .hero-wrapper .hero h5, .hero-container .hero-wrapper .hero h6 {
     font-size: 48px;
     font-weight: 300;
