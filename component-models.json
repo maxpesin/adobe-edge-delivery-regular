@@ -136,7 +136,16 @@
           {
             "name": "Highlight",
             "value": "highlight"
-          },
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Layout & Alignment",
+        "valueType": "string",
+        "options": [
           {
             "name": "Text Align Left",
             "value": "section-text-align-left"
