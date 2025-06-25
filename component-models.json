@@ -133,10 +133,22 @@
         "name": "style",
         "label": "Style",
         "options": [
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
+            {
+              "name": "Highlight",
+              "value": "highlight"
+            },
+            {
+              "name": "Align Left",
+              "value": "section-align--left"
+            },
+            {
+              "name": "Align Center",
+              "value": "section-align--center"
+            },
+            {
+              "name": "Align Right",
+              "value": "section-align--right"
+            }
         ]
       }
     ]
