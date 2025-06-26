@@ -119,9 +119,11 @@
     "id": "text",
     "fields": [
       {
-        "component": "text",
+        "component": "richtext",
+        "valueType": "string",
         "name": "text",
-        "label": "Rich Text"
+        "label": "Rich Text",
+        "value": ""
       },
       {
         "component": "select",
