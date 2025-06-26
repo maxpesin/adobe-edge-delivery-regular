@@ -7,10 +7,10 @@
   grid-gap: 24px;
 }
 
-.cards > ul > li {
+/* .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--color-white);
-}
+} */
 
 .cards .cards-card-body {
   margin: 16px;
@@ -21,7 +21,16 @@
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  width: 88px;
+}
+
+.cards .cards-cards-body [data-aue-label*="Title"] {
+  color: var(--color-trex-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.cards .cards-cards-body [data-aue-label*="Body"] {
+  padding: 0;
 }

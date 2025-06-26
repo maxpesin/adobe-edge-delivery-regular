@@ -50,7 +50,7 @@ body {
   color: var(--color-trex-dark-charcoal);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  line-height: 1.44;
 }
 
 body.appear {
@@ -200,7 +200,8 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  padding: 48px 0;
+  margin: 0;
 }
 
 main > .section > div {
@@ -217,10 +218,6 @@ main > .section:first-of-type {
   main > .section > div {
     padding: 0 32px;
   }
-}
-
-.section {
- padding: 48px 0;
 }
 
 .no-padding {
