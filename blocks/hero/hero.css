@@ -50,15 +50,6 @@
     max-width: 1320px;
   }
 }
-.hero-container .hero-wrapper .hero.hero-align--left {
-  text-align: left;
-}
-.hero-container .hero-wrapper .hero.hero-align--center {
-  text-align: center;
-}
-.hero-container .hero-wrapper .hero.hero-align--right {
-  text-align: right;
-}
 .hero-container .hero-wrapper .hero h1, .hero-container .hero-wrapper .hero h2, .hero-container .hero-wrapper .hero h3, .hero-container .hero-wrapper .hero h4, .hero-container .hero-wrapper .hero h5, .hero-container .hero-wrapper .hero h6 {
   font-size: 20px;
   font-weight: 400;

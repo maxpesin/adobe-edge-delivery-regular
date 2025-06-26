@@ -284,18 +284,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "label": "Layout & Alignment",
-        "value": "",
-        "valueType": "string",
-        "options": [
-          { "name": "Left", "value": "hero-align--left" },
-          { "name": "Center", "value": "hero-align--center" },
-          { "name": "Right", "value": "hero-align--right" }
-        ]
       }
     ]
   }
