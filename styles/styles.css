@@ -204,16 +204,12 @@ main > .section {
   margin: 0;
 }
 
-main > .section:not(:first-child) {
+main > .section > div:not(:first-child) {
   margin-top: 24px;
 }
 
 main > .section.no-padding {
   padding: 0;
-}
-
-main > .section:first-of-type {
-  margin-top: 0;
 }
 
 main > .section > div {
@@ -223,22 +219,22 @@ main > .section > div {
 }
 
 @media (min-width: 768px) {
-  .main > .section > div {
+  main > .section > div {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .main > .section > div {
+  main > .section > div {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .main > .section > div {
+  main > .section > div {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .main > .section > div {
+  main > .section > div {
     max-width: 1320px;
   }
 }
