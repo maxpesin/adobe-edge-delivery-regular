@@ -119,7 +119,7 @@
     "id": "text",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text",
         "name": "text",
         "label": "Rich Text"
       },
@@ -144,7 +144,7 @@
     "id": "title",
     "fields": [
       {
-        "component": "text",
+        "component": "title",
         "name": "title",
         "label": "Title"
       },

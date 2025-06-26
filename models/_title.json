@@ -20,7 +20,7 @@
       "id": "title",
       "fields": [
         {
-          "component": "text",
+          "component": "title",
           "name": "title",
           "label": "Title"
         },
