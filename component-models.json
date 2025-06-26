@@ -146,15 +146,15 @@
             "value": "text-align-right"
           },
           {
-            "name": "Background - White",
+            "name": "Background White",
             "value": "bg-white"
           },
           {
-            "name": "Background -White Smoke",
+            "name": "Background White Smoke",
             "value": "bg-white-smoke"
           },
           {
-            "name": "Background - Light Gray",
+            "name": "Background Light Gray",
             "value": "bg-light-gray"
           }
         ]
