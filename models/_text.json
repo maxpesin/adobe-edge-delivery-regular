@@ -18,7 +18,28 @@
   "models": [
     {
       "id": "text",
-      "fields": []
+      "fields": [
+        {
+          "component": "text",
+          "name": "text",
+          "label": "Rich Text"
+        },
+        {
+          "component": "select",
+          "name": "classes",
+          "label": "Text Style",
+          "options": [
+            {
+              "name": "subheading",
+              "value": "text-subheading"
+            },
+            {
+              "name": "Test STyle",
+              "value": "text-style"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
