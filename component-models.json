@@ -134,19 +134,6 @@
         "label": "Style",
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Layout & Alignment",
-        "valueType": "string",
-        "options": [
-          {
             "name": "Text Align Left",
             "value": "section-text-align-left"
           },
@@ -157,6 +144,18 @@
           {
             "name": "Text Align Right",
             "value": "section-text-align-right"
+          },
+          {
+            "name": "Background - White",
+            "value": "bg-white"
+          },
+          {
+            "name": "Background -White Smoke",
+            "value": "bg-white-smoke"
+          },
+          {
+            "name": "Background - Light Gray",
+            "value": "bg-light-gray"
           }
         ]
       }
@@ -216,29 +215,8 @@
       {
         "component": "select",
         "name": "classes",
-        "value": "",
-        "label": "Background Color",
-        "description": "The quote background color",
+        "label": "Quote Stylew",
         "valueType": "string",
-        "options": [
-          {
-            "name": "White",
-            "value": "bg-white"
-          },
-          {
-            "name": "White Smoke",
-            "value": "bg-white-smoke"
-          },
-          {
-            "name": "Light Gray",
-            "value": "bg-light-gray"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "quoteType",
-        "label": "Quote Type",
         "options": [
           {
             "name": "default",
@@ -251,27 +229,6 @@
           {
             "name": "Hollow",
             "value": "hollow"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Layout & Alignment",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Text Align Left",
-            "value": "section-text-align-left"
-          },
-          {
-            "name": "Text Align Center",
-            "value": "section-text-align-center"
-          },
-          {
-            "name": "Text Align Right",
-            "value": "section-text-align-right"
           }
         ]
       },
