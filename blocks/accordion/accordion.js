@@ -1,7 +1,7 @@
 export default function decorate(block) {
   block.querySelectorAll(':scope > div').forEach((item) => {
-    const header = item.querySelector('h3, h4, strong');
-    const body = item.querySelector('p, div');
+    const header = item.querySelector('h1, h2, h3, h4, p');
+    const body = item.querySelector('div[data-aue-prop="body"]');
 
     if (header && body) {
       header.classList.add('accordion-header');
