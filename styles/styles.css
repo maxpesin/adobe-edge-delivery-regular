@@ -221,22 +221,18 @@ main > .section:first-of-type {
   }
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
-}
-
-/* doucouple into its own section folder */
-
-.section.section-text-align-left {
+/* Text alignment classes */
+.text-align-left {
   text-align: left;
 }
-.section.section-text-align-center {
+.text-align-center {
   text-align: center;
 }
-.section.section-text-align-right {
+.text-align-right {
   text-align: right;
+}
+
+/* Background color classes */
+.bg-white-smoke {
+  background-color: var(--color-white-smoke);
 }

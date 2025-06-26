@@ -135,15 +135,15 @@
         "options": [
           {
             "name": "Text Align Left",
-            "value": "section-text-align-left"
+            "value": "text-align-left"
           },
           {
             "name": "Text Align Center",
-            "value": "section-text-align-center"
+            "value": "text-align-center"
           },
           {
             "name": "Text Align Right",
-            "value": "section-text-align-right"
+            "value": "text-align-right"
           },
           {
             "name": "Background - White",
