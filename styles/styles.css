@@ -26,7 +26,7 @@
 @media min-screen(xxl) {
     padding-left: calc((100% - 1320px) / 2);
 } */
- 
+
 
 @import url('variables.css');
 
@@ -244,4 +244,14 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+.section.section-text-align-left {
+  text-align: left;
+}
+.section.section-text-align-center {
+  text-align: center;
+}
+.section.section-text-align-right {
+  text-align: right;
 }
