@@ -544,24 +544,25 @@ function decorateSections(main) {
  * @param {Element} block The block element
  */
 function decorateBlock(block) {
-  console.log("🚀 ~ decorateBlock ~ block:", block)
-  
   const shortBlockName = block.classList[0];
-  if (shortBlockName && !block.dataset.blockStatus) {
+  if (!shortBlockName) return;
+
+  if (!block.dataset.blockStatus) {
     block.classList.add('block');
     block.dataset.blockName = shortBlockName;
     block.dataset.blockStatus = 'initialized';
     wrapTextNodes(block);
+
     const blockWrapper = block.parentElement;
-    blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+    if (blockWrapper) blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+
     const section = block.closest('.section');
     if (section) section.classList.add(`${shortBlockName}-container`);
+
     decorateButtons(block);
 
-    // NEW: process block metadata like sections do
-    const blockMeta = block.querySelector(
-      `:scope > div.${shortBlockName}-metadata, :scope > div.block-metadata`
-    );
+    // apply block metadata
+    const blockMeta = block.querySelector(`:scope > div.${shortBlockName}-metadata, :scope > div.block-metadata`);
     if (blockMeta) {
       const meta = readBlockConfig(blockMeta);
       applyMetaToElement(meta, block);
@@ -569,6 +570,33 @@ function decorateBlock(block) {
     }
   }
 }
+
+// function decorateBlock(block) {
+//   console.log("🚀 ~ decorateBlock ~ block:", block)
+  
+//   const shortBlockName = block.classList[0];
+//   if (shortBlockName && !block.dataset.blockStatus) {
+//     block.classList.add('block');
+//     block.dataset.blockName = shortBlockName;
+//     block.dataset.blockStatus = 'initialized';
+//     wrapTextNodes(block);
+//     const blockWrapper = block.parentElement;
+//     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+//     const section = block.closest('.section');
+//     if (section) section.classList.add(`${shortBlockName}-container`);
+//     decorateButtons(block);
+
+//     // NEW: process block metadata like sections do
+//     const blockMeta = block.querySelector(
+//       `:scope > div.${shortBlockName}-metadata, :scope > div.block-metadata`
+//     );
+//     if (blockMeta) {
+//       const meta = readBlockConfig(blockMeta);
+//       applyMetaToElement(meta, block);
+//       blockMeta.remove();
+//     }
+//   }
+// }
 
 /**
  * Builds a block DOM Element from a two dimensional array, string, or object
@@ -662,8 +690,34 @@ async function loadBlock(block) {
  * Decorates all blocks in a container element.
  * @param {Element} main The container element
  */
+// function decorateBlocks(main) {
+//   main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
+// }
+
+function decorateSection(section) {
+  // apply section metadata
+  const sectionMeta = section.querySelector(':scope > div.section-metadata');
+  if (sectionMeta) {
+    const meta = readBlockConfig(sectionMeta);
+    applyMetaToElement(meta, section);
+    sectionMeta.remove();
+  }
+
+  // now decorate blocks inside this section
+  section.querySelectorAll(':scope > div > div').forEach((el) => {
+    const firstClass = el.classList[0]; // block name
+    if (!firstClass) return;
+    if (firstClass === 'default-content-wrapper') return;
+    if (firstClass === 'section') return; // guard against malformed DOM
+    decorateBlock(el);
+  });
+}
+
 function decorateBlocks(main) {
-  main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
+  // decorate every section, then each section’s blocks
+  main.querySelectorAll('div.section').forEach((section) => {
+    decorateSection(section);
+  });
 }
 
 /**
