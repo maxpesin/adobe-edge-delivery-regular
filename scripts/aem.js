@@ -187,6 +187,7 @@ function toCamelCase(name) {
 }
 
 function normalizeClassList(value) {
+  console.log("🚀 ~ normalizeClassList ~ value:", value)
   if (Array.isArray(value)) return value.filter(Boolean);
   if (typeof value === 'string') {
     return value
@@ -198,6 +199,8 @@ function normalizeClassList(value) {
 }
 
 function applyMetaToElement(meta, el) {
+  console.log("🚀 ~ applyMetaToElement ~ el:", el)
+  console.log("🚀 ~ applyMetaToElement ~ meta:", meta)
   Object.keys(meta).forEach((key) => {
     if (key === 'style') {
       normalizeClassList(meta.style).forEach((cls) => el.classList.add(toClassName(cls)));
@@ -541,6 +544,8 @@ function decorateSections(main) {
  * @param {Element} block The block element
  */
 function decorateBlock(block) {
+  console.log("🚀 ~ decorateBlock ~ block:", block)
+  
   const shortBlockName = block.classList[0];
   if (shortBlockName && !block.dataset.blockStatus) {
     block.classList.add('block');
