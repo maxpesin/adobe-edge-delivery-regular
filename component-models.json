@@ -84,18 +84,11 @@
     "id": "container",
     "fields": [
       {
-        "component": "text",
-        "valueType": "number",
-        "name": "container",
-        "value": "",
-        "label": "Container"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
       }
     ]
   },
