@@ -89,6 +89,12 @@
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "button",
+        "name": "button",
+        "value": "",
+        "label": "Button"
       }
     ]
   },
