@@ -47,7 +47,6 @@
     {
       "id": "column",
       "components": [
-        "richtext",
         "text",
         "image",
         "button",
