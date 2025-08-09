@@ -372,12 +372,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      },
-      {
-        "component": "button",
-        "name": "button",
-        "value": "",
-        "label": "Button"
       }
     ]
   }

@@ -50,13 +50,5 @@
       "button",
       "title"
     ]
-  },
-  {
-    "id": "hero",
-    "components": [
-      "text",
-      "image",
-      "button"
-    ]
   }
 ]
