@@ -84,17 +84,6 @@
     "id": "columns",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Position Absolute",
-            "value": "position-absolute"
-          }
-        ]
-      },
-      {
         "component": "text",
         "valueType": "number",
         "name": "columns",
