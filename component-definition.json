@@ -115,21 +115,6 @@
           }
         },
         {
-          "title": "Container",
-          "id": "container",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "Container",
-                  "model": "container"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
