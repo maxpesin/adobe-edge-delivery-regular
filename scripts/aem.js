@@ -186,31 +186,6 @@ function toCamelCase(name) {
   return toClassName(name).replace(/-([a-z])/g, (g) => g[1].toUpperCase());
 }
 
-function normalizeClassList(value) {
-  console.log("🚀 ~ normalizeClassList ~ value:", value)
-  if (Array.isArray(value)) return value.filter(Boolean);
-  if (typeof value === 'string') {
-    return value
-      .split(/[,\s]+/)           // commas or whitespace
-      .map((s) => s.trim())
-      .filter(Boolean);
-  }
-  return [];
-}
-
-function applyMetaToElement(meta, el) {
-  console.log("🚀 ~ applyMetaToElement ~ el:", el)
-  console.log("🚀 ~ applyMetaToElement ~ meta:", meta)
-  Object.keys(meta).forEach((key) => {
-    if (key === 'style') {
-      normalizeClassList(meta.style).forEach((cls) => el.classList.add(toClassName(cls)));
-    } else {
-      el.dataset[toCamelCase(key)] = meta[key];
-    }
-  });
-}
-
-
 /**
  * Extracts the config from a block.
  * @param {Element} block The block element
@@ -540,65 +515,6 @@ function decorateSections(main) {
 }
 
 /**
- * Decorates a block.
- * @param {Element} block The block element
- */
-function decorateBlock(block) {
-  const shortBlockName = block.classList[0];
-  if (!shortBlockName) return;
-
-  if (!block.dataset.blockStatus) {
-    block.classList.add('block');
-    block.dataset.blockName = shortBlockName;
-    block.dataset.blockStatus = 'initialized';
-    wrapTextNodes(block);
-
-    const blockWrapper = block.parentElement;
-    if (blockWrapper) blockWrapper.classList.add(`${shortBlockName}-wrapper`);
-
-    const section = block.closest('.section');
-    if (section) section.classList.add(`${shortBlockName}-container`);
-
-    decorateButtons(block);
-
-    // apply block metadata
-    const blockMeta = block.querySelector(`:scope > div.${shortBlockName}-metadata, :scope > div.block-metadata`);
-    if (blockMeta) {
-      const meta = readBlockConfig(blockMeta);
-      applyMetaToElement(meta, block);
-      blockMeta.remove();
-    }
-  }
-}
-
-// function decorateBlock(block) {
-//   console.log("🚀 ~ decorateBlock ~ block:", block)
-  
-//   const shortBlockName = block.classList[0];
-//   if (shortBlockName && !block.dataset.blockStatus) {
-//     block.classList.add('block');
-//     block.dataset.blockName = shortBlockName;
-//     block.dataset.blockStatus = 'initialized';
-//     wrapTextNodes(block);
-//     const blockWrapper = block.parentElement;
-//     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
-//     const section = block.closest('.section');
-//     if (section) section.classList.add(`${shortBlockName}-container`);
-//     decorateButtons(block);
-
-//     // NEW: process block metadata like sections do
-//     const blockMeta = block.querySelector(
-//       `:scope > div.${shortBlockName}-metadata, :scope > div.block-metadata`
-//     );
-//     if (blockMeta) {
-//       const meta = readBlockConfig(blockMeta);
-//       applyMetaToElement(meta, block);
-//       blockMeta.remove();
-//     }
-//   }
-// }
-
-/**
  * Builds a block DOM Element from a two dimensional array, string, or object
  * @param {string} blockName name of the block
  * @param {*} content two dimensional array or string or object of content
@@ -670,54 +586,28 @@ async function loadBlock(block) {
  * Decorates a block.
  * @param {Element} block The block element
  */
-// function decorateBlock(block) {
-//   const shortBlockName = block.classList[0];
-//   if (shortBlockName && !block.dataset.blockStatus) {
-//     block.classList.add('block');
-//     block.dataset.blockName = shortBlockName;
-//     block.dataset.blockStatus = 'initialized';
-//     wrapTextNodes(block);
-//     const blockWrapper = block.parentElement;
-//     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
-//     const section = block.closest('.section');
-//     if (section) section.classList.add(`${shortBlockName}-container`);
-//     // eslint-disable-next-line no-use-before-define
-//     decorateButtons(block);
-//   }
-// }
+function decorateBlock(block) {
+  const shortBlockName = block.classList[0];
+  if (shortBlockName && !block.dataset.blockStatus) {
+    block.classList.add('block');
+    block.dataset.blockName = shortBlockName;
+    block.dataset.blockStatus = 'initialized';
+    wrapTextNodes(block);
+    const blockWrapper = block.parentElement;
+    blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+    const section = block.closest('.section');
+    if (section) section.classList.add(`${shortBlockName}-container`);
+    // eslint-disable-next-line no-use-before-define
+    decorateButtons(block);
+  }
+}
 
 /**
  * Decorates all blocks in a container element.
  * @param {Element} main The container element
  */
-// function decorateBlocks(main) {
-//   main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
-// }
-
-function decorateSection(section) {
-  // apply section metadata
-  const sectionMeta = section.querySelector(':scope > div.section-metadata');
-  if (sectionMeta) {
-    const meta = readBlockConfig(sectionMeta);
-    applyMetaToElement(meta, section);
-    sectionMeta.remove();
-  }
-
-  // now decorate blocks inside this section
-  section.querySelectorAll(':scope > div > div').forEach((el) => {
-    const firstClass = el.classList[0]; // block name
-    if (!firstClass) return;
-    if (firstClass === 'default-content-wrapper') return;
-    if (firstClass === 'section') return; // guard against malformed DOM
-    decorateBlock(el);
-  });
-}
-
 function decorateBlocks(main) {
-  // decorate every section, then each section’s blocks
-  main.querySelectorAll('div.section').forEach((section) => {
-    decorateSection(section);
-  });
+  main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
 }
 
 /**
