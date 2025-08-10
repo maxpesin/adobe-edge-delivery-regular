@@ -262,6 +262,22 @@
     "id": "card",
     "fields": [
       {
+        "component": "select",
+        "name": "classes",
+        "label": "Card Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "image 88px",
+            "value": "image-width-88"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
