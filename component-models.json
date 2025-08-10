@@ -187,14 +187,12 @@
     "id": "button",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
+        "component": "select",
+        "name": "classes",
+        "label": "Styles",
+        "multi": true,
         "options": [
-          {
-            "name": "Position Absolute",
-            "value": "position-absolute"
-          }
+          { "name": "Position Absolute", "value": "position-absolute" }
         ]
       },
       {
