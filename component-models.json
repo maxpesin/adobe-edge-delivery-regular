@@ -118,6 +118,22 @@
   {
     "id": "text",
     "fields": [
+            {
+        "component": "select",
+        "name": "classes",
+        "label": "Teaser Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Position Absolute",
+            "value": "position-absolute"
+          }
+        ]
+      },
       {
         "component": "richtext",
         "valueType": "string",
@@ -145,6 +161,22 @@
   {
     "id": "title",
     "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Teaser Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Position Absolute",
+            "value": "position-absolute"
+          }
+        ]
+      },
       {
         "component": "title",
         "name": "title",
