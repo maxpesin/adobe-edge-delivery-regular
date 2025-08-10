@@ -41,11 +41,5 @@
       "button",
       "title"
     ]
-  },
-  {
-    "id": "teaser",
-    "components": [
-      "button"
-    ]
   }
 ]
