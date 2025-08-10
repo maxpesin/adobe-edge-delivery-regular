@@ -121,7 +121,7 @@
             {
         "component": "select",
         "name": "classes",
-        "label": "Teaser Styles",
+        "label": "Text Styles",
         "valueType": "string",
         "options": [
           {
@@ -129,8 +129,8 @@
             "value": ""
           },
           {
-            "name": "Position Absolute",
-            "value": "position-absolute"
+            "name": "Font Size 21px",
+            "value": "font-size-21"
           }
         ]
       },
