@@ -284,7 +284,7 @@
       {
         "component": "select",
         "name": "classes",
-        "label": "Quote Stylew",
+        "label": "Quote Styles",
         "valueType": "string",
         "options": [
           {
@@ -320,6 +320,26 @@
   {
     "id": "hero",
     "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Hero Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Position Absolute",
+            "value": "position-absolute"
+          },
+          {
+            "name": "Hollow",
+            "value": "hollow"
+          }
+        ]
+      },
       {
         "component": "reference",
         "valueType": "string",
