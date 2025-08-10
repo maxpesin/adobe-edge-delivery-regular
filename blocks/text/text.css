@@ -1,3 +1,5 @@
-.text-wrapper .text.font-size-21 {
+.text-wrapper .text.font-size-21 p, .text-wrapper .text.font-size-21 h1, .text-wrapper .text.font-size-21 h2, .text-wrapper .text.font-size-21 h3, .text-wrapper .text.font-size-21 h4, .text-wrapper .text.font-size-21 h5, .text-wrapper .text.font-size-21 h6 {
   font-size: 21px;
+  line-height: 1.38;
+  font-weight: 400;
 }
