@@ -1,10 +1,10 @@
 export default function decorate(block) {
   console.log("🚀 ~ decorate ~ block:", block)
   
-  block.querySelectorAll(':scope > div').forEach((item) => {
-    console.log("🚀 ~ decorate ~ item:", item)
+  // block.querySelectorAll(':scope > div').forEach((item) => {
+    // console.log("🚀 ~ decorate ~ item:", item)
     // const header = item.querySelector('h1, h2, h3, h4, p');
-    const body = item.querySelector('div[data-aue-prop="body"]');
+    const body = block.querySelector('div[data-aue-prop="body"]');
     console.log("🚀 ~ decorate ~ body:", body)
 
     if (body) {
@@ -12,11 +12,11 @@ export default function decorate(block) {
       body.classList.add('accordion-body');
       body.style.display = 'none';
 
-      item.addEventListener('click', () => {
+      block.addEventListener('click', () => {
         const expanded = body.style.display === 'block';
         body.style.display = expanded ? 'none' : 'block';
-        this.classList.toggle('open', !expanded);
+        block.classList.toggle('open', !expanded);
       });
     }
-  });
+  // });
 }
