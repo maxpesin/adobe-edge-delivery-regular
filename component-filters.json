@@ -41,5 +41,14 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "teaser",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
 ]
