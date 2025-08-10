@@ -122,7 +122,7 @@
         "component": "select",
         "name": "classes",
         "label": "Text Styles",
-        "valueType": "string",
+        "valueType": "string[]",
         "multi": true,
         "options": [
           {
