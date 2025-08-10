@@ -278,6 +278,42 @@
         ]
       },
       {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Text Align Left",
+            "value": "text-align-left"
+          },
+          {
+            "name": "Text Align Center",
+            "value": "text-align-center"
+          },
+          {
+            "name": "Text Align Right",
+            "value": "text-align-right"
+          },
+          {
+            "name": "Background White",
+            "value": "bg-white"
+          },
+          {
+            "name": "Background White Smoke",
+            "value": "bg-white-smoke"
+          },
+          {
+            "name": "Background Light Gray",
+            "value": "bg-light-gray"
+          },
+          {
+            "name": "No Padding",
+            "value": "no-padding"
+          }
+
+        ]
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
