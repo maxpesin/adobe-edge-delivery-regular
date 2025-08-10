@@ -261,10 +261,10 @@
     {
     "id": "cards",
     "fields": [
-      {
+            {
         "component": "select",
         "name": "classes",
-        "label": "Cards Styles",
+        "label": "Card Styles",
         "valueType": "string",
         "options": [
           {
@@ -275,6 +275,42 @@
             "name": "image 88px",
             "value": "image-width-88"
           }
+        ]
+      },
+     {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Text Align Left",
+            "value": "text-align-left"
+          },
+          {
+            "name": "Text Align Center",
+            "value": "text-align-center"
+          },
+          {
+            "name": "Text Align Right",
+            "value": "text-align-right"
+          },
+          {
+            "name": "Background White",
+            "value": "bg-white"
+          },
+          {
+            "name": "Background White Smoke",
+            "value": "bg-white-smoke"
+          },
+          {
+            "name": "Background Light Gray",
+            "value": "bg-light-gray"
+          },
+          {
+            "name": "No Padding",
+            "value": "no-padding"
+          }
+
         ]
       }
     ]
