@@ -3,3 +3,11 @@
   line-height: 1.38;
   font-weight: 400;
 }
+.text-wrapper .text.after-divider::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-trex-green);
+  margin: 12px 0;
+}
