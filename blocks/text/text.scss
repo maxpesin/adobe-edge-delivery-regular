@@ -15,10 +15,10 @@
             &::after {
                 content: "";
                 display: block;
-                width: 100%;
+                width: 25%;
                 height: 1px;
-                background-color: var(--color-trex-green);
-                margin: 12px 0;
+                background-color: var(--color-light-x11-grey);
+                margin: 10px auto 0;
             }
         }
     }
