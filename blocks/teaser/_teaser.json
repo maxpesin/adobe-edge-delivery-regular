@@ -20,17 +20,7 @@
   "models": [
     {
       "id": "teaser",
-      "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "label": "Styles",
-        "options": [
-          { "name": "Position Absolute", "value": "position-absolute" },
-          { "name": "Background Light Gray", "value": "bg-light-gray" }
-        ]
-      }
-    ]
+      "fields": [   ]
     }
   ]
 }
