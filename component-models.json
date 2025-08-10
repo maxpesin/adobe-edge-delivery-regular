@@ -258,6 +258,27 @@
       }
     ]
   },
+    {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Cards Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "image 88px",
+            "value": "image-width-88"
+          }
+        ]
+      }
+    ]
+  },
   {
     "id": "card",
     "fields": [
