@@ -12,7 +12,7 @@ export default function decorate(block) {
       body.classList.add('accordion-body');
       body.style.display = 'none';
 
-      this.addEventListener('click', () => {
+      item.addEventListener('click', () => {
         const expanded = body.style.display === 'block';
         body.style.display = expanded ? 'none' : 'block';
         this.classList.toggle('open', !expanded);
