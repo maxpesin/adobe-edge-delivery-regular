@@ -123,6 +123,7 @@
         "name": "classes",
         "label": "Text Styles",
         "valueType": "string",
+        "multi": true,
         "options": [
           {
             "name": "default",
@@ -131,6 +132,10 @@
           {
             "name": "Font Size 21px",
             "value": "font-size-21"
+          },
+          {
+            "name": "After Divider",
+            "value": "after-divider"
           }
         ]
       },
