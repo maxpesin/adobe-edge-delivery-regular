@@ -4,7 +4,9 @@ export default function decorate(block) {
   // block.querySelectorAll(':scope > div').forEach((item) => {
     // console.log("🚀 ~ decorate ~ item:", item)
     // const header = item.querySelector('h1, h2, h3, h4, p');
-    const body = block.querySelector('div[data-aue-prop="body"]');
+    const body = 
+      block.querySelector('div[data-aue-prop="body"]') ||
+      block.querySelector(':scope > div:nth-of-type(2)');
     console.log("🚀 ~ decorate ~ body:", body)
 
     if (body) {
