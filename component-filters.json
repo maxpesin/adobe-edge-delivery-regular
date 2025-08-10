@@ -16,7 +16,7 @@
       "accordion",
       "cards",
       "columns",
-      "container",
+      "teaser",
       "quote",
       "fragment"
     ]
@@ -35,15 +35,6 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  {
-    "id": "container",
     "components": [
       "text",
       "image",

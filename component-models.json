@@ -362,5 +362,57 @@
         "valueType": "string"
       }
     ]
+  },
+    {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Hero Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Position Absolute",
+            "value": "position-absolute"
+          },
+          {
+            "name": "Hollow",
+            "value": "hollow"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "button",
+        "name": "button",
+        "value": "",
+        "label": "Button"
+      }
+    ]
   }
 ]
