@@ -4,6 +4,8 @@
 .teaser-wrapper {
     .teaser {
         &.position-absolute {
+            position: relative;
+
             > div:not(:has(picture)) {
                 position: absolute;
                 top: 50%;
