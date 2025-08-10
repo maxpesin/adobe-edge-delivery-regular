@@ -100,6 +100,23 @@
     ]
   },
   {
+    "id": "column",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Styles",
+        "valueType": "string",
+        "options": [
+          { 
+            "name": "Position Absolute",
+           "value": "position-absolute"
+           }
+        ]
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
