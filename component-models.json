@@ -190,9 +190,12 @@
         "component": "select",
         "name": "classes",
         "label": "Styles",
-        "multi": true,
+        "valueType": "string",
         "options": [
-          { "name": "Position Absolute", "value": "position-absolute" }
+          { 
+            "name": "Position Absolute",
+           "value": "position-absolute"
+           }
         ]
       },
       {
