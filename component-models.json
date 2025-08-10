@@ -123,7 +123,6 @@
         "name": "classes",
         "label": "Text Styles",
         "valueType": "string[]",
-        "multi": true,
         "options": [
           {
             "name": "default",
