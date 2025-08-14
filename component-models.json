@@ -323,18 +323,21 @@
     "id": "card",
     "fields": [
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "classes",
-        "label": "Card Styles",
-        "valueType": "string",
+        "label": "Classes",
         "options": [
           {
-            "name": "default",
-            "value": ""
+            "name": "Image Small",
+            "value": "card-image-small"
           },
           {
-            "name": "image 88px",
-            "value": "image-width-88"
+            "name": "Image Medium",
+            "value": "card-image-medium"
+          },
+          {
+            "name": "Image Large",
+            "value": "card-image-large"
           }
         ]
       },
@@ -344,34 +347,17 @@
         "label": "Style",
         "options": [
           {
-            "name": "Text Align Left",
-            "value": "text-align-left"
+            "name": "Image Small",
+            "value": "card-image-small"
           },
           {
-            "name": "Text Align Center",
-            "value": "text-align-center"
+            "name": "Image Medium",
+            "value": "card-image-medium"
           },
           {
-            "name": "Text Align Right",
-            "value": "text-align-right"
-          },
-          {
-            "name": "Background White",
-            "value": "bg-white"
-          },
-          {
-            "name": "Background White Smoke",
-            "value": "bg-white-smoke"
-          },
-          {
-            "name": "Background Light Gray",
-            "value": "bg-light-gray"
-          },
-          {
-            "name": "No Padding",
-            "value": "no-padding"
+            "name": "Image Large",
+            "value": "card-image-large"
           }
-
         ]
       },
       {
