@@ -1,34 +1,23 @@
-@charset "UTF-8";
-.accordion-wrapper .accordion-header {
-  font-weight: bold;
-  cursor: pointer;
-  margin: 0;
-}
-.accordion-wrapper .accordion-body {
-  display: none;
-  margin-top: 8px;
-  padding-left: 10px;
-}
-.accordion-wrapper .accordion > div:first-child p {
+.accordion-wrapper .accordion [data-aue-prop=title] {
   font-weight: 600;
   color: #00493d;
   line-height: 1.33;
 }
-.accordion-wrapper .accordion > div:first-child p:after {
+.accordion-wrapper .accordion [data-aue-prop=title]:after {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("../../icons/icon-arrow-up.png") no-repeat center;
+  background: url("/icons/icon-arrow-up.png") no-repeat center;
   background-size: contain;
+  transform: rotate(180);
 }
-
-.accordion-header.open::after {
-  content: "▲";
-  float: right;
+.accordion-wrapper .accordion [data-aue-prop=title] .open:after {
+  content: "";
+  transform: rotate(0);
 }
-
-.accordion-header::after {
-  content: "▼";
-  float: right;
+.accordion-wrapper .accordion .accordion-body {
+  display: none;
+  margin-top: 8px;
+  padding-left: 10px;
 }
