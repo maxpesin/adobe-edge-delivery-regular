@@ -6,26 +6,37 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
     representing default html snippet we discuss above.
 */
 export default function decorate(block) {
-  /* change to ul, li */
-  /* Create ul tag dynamically */
+  // 0) Promote block-level styles/classes from the authoring crumb row, then remove that row.
+  const crumb = block.querySelector('[data-aue-prop="style"]');
+  console.log("🚀 ~ decorate ~ crumb:", crumb)
+  if (crumb) {
+    const raw = (crumb.textContent || '').trim();
+    const tokens = raw.split(/[,\s]+/).map(s => s.trim()).filter(Boolean);
+    console.log("🚀 ~ decorate ~ tokens:", tokens)
+    tokens.forEach(cls => block.classList.add(cls));
+
+    // remove the top-level row that contains the crumb, before we rebuild the UL
+    let row = crumb;
+    while (row && row.parentElement !== block) row = row.parentElement;
+    if (row && row.parentElement === block) row.remove();
+  }
+
+  // 1) Build UL/LI structure from remaining rows
   const ul = document.createElement('ul');
 
-  /* loop through all child rows */
   [...block.children].forEach((row) => {
-
-    /* Create ul tag dynamically */
     const li = document.createElement('li');
     moveInstrumentation(row, li);
 
-    /* Wrap every child element within li tag */ 
     while (row.firstElementChild) li.append(row.firstElementChild);
 
-    /* loop through all div tags within li tag */
+    // classify child divs
     [...li.children].forEach((div) => {
-
-      /* append class to picture and content parent div */
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) {
+        div.className = 'cards-card-image';
+      } else {
+        div.className = 'cards-card-body';
+      }
     });
 
     /* append li to ul*/
@@ -40,7 +51,7 @@ export default function decorate(block) {
 
   // make block empty to removed ealier html code or structure.
   block.textContent = '';
-  
+
   // append brand new updated HTML structure having ul and li's tags.
   block.append(ul);
 }
