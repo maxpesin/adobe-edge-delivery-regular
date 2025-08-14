@@ -34,14 +34,19 @@ export default function decorate(block) {
       }
     });
 
-    // skip if it has a body div but no children in it
-    const body = li.querySelector('.cards-card-body');
-    if (body && body.children.length === 0) return;
-
     /* append li to ul*/
     ul.append(li);
   });
 
+    // 2) If the first li's body has no children, remove that li
+  const firstLi = ul.querySelector(':scope > li');
+  if (firstLi) {
+    const firstBody = firstLi.querySelector(':scope > .cards-card-body');
+    if (firstBody && firstBody.children.length === 0) {
+      firstLi.remove();
+    }
+  }
+  
   /* get all img tags within ul and update properties*/
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
