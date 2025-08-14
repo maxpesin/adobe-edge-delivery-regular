@@ -13,19 +13,25 @@
 }
 
 .block.quote > div:last-child > div {
-    margin: 0 16px;
-    font-size: small;
-    font-style: italic;
-    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    /* margin: 0 16px; */
+    /* font-size: small; */
+    /* font-style: italic; */
+    /* position: relative; */
 }
 
 .block.quote > div:last-child > div::before {
     content: "-";
-    display: block;
+    display: inline-block;
     /* position: absolute; */
     /* left: 0; */
     /* bottom: -8px; */
-    height: 5px;
-    width: 30px;
+    /* height: 5px; */
+    /* width: 30px; */
     /* background-color: darkgray; */
 }
