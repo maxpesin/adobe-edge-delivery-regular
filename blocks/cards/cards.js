@@ -14,11 +14,6 @@ export default function decorate(block) {
     const tokens = raw.split(/[,\s]+/).map(s => s.trim()).filter(Boolean);
     console.log("🚀 ~ decorate ~ tokens:", tokens)
     tokens.forEach(cls => block.classList.add(cls));
-
-    // remove the top-level row that contains the crumb, before we rebuild the UL
-    let row = crumb;
-    while (row && row.parentElement !== block) row = row.parentElement;
-    if (row && row.parentElement === block) row.remove();
   }
 
   // 1) Build UL/LI structure from remaining rows
@@ -39,9 +34,14 @@ export default function decorate(block) {
       }
     });
 
+    // skip if it has a body div but no children in it
+    const body = tempLi.querySelector('.cards-card-body');
+    if (body && body.children.length === 0) return;
+
     /* append li to ul*/
     ul.append(li);
   });
+
   /* get all img tags within ul and update properties*/
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
