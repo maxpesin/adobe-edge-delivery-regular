@@ -1,5 +1,14 @@
-.cards-wrapper .block.cards.cards-block-image-small > ul > li img {
-  width: 88px;
+@use "../../styles/breakpoints.scss" as *;
+// sass blocks/cards/cards.scss blocks/cards/cards.css --no-source-map
+
+.cards-wrapper {
+    .block.cards {
+        &.cards-block-image-small {
+            > ul > li img {
+            width: 88px;
+            }
+        }
+    }
 }
 
 .cards > ul {
@@ -15,6 +24,7 @@
   border: 1px solid #dadada;
   background-color: var(--color-white);
 } */
+
 .cards .cards-card-body {
   margin: 16px;
 }
@@ -23,13 +33,13 @@
   line-height: 0;
 }
 
-.cards .cards-card-body [data-aue-label*=Title] {
+.cards .cards-card-body [data-aue-label*="Title"] {
   color: var(--color-trex-green);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 5px 0;
 }
 
-.cards .cards-card-body [data-aue-label*=Body] {
+.cards .cards-card-body [data-aue-label*="Body"] {
   padding: 0;
 }
