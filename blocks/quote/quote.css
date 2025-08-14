@@ -1,15 +1,20 @@
 .block.quote {
     background-color: #f8f8f8;
-    padding: 0 0 24px;
+    padding: 50px 78pt;
     display: flex;
     flex-direction: column;
     align-items: start;
+    text-align: left;
     margin: 1rem 0;
 }
 
-.block.quote blockquote {
-    margin: 16px;
-    text-indent: 0;
+.block.quote blockquote::before {
+    content: "“";
+    color: #00493d;
+    font-weight: 700;
+    font-size: 100px;
+    /* margin: 16px; */
+    /* text-indent: 0; */
 }
 
 .block.quote > div:last-child > div {
