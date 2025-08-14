@@ -35,7 +35,7 @@ export default function decorate(block) {
     });
 
     // skip if it has a body div but no children in it
-    const body = tempLi.querySelector('.cards-card-body');
+    const body = li.querySelector('.cards-card-body');
     if (body && body.children.length === 0) return;
 
     /* append li to ul*/
