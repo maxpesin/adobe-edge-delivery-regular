@@ -44,13 +44,13 @@ export default function decorate(block) {
   });
 
     // 2) If the first li's body has no children, remove that li
-  const firstLi = ul.querySelector(':scope > li');
-  if (firstLi) {
-    const firstBody = firstLi.querySelector(':scope > .cards-card-body');
-    if (firstBody && firstBody.children.length === 0) {
-      firstLi.remove();
-    }
-  }
+  // const firstLi = ul.querySelector(':scope > li');
+  // if (firstLi) {
+  //   const firstBody = firstLi.querySelector(':scope > .cards-card-body');
+  //   if (firstBody && firstBody.children.length === 0) {
+  //     firstLi.remove();
+  //   }
+  // }
   
   /* get all img tags within ul and update properties*/
   ul.querySelectorAll('picture > img').forEach((img) => {
