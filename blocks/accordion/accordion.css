@@ -1,4 +1,4 @@
-.accordion-wrapper .accordion [data-aue-prop=title] {
+.accordion-wrapper .accordion div:first-child > div p {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   line-height: 1.33;
   cursor: pointer;
 }
-.accordion-wrapper .accordion [data-aue-prop=title]:after {
+.accordion-wrapper .accordion div:first-child > div p:after {
   content: "";
   display: inline-block;
   width: 20px;
@@ -16,9 +16,9 @@
   background-size: contain;
   rotate: 180deg;
 }
-.accordion-wrapper .accordion.open [data-aue-prop=title]:after {
+.accordion-wrapper .accordion.open div:first-child > div p:after {
   content: "";
-  rotate: 0;
+  rotate: unset;
 }
 .accordion-wrapper .accordion .accordion-body {
   display: none;
