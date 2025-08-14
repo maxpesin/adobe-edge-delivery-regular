@@ -10,6 +10,7 @@
             color: var(--color-trex-green);
             font-weight: 600;
             line-height: 1.33;
+            cursor: pointer;
 
             &:after {
                 content: '';
@@ -23,9 +24,11 @@
         }
 
         &.open {
-            &:after {
-                content: '';
-                rotate: 0;
+            [data-aue-prop="title"] {
+                &:after {
+                    content: '';
+                    rotate: 0;
+                }
             }
         }
 

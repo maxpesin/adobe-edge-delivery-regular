@@ -5,6 +5,7 @@
   color: var(--color-trex-green);
   font-weight: 600;
   line-height: 1.33;
+  cursor: pointer;
 }
 .accordion-wrapper .accordion [data-aue-prop=title]:after {
   content: "";
@@ -15,7 +16,7 @@
   background-size: contain;
   rotate: 180deg;
 }
-.accordion-wrapper .accordion.open:after {
+.accordion-wrapper .accordion.open [data-aue-prop=title]:after {
   content: "";
   rotate: 0;
 }
