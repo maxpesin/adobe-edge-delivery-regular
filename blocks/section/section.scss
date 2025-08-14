@@ -12,4 +12,10 @@
             text-align: right;
         }
     }
+
+    &.nav-section {
+        .accordion-wrapper {
+            display: inline-flex;
+        }
+    }
 }
