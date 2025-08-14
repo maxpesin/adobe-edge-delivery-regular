@@ -8,13 +8,13 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("/icons/icon-arrow-up.png") no-repeat center;
+  background: url("../../icons/icon-arrow-up.png") no-repeat center;
   background-size: contain;
-  transform: rotate(180);
+  rotate: 180deg;
 }
 .accordion-wrapper .accordion [data-aue-prop=title] .open:after {
   content: "";
-  transform: rotate(0);
+  rotate: 0;
 }
 .accordion-wrapper .accordion .accordion-body {
   display: none;
