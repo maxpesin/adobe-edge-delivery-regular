@@ -35,27 +35,7 @@
   "models": [
     {
     "id": "cards",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Cards Image Small",
-            "value": "cards-image-small"
-          },
-          {
-            "name": "Cards Image Medium",
-            "value": "cards-image-medium"
-          },
-          {
-            "name": "Cards Image Large",
-            "value": "cards-image-large"
-          }
-        ]
-      }
-    ]
+    "fields": []
   },
     {
       "id": "card",
