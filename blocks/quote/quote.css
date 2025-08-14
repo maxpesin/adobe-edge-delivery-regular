@@ -31,9 +31,11 @@
   font-weight: 600;
   letter-spacing: 1px;
   padding-top: 5px;
-  margin: 0;
 }
 .quote-wrapper .block.quote > div:last-child > div:before {
   content: "-";
   font-size: 16px;
+}
+.quote-wrapper .block.quote > div:last-child > div p {
+  margin: 0;
 }
