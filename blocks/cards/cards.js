@@ -16,6 +16,11 @@ export default function decorate(block) {
     tokens.forEach(cls => block.classList.add(cls));
   }
 
+    // remove the top-level row that contains the crumb, before we rebuild the UL
+    let row = crumb;
+    while (row && row.parentElement !== block) row = row.parentElement;
+    if (row && row.parentElement === block) row.remove();
+
   // 1) Build UL/LI structure from remaining rows
   const ul = document.createElement('ul');
 
