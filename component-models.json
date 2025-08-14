@@ -227,25 +227,6 @@
     "id": "button",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Cards Image Small",
-            "value": "cards-image-small"
-          },
-          {
-            "name": "Cards Image Medium",
-            "value": "cards-image-medium"
-          },
-          {
-            "name": "Cards Image Large",
-            "value": "cards-image-large"
-          }
-        ]
-      },    
-      {
         "component": "aem-content",
         "name": "link",
         "label": "Link"
@@ -284,56 +265,23 @@
     {
     "id": "cards",
     "fields": [
-            {
-        "component": "select",
-        "name": "classes",
-        "label": "Card Styles",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "image 88px",
-            "value": "image-width-88"
-          }
-        ]
-      },
-     {
+      {
         "component": "multiselect",
         "name": "style",
         "label": "Style",
         "options": [
           {
-            "name": "Text Align Left",
-            "value": "text-align-left"
+            "name": "Cards Image Small",
+            "value": "cards-block-image-small"
           },
           {
-            "name": "Text Align Center",
-            "value": "text-align-center"
+            "name": "Cards Image Medium",
+            "value": "cards-block-image-medium"
           },
           {
-            "name": "Text Align Right",
-            "value": "text-align-right"
-          },
-          {
-            "name": "Background White",
-            "value": "bg-white"
-          },
-          {
-            "name": "Background White Smoke",
-            "value": "bg-white-smoke"
-          },
-          {
-            "name": "Background Light Gray",
-            "value": "bg-light-gray"
-          },
-          {
-            "name": "No Padding",
-            "value": "no-padding"
+            "name": "Cards Image Large",
+            "value": "cards-block-image-large"
           }
-
         ]
       }
     ]
@@ -343,39 +291,20 @@
     "fields": [
       {
         "component": "multiselect",
-        "name": "classes",
-        "label": "Classes",
-        "options": [
-          {
-            "name": "Image Small",
-            "value": "card-image-small"
-          },
-          {
-            "name": "Image Medium",
-            "value": "card-image-medium"
-          },
-          {
-            "name": "Image Large",
-            "value": "card-image-large"
-          }
-        ]
-      },
-      {
-        "component": "multiselect",
         "name": "style",
         "label": "Style",
         "options": [
           {
             "name": "Image Small",
-            "value": "card-image-small"
+            "value": "card-item-image-small"
           },
           {
             "name": "Image Medium",
-            "value": "card-image-medium"
+            "value": "card-item-image-medium"
           },
           {
             "name": "Image Large",
-            "value": "card-image-large"
+            "value": "card-item-image-large"
           }
         ]
       },
