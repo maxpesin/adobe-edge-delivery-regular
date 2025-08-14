@@ -1,5 +1,7 @@
 export default function decorate(block) {
   console.log("🚀 ~ decorate ~ block:", block)
+
+  //TODO Opening one closes to the OTHER
   
   // block.querySelectorAll(':scope > div').forEach((item) => {
     // console.log("🚀 ~ decorate ~ item:", item)
