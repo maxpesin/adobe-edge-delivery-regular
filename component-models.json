@@ -44,7 +44,7 @@
       },
       {
         "component": "multiselect",
-        "name": "style",
+        "name": "classes",
         "value": [],
         "label": "Style Options",
         "valueType": "array",
