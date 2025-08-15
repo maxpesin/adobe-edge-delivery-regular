@@ -4,6 +4,11 @@ footer {
   font-size: var(--body-font-size-xs);
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
 footer .footer > div {
   margin: auto;
   max-width: 1200px;

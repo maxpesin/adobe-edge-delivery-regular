@@ -142,6 +142,10 @@
             "value": "font-size-21"
           },
           {
+            "name": "Before Divider",
+            "value": "before-divider"
+          },
+          {
             "name": "After Divider",
             "value": "after-divider"
           }
