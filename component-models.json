@@ -74,10 +74,6 @@
           {
             "name": "No Padding",
             "value": "no-padding"
-          },
-          {
-            "name": "No Padding",
-            "value": "no-padding"
           }
         ]
       }
@@ -270,16 +266,12 @@
         "label": "Style",
         "options": [
           {
-            "name": "Cards Image Small",
-            "value": "cards-block-image-small"
+            "name": "Cards Icon Image",
+            "value": "cards-block-icon-image"
           },
           {
-            "name": "Cards Image Medium",
-            "value": "cards-block-image-medium"
-          },
-          {
-            "name": "Cards Image Large",
-            "value": "cards-block-image-large"
+            "name": "Cards Callout",
+            "value": "cards-block-callout"
           }
         ]
       }
@@ -288,25 +280,6 @@
   {
     "id": "card",
     "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Image Small",
-            "value": "card-item-image-small"
-          },
-          {
-            "name": "Image Medium",
-            "value": "card-item-image-medium"
-          },
-          {
-            "name": "Image Large",
-            "value": "card-item-image-large"
-          }
-        ]
-      },
       {
         "component": "reference",
         "valueType": "string",
