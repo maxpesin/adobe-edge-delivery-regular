@@ -137,7 +137,8 @@ a:any-link {
   overflow-wrap: break-word;
 }
 
-a:hover {
+a:hover,
+a.button:hover {
   /* color: var(--color-dark-green); */
   text-decoration: none;
 }
