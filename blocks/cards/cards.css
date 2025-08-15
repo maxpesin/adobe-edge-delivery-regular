@@ -19,16 +19,15 @@
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body p {
   color: var(--color-trex-green);
   text-transform: uppercase;
-  padding-bottom: 20px;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:nth-child(2) {
   margin: 0;
 }
-.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:first-of-type {
-  order: 1;
-  margin: 0;
-}
-.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:first-of-type p {
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:nth-child(2) p {
   font-size: 14px;
   letter-spacing: 1px;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type {
   order: 3;
