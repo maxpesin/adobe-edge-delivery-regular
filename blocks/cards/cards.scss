@@ -11,7 +11,11 @@
 
         &.cards-block-callout {
             ul {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: 1fr;
+
+                @media (width >= $breakpoint-lg) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
 
                 li {
                     display: flex;

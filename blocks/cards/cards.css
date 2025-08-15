@@ -3,7 +3,12 @@
   width: 88px;
 }
 .cards-wrapper .block.cards.cards-block-callout ul {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+}
+@media (width >= 992px) {
+  .cards-wrapper .block.cards.cards-block-callout ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .cards-wrapper .block.cards.cards-block-callout ul li {
   display: flex;
