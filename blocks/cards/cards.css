@@ -119,7 +119,7 @@
   flex-direction: column;
   flex-basis: 46%;
 }
-@media (width >= 1200px) {
+@media (width >= 992px) {
   .block.cards.cards-block-conversion-cta ul > * {
     flex-basis: 25%;
   }
