@@ -119,6 +119,11 @@
 .cards-wrapper .block.cards.cards-block-conversion-cta ul > :first-child .cards-card-body {
   order: 1;
 }
+.cards-wrapper .block.cards.cards-block-conversion-cta ul > :first-child > div:nth-child(2) p {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: unset;
+}
 .cards-wrapper .block.cards.cards-block-conversion-cta ul > :first-child .cards-card-image {
   order: 2;
   max-width: unset;
