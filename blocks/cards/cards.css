@@ -22,7 +22,7 @@
 .cards-wrapper .block.cards .cards-card-image {
   line-height: 0;
 }
-.cards-wrapper .block.cards.cards-block-image-small > ul > li img {
+.cards-wrapper .block.cards.cards-block-icon-image > ul > li img {
   width: 88px;
 }
 .cards-wrapper .block.cards.cards-block-callout ul {
