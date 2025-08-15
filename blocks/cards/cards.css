@@ -112,6 +112,7 @@
 @media (width >= 992px) {
   .block.cards.cards-block-conversion-cta ul {
     justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 .block.cards.cards-block-conversion-cta ul > * {

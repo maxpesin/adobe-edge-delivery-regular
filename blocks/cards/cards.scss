@@ -149,6 +149,7 @@
 
                 @media (width >= $breakpoint-lg) {
                     justify-content: center;
+                    flex-wrap: nowrap;
                 }
 
                 > * {
