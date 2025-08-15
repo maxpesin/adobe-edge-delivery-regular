@@ -3,12 +3,37 @@
 
 .cards-wrapper {
     .block.cards {
+        // --------------------------------------------
+        // Default
+        // --------------------------------------------
+        > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+            grid-gap: 24px;
+        }
+
+        .cards-card-body {
+            margin: 16px;
+        }
+
+        .cards-card-image {
+            line-height: 0;
+        }
+        // --------------------------------------------
+        // Style - Cards Icon Image
+        // --------------------------------------------
         &.cards-block-image-small {
             > ul > li img {
-            width: 88px;
+                width: 88px;
             }
         }
 
+        // --------------------------------------------
+        // Style - Cards Block Callout
+        // --------------------------------------------
         &.cards-block-callout {
             ul {
                 grid-template-columns: 1fr;
@@ -51,7 +76,7 @@
                                 &:before,
                                 &:after {
                                     content: "—";
-                                    color: #8dc63f;
+                                    color: var(--color-accent-green);
                                     font-size: 14px;
                                     letter-spacing: 1px;
                                     text-transform: uppercase;
@@ -70,34 +95,23 @@
                                 font-weight: 600;
                                 margin: 0 auto;
                             }
+                            .button-container a {
+                                color: unset;
+                                font-weight: unset;
+                                background: unset;
+                                text-overflow: unset;
+                                white-space: unset;
+                                padding: 0;
+                                border: none;
+                                margin: 0;
+
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
-}
-
-/* .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--color-white);
-} */
-
-.cards .cards-card-body {
-  margin: 16px;
-}
-
-.cards .cards-card-image {
-  line-height: 0;
 }
 
 .cards .cards-card-body [data-aue-label*="Title"] {
