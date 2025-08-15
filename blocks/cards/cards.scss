@@ -98,8 +98,11 @@
 
                         &:last-of-type {
                             order: 3;
-                            width: 60%;
                             margin: auto;
+
+                            @media (width >= $breakpoint-xl) {
+                                width: 60%;
+                            }
 
                             p {
                                 font-size: 32px;
@@ -115,6 +118,8 @@
                                 padding: 0;
                                 border: none;
                                 margin: 0;
+                                overflow: visible;
+                                overflow-wrap: normal;
 
                             }
                         }

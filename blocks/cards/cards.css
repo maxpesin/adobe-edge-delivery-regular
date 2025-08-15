@@ -70,8 +70,12 @@
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type {
   order: 3;
-  width: 60%;
   margin: auto;
+}
+@media (width >= 1200px) {
+  .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type {
+    width: 60%;
+  }
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type p {
   font-size: 32px;
@@ -87,4 +91,6 @@
   padding: 0;
   border: none;
   margin: 0;
+  overflow: visible;
+  overflow-wrap: normal;
 }
