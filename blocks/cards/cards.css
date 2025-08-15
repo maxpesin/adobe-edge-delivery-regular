@@ -1,6 +1,21 @@
 .cards-wrapper .block.cards.cards-block-image-small > ul > li img {
   width: 88px;
 }
+.cards-wrapper .block.cards.cards-block-callout ul {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards-wrapper .block.cards.cards-block-callout ul li {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white-smoke);
+  padding: 18px;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li > .cards-card-image {
+  order: 2;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li > .cards-card-body:last-of-type {
+  order: 3;
+}
 
 .cards > ul {
   list-style: none;

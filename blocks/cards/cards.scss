@@ -10,7 +10,25 @@
         }
 
         &.cards-block-callout {
-            
+            ul {
+                grid-template-columns: repeat(3, 1fr);
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    background: var(--color-white-smoke);
+                    padding: 18px;
+
+                    > .cards-card-image {
+                        order: 2;
+                    }
+
+                    > .cards-card-body:last-of-type {
+                        order: 3;
+                    }
+                }
+            }
+
         }
     }
 }
