@@ -262,8 +262,10 @@
     "fields": [
       {
         "component": "multiselect",
-        "name": "style",
+        "name": "classes",
+        "value": [],
         "label": "Style",
+        "valueType": "array",
         "options": [
           {
             "name": "Cards Icon Image",
