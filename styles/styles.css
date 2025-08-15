@@ -168,8 +168,9 @@ button {
 }
 
 @media (width >= 768px) {
+  a.button:any-link,
   button {
-      max-width: auto;
+      width: auto;
     }
 }
 
