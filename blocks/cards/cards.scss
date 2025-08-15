@@ -57,7 +57,11 @@
                     display: flex;
                     flex-direction: column;
                     background: var(--color-white-smoke);
-                    padding: 18px;
+                    padding: 28px 24px;
+
+                    @media (width >= $breakpoint-lg) {
+                        padding: 18px;
+                    }
 
                     .cards-card-image {
                         order: 2;
