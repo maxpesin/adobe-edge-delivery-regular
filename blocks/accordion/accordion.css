@@ -1,4 +1,4 @@
-.accordion-wrapper .accordion div:first-child > div p {
+.accordion-wrapper .accordion > div:first-child p {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   line-height: 1.33;
   cursor: pointer;
 }
-.accordion-wrapper .accordion div:first-child > div p:after {
+.accordion-wrapper .accordion > div:first-child:after {
   content: "";
   display: inline-block;
   width: 20px;
@@ -16,7 +16,7 @@
   background-size: contain;
   rotate: 180deg;
 }
-.accordion-wrapper .accordion.open div:first-child > div p:after {
+.accordion-wrapper .accordion.open > div:first-child p:after {
   content: "";
   rotate: unset;
 }
