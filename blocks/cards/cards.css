@@ -10,11 +10,27 @@
   background: var(--color-white-smoke);
   padding: 18px;
 }
-.cards-wrapper .block.cards.cards-block-callout ul li > .cards-card-image {
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-image {
   order: 2;
 }
-.cards-wrapper .block.cards.cards-block-callout ul li > .cards-card-body:last-of-type {
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body p {
+  color: var(--color-trex-green);
+  text-transform: uppercase;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:first-of-type {
+  order: 1;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:first-of-type p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type {
   order: 3;
+}
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type p {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .cards > ul {

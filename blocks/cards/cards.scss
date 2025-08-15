@@ -19,16 +19,37 @@
                     background: var(--color-white-smoke);
                     padding: 18px;
 
-                    > .cards-card-image {
+                    .cards-card-image {
                         order: 2;
                     }
 
-                    > .cards-card-body:last-of-type {
-                        order: 3;
+                    .cards-card-body {
+                        p {
+                            color: var(--color-trex-green);
+                            text-transform: uppercase;
+                        }
+
+                        &:first-of-type {       
+                            order: 1;
+
+                            p {
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                            }
+                        }
+
+                        &:last-of-type {
+                            order: 3;
+
+                            p {
+                                font-size: 32px;
+                                font-weight: 600;
+                                margin: 0 auto;
+                            }
+                        }
                     }
                 }
             }
-
         }
     }
 }
