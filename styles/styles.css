@@ -174,8 +174,8 @@ button {
     }
 }
 
-a.button:hover,
-a.button:focus,
+/* a.button:hover,
+a.button:focus, */
 button:hover,
 button:focus {
   background-color: white;
