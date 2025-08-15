@@ -156,6 +156,8 @@
 
                     .cards-card-image {
                         order: 2;
+                        max-width: unset;
+                        margin: 0;
 
                         img {
                             max-width: 500px;
@@ -166,14 +168,8 @@
             }
 
             .cards-card-image {
-                // max-height: 98px;
                 max-width: 137px;
                 margin: 0 auto 40px;
-
-                &:first-of-type {
-                    max-width: unset;
-                    margin: 0;
-                }
             }
 
             .cards-card-body {
