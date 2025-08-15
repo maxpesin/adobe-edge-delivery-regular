@@ -163,14 +163,17 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: all 0.3s;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--color-dark-green);
-  cursor: pointer;
+  background-color: white;
+  color: var(--color-trex-green);
+  border: 2px solid var(--color-trex-green);
+  /* cursor: pointer; */
 }
 
 button:disabled,
