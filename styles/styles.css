@@ -182,8 +182,17 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--color-trex-dark-charcoal);
+  border: 2px solid var(--color-trex-green);
+  color: var(--color-trex-green);
+  transition: all 0.3s;
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus,
+button.secondary:hover,
+button.secondary:focus {
+  background-color: var(--color-trex-green);
+  color: white;
 }
 
 main img {

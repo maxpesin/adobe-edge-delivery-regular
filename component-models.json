@@ -175,30 +175,6 @@
     "id": "title",
     "fields": [
       {
-        "component": "select",
-        "name": "classes",
-        "label": "Style Options",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "Text Align Left",
-            "value": "title-text-align-left"
-          },
-          {
-            "name": "Text Align Center",
-            "value": "title-text-align-center"
-          },
-          {
-            "name": "Text Align Right",
-            "value": "title-text-align-right"
-          }
-        ]
-      },
-      {
         "component": "title",
         "name": "title",
         "label": "Title"
@@ -275,7 +251,7 @@
       }
     ]
   },
-    {
+  {
     "id": "cards",
     "fields": [
       {
