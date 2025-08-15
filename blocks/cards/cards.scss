@@ -135,10 +135,10 @@
         &.cards-block-conversion-cta {
             text-align: center;
 
-            main > .section > div.cards-wrapper > & {
-                margin: 0;
-                padding: 0;
-            }
+            // main > .section > div & {
+            //     margin: 0;
+            //     padding: 0;
+            // }
 
             ul {
                 display: flex;
@@ -147,7 +147,7 @@
                 align-items: center;
                 flex-wrap: wrap;
 
-                @media (width >= $breakpoint-xl) {
+                @media (width >= $breakpoint-lg) {
                     justify-content: center;
                 }
 
@@ -164,7 +164,7 @@
                 > :first-child {
                     flex-basis: 100%;
 
-                    @media (width >= $breakpoint-xl) {
+                    @media (width >= $breakpoint-lg) {
                         flex-basis: 50%;
                     }
 

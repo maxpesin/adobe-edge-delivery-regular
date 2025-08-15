@@ -244,6 +244,11 @@ main > .section > div {
   padding: 0 24px;
 }
 
+main > .section > div:has(.cards-block-conversion-cta) {
+  padding: 0;
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   main > .section > div {
     max-width: 720px;
