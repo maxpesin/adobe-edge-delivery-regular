@@ -167,7 +167,7 @@ button {
   transition: all 0.3s;
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   a.button:any-link,
   button {
       width: auto;
