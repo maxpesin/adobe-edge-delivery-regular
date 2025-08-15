@@ -4,13 +4,20 @@
  * https://www.aem.live/developer/block-collection/fragment
  */
 
-import { decorateMain } from '../../scripts/scripts.js';
-import { decorateBlocks, loadBlocks } from '../../scripts/aem.js';
+import {
+  decorateMain,
+} from '../../scripts/scripts.js';
+
+import {
+  loadSections,
+  decorateBlocks,
+  loadBlocks,
+} from '../../scripts/aem.js';
 
 /**
- * Loads a fragment shell (transformed to blocks) without hydrating them yet.
+ * Loads a fragment.
  * @param {string} path The path to the fragment
- * @returns {HTMLElement} A <main> containing decorated sections/blocks (not loaded)
+ * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
   if (path && path.startsWith('/')) {
@@ -31,8 +38,12 @@ export async function loadFragment(path) {
       resetAttributeBase('img', 'src');
       resetAttributeBase('source', 'srcset');
 
-      // transform tables etc into blocks/sections, but do NOT load yet
+      // transform tables to sections/blocks (same as before)
       decorateMain(main);
+
+      // keep your original behavior: load off-DOM
+      await loadSections(main);
+
       return main;
     }
   }
@@ -43,31 +54,28 @@ export default async function decorate(block) {
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
   const fragment = await loadFragment(path);
-  if (!fragment) return;
+  if (fragment) {
+    const fragmentSection = fragment.querySelector(':scope .section') || fragment;
 
-  // pick the first section inside the fetched fragment (mirror your original logic)
-  const fragmentSection = fragment.querySelector(':scope .section') || fragment;
-
-  // carry section-level classes onto this fragment wrapper
-  if (fragmentSection !== fragment) {
-    block.classList.add(...fragmentSection.classList);
-  }
-  block.classList.remove('section');
-
-  // take children of the section and inject them into this block
-  const nodes = [...fragmentSection.childNodes];
-
-  // very important: ensure nested blocks will actually hydrate after injection
-  nodes.forEach((n) => {
-    if (n.nodeType === 1) {
-      n.querySelectorAll?.('.block').forEach((b) => b.removeAttribute('data-block-status'));
-      if (n.classList?.contains('block')) n.removeAttribute('data-block-status');
+    // carry section-level classes to this fragment wrapper
+    if (fragmentSection !== fragment) {
+      block.classList.add(...fragmentSection.classList);
     }
-  });
 
-  block.replaceChildren(...nodes);
+    // this block is not a section, so nuke stray 'section' if present
+    block.classList.remove('section');
 
-  // now hydrate only what we just injected
-  decorateBlocks(block);
-  await loadBlocks(block);
+    // move content into this block
+    const nodes = [...fragmentSection.childNodes];
+    block.replaceChildren(...nodes);
+
+    // IMPORTANT: re-enable hydration for nested blocks you just injected
+    block.querySelectorAll('.block').forEach((b) => {
+      b.removeAttribute('data-block-status'); // kill stale "loaded"
+    });
+
+    // hydrate only this subtree so cards.js runs
+    decorateBlocks(block);
+    await loadBlocks(block);
+  }
 }
