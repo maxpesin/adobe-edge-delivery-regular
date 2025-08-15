@@ -117,7 +117,12 @@
 .block.cards.cards-block-conversion-cta ul > * {
   display: flex;
   flex-direction: column;
-  flex-basis: 25%;
+  flex-basis: 46%;
+}
+@media (width >= 1200px) {
+  .block.cards.cards-block-conversion-cta ul > * {
+    flex-basis: 25%;
+  }
 }
 .block.cards.cards-block-conversion-cta ul > :first-child {
   flex-basis: 100%;
