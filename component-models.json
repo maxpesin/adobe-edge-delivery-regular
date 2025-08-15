@@ -177,7 +177,8 @@
       {
         "component": "select",
         "name": "classes",
-        "label": "Teaser Styles",
+        "label": "Style Options",
+        "value": "",
         "valueType": "string",
         "options": [
           {
@@ -185,8 +186,16 @@
             "value": ""
           },
           {
-            "name": "Position Absolute",
-            "value": "position-absolute"
+            "name": "Text Align Left",
+            "value": "title-text-align-left"
+          },
+          {
+            "name": "Text Align Center",
+            "value": "title-text-align-center"
+          },
+          {
+            "name": "Text Align Right",
+            "value": "title-text-align-right"
           }
         ]
       },
