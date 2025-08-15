@@ -309,6 +309,6 @@ main > .section > div:has(.cards-block-conversion-cta) {
 }
 
 /* Section Background */
-.bg-white-smoke {
+.section-bg-white-smoke {
   background-color: var(--color-white-smoke);
 }
