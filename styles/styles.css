@@ -244,11 +244,6 @@ main > .section > div {
   padding: 0 24px;
 }
 
-main > .section > div:has(.cards-block-conversion-cta) {
-  padding: 0;
-  max-width: 100%;
-}
-
 @media (min-width: 768px) {
   main > .section > div {
     max-width: 720px;
@@ -269,6 +264,23 @@ main > .section > div:has(.cards-block-conversion-cta) {
     max-width: 1320px;
   }
 }
+
+main > .section > div:has(.cards-block-conversion-cta) {
+  padding: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+  main > .section > div:has(.cards-block-conversion-cta) {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  main > .section > div:has(.cards-block-conversion-cta) {
+    max-width: 1320px;
+  }
+}
+
 
 /* -------------------------------------------- */
 /* Section Styles                               */    
