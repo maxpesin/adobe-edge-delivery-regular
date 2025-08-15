@@ -257,7 +257,7 @@
       {
         "component": "multiselect",
         "name": "style",
-        "value": [],
+        "value": ["cards-block"],
         "label": "Style Options",
         "valueType": "array",
         "options": [
