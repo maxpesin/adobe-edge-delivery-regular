@@ -244,18 +244,33 @@ main > .section > div {
   }
 }
 
-/* Text alignment classes */
-.text-align-left {
+/* -------------------------------------------- */
+/* Section Styles                               */    
+/* -------------------------------------------- */
+
+/* Section Padding */
+.section.section-padding-none {
+  padding: 0;
+}
+.section.section-padding-top-0 {
+  padding-top: 0;
+}
+.section.section-padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+/* Section alignment */
+.section-align-left {
   text-align: left;
 }
-.text-align-center {
+.section-align-center {
   text-align: center;
 }
-.text-align-right {
+.section-align-right {
   text-align: right;
 }
 
-/* Background color classes */
+/* Section Background */
 .bg-white-smoke {
   background-color: var(--color-white-smoke);
 }
