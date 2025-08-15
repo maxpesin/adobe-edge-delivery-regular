@@ -128,5 +128,40 @@
                 }
             }
         }
+
+        // --------------------------------------------
+        // Style - Conversion CTA
+        // --------------------------------------------
+        &.cards-block-conversion-cta {
+            text-align: center;
+
+            ul {
+                grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+
+                @media (width >= $breakpoint-lg) {
+                    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+                }
+            }
+
+            .cards-card-image {
+                max-height: 98px;
+                max-width: 137px;
+                margin-bottom: 40px;
+            }
+
+            .cards-card-body {
+                .button-container a {
+                    color: var(--color-trex-green);
+                    background: unset;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    text-decoration: underline;
+                    text-underline-offset: 6px;
+                    padding: 0 0 0 6px;
+                    margin: 0;
+
+                }
+            }
+        }
     }
 }
