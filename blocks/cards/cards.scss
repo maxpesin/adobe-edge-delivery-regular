@@ -1,7 +1,7 @@
 @use "../../styles/breakpoints.scss" as *;
 // sass blocks/cards/cards.scss blocks/cards/cards.css --no-source-map
 
-.cards-wrapper {
+// .cards-wrapper {
     .block.cards {
         > ul {
             list-style: none;
@@ -135,11 +135,21 @@
         &.cards-block-conversion-cta {
             text-align: center;
 
+            .cards-wrapper & {
+                margin: 0;
+                padding: 0;
+            }
+
             ul {
                 display: flex;
                 width: 100%;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
+                flex-wrap: wrap;
+
+                @media (width >= $breakpoint-xl) {
+                    justify-content: center;
+                }
 
                 > * {
                     display: flex;
@@ -182,9 +192,9 @@
                     }
                 }
 
-                > :nth-child(2) {
-                    border-right: 1px solid #333;
-                }
+                // > :nth-child(2) {
+                //     border-right: 1px solid #333;
+                // }
             }
 
             .cards-card-image {
@@ -214,4 +224,4 @@
             }
         }
     }
-}
+// }
