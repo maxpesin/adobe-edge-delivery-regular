@@ -114,6 +114,12 @@
 .cards-wrapper .block.cards.cards-block-conversion-cta ul > :first-child {
   flex-basis: 50%;
 }
+.cards-wrapper .block.cards.cards-block-conversion-cta ul > :first-child .cards-card-body {
+  order: 1;
+}
+.cards-wrapper .block.cards.cards-block-conversion-cta ul > :first-child .cards-card-image {
+  order: 2;
+}
 .cards-wrapper .block.cards.cards-block-conversion-cta .cards-card-image {
   max-width: 137px;
   margin: 0 auto 40px;
@@ -121,9 +127,13 @@
 .cards-wrapper .block.cards.cards-block-conversion-cta .cards-card-body {
   margin: 0;
 }
+.cards-wrapper .block.cards.cards-block-conversion-cta .cards-card-body .button-container {
+  margin: 0;
+}
 .cards-wrapper .block.cards.cards-block-conversion-cta .cards-card-body .button-container a {
   color: var(--color-trex-green);
   background: unset;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: underline;
