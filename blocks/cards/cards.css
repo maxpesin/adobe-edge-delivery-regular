@@ -29,7 +29,7 @@
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 0 5px 20px 5px;
+  padding-bottom: 20px;
   margin: 0;
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:nth-child(2) p:before, .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:nth-child(2) p:after {
@@ -38,6 +38,7 @@
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding: 0 5px;
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type {
   order: 3;

@@ -35,14 +35,13 @@
                         }
 
                         &:nth-child(2) {       
-                            // order: 1;
                             margin: 0;
 
                             p {
                                 font-size: 14px;
                                 font-weight: 600;
                                 letter-spacing: 1px;
-                                padding: 0 5px 20px 5px;
+                                padding-bottom: 20px;
                                 margin: 0;
 
                                 &:before,
@@ -52,6 +51,7 @@
                                     font-size: 14px;
                                     letter-spacing: 1px;
                                     text-transform: uppercase;
+                                    padding: 0 5px;
                                 }
                             }
                         }
