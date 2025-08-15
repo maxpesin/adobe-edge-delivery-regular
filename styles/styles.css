@@ -150,7 +150,7 @@ button {
   max-width: 100%;
   width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -180,7 +180,7 @@ button:hover,
 button:focus {
   background-color: white;
   color: var(--color-trex-green);
-  border: 2px solid var(--color-trex-green);
+  border: 1.5px solid var(--color-trex-green);
   /* cursor: pointer; */
 }
 
@@ -193,7 +193,7 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid var(--color-trex-green);
+  border: 1.5px solid var(--color-trex-green);
   color: var(--color-trex-green);
   transition: all 0.3s;
 }
