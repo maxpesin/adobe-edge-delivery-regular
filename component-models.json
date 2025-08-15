@@ -46,7 +46,6 @@
         "component": "multiselect",
         "name": "classes",
         "label": "Style Options",
-        "valueType": "array",
         "options": [
           {
             "name": "Align Left",
