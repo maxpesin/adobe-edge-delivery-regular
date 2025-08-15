@@ -10,6 +10,15 @@
 .cards-wrapper .block.cards .cards-card-body {
   margin: 16px;
 }
+.cards-wrapper .block.cards .cards-card-body [data-aue-label*=Title] {
+  color: var(--color-trex-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+.cards-wrapper .block.cards .cards-card-body [data-aue-label*=Body] {
+  padding: 0;
+}
 .cards-wrapper .block.cards .cards-card-image {
   line-height: 0;
 }
@@ -78,15 +87,4 @@
   padding: 0;
   border: none;
   margin: 0;
-}
-
-.cards .cards-card-body [data-aue-label*=Title] {
-  color: var(--color-trex-green);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 5px 0;
-}
-
-.cards .cards-card-body [data-aue-label*=Body] {
-  padding: 0;
 }

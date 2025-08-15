@@ -17,6 +17,17 @@
 
         .cards-card-body {
             margin: 16px;
+
+            [data-aue-label*="Title"] {
+                color: var(--color-trex-green);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 5px 0;
+            }
+
+            [data-aue-label*="Body"] {
+                padding: 0;
+            }
         }
 
         .cards-card-image {
@@ -112,15 +123,4 @@
             }
         }
     }
-}
-
-.cards .cards-card-body [data-aue-label*="Title"] {
-  color: var(--color-trex-green);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 5px 0;
-}
-
-.cards .cards-card-body [data-aue-label*="Body"] {
-  padding: 0;
 }
