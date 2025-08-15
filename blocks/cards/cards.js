@@ -1,94 +1,69 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+/* 
+    block parameter name can be anything
+    representing default html snippet we discuss above.
+*/
 export default function decorate(block) {
-  // Helper: is this row/card empty?
-  const isVisuallyEmpty = (el) => {
-    // no picture/svg and no non-whitespace text
-    const hasMedia = el.querySelector('picture,img,source,svg');
-    const hasText = (el.textContent || '').trim().length > 0;
-    return !hasMedia && !hasText;
-  };
+  // 0) Promote block-level styles/classes from the authoring crumb row, then remove that row.
+  // 0) Always treat the first row as the crumb row
+  const firstRow = block.firstElementChild;
 
-  // Use existing UL in authoring, or build one later
-  let ul = block.querySelector(':scope > ul');
-  const searchRoot = ul || block;
-
-  // 0) Promote styles from crumb (even if empty) then remove its row
-  const crumb = searchRoot.querySelector('[data-aue-prop="style"]');
-  if (crumb) {
-    const raw = (crumb.textContent || '').trim();
-    raw.split(/[,\s]+/)
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .forEach((cls) => block.classList.add(cls));
-
-    if (ul) {
-      const li = crumb.closest('li');
-      if (li && li.parentElement === ul) li.remove();
-    } else {
-      let row = crumb;
-      while (row && row.parentElement !== block) row = row.parentElement;
-      if (row && row.parentElement === block) row.remove();
+  if (firstRow) {
+    const crumb = firstRow.querySelector('[data-aue-prop="style"]');
+    if (crumb) {
+      const raw = (crumb.textContent || '').trim();
+      raw.split(/[,\s]+/)
+        .map((s) => s.trim())
+        .filter(Boolean)
+        .forEach((cls) => block.classList.add(cls));
     }
+    // Remove the first row unconditionally, even if no styles were found
+    firstRow.remove();
   }
 
-  // 1) Build UL only if one doesn’t exist
-  if (!ul) {
-    ul = document.createElement('ul');
+  // 1) Build UL/LI structure from remaining rows
+  const ul = document.createElement('ul');
 
-    [...block.children].forEach((row) => {
-      // skip any empty artifact rows
-      if (isVisuallyEmpty(row)) return;
+  [...block.children].forEach((row) => {
+    const li = document.createElement('li');
+    moveInstrumentation(row, li);
 
-      const li = document.createElement('li');
-      moveInstrumentation(row, li);
+    while (row.firstElementChild) li.append(row.firstElementChild);
 
-      while (row.firstElementChild) li.append(row.firstElementChild);
-
-      [...li.children].forEach((div) => {
-        if (div.children.length === 1 && div.querySelector('picture')) {
-          div.className = 'cards-card-image';
-        } else {
-          div.className = 'cards-card-body';
-        }
-      });
-
-      ul.append(li);
+    // classify child divs
+    [...li.children].forEach((div) => {
+      if (div.children.length === 1 && div.querySelector('picture')) {
+        div.className = 'cards-card-image';
+      } else {
+        div.className = 'cards-card-body';
+      }
     });
 
-    block.textContent = '';
-    block.append(ul);
-  } else {
-    // Clean up empty leading li that the editor leaves behind
-    let first = ul.querySelector(':scope > li');
-    while (first && isVisuallyEmpty(first)) {
-      const next = first.nextElementSibling;
-      first.remove();
-      first = next;
-    }
-
-    // Normalize classnames for authoring shape
-    ul.querySelectorAll(':scope > li').forEach((li) => {
-      [...li.children].forEach((div) => {
-        if (div.children.length === 1 && div.querySelector('picture')) {
-          div.classList.add('cards-card-image');
-        } else {
-          div.classList.add('cards-card-body');
-        }
-      });
-    });
-  }
-
-  // 2) Optimize pictures
-  ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimized = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
-    moveInstrumentation(img, optimized.querySelector('img'));
-    img.closest('picture').replaceWith(optimized);
+    /* append li to ul*/
+    ul.append(li);
   });
 
-  // Optional: if you truly want a default style token when none chosen,
-  // uncomment the next two lines. Otherwise keep CSS defaulting by absence of class.
-  // if (![...block.classList].some(c => c.startsWith('cards-')))
-  //   block.classList.add('cards--default');
+    // 2) If the first li's body has no children, remove that li
+  // const firstLi = ul.querySelector(':scope > li');
+  // if (firstLi) {
+  //   const firstBody = firstLi.querySelector(':scope > .cards-card-body');
+  //   if (firstBody && firstBody.children.length === 0) {
+  //     firstLi.remove();
+  //   }
+  // }
+  
+  /* get all img tags within ul and update properties*/
+  ul.querySelectorAll('picture > img').forEach((img) => {
+    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+    moveInstrumentation(img, optimizedPic.querySelector('img'));
+    img.closest('picture').replaceWith(optimizedPic);
+  });
+
+  // make block empty to removed ealier html code or structure.
+  block.textContent = '';
+
+  // append brand new updated HTML structure having ul and li's tags.
+  block.append(ul);
 }
