@@ -1,7 +1,29 @@
+@use "../../styles/breakpoints.scss" as *;
 // sass blocks/section/section.scss blocks/section/section.css --no-source-map
 
 .section {
-    &.section-text-align {
+    // --------------------------------------------
+    // Style - Padding
+    // --------------------------------------------
+    &.section-padding {
+        // Padding None
+        &-none {
+            padding: 0;
+        }
+        // Padding Top None
+        &-top-0 {
+            padding-top: 0;
+        }
+        // Padding Bottom None
+        &-bottom-0 {
+            padding-bottom: 0;
+        }
+    }
+
+    // --------------------------------------------
+    // Style - Alignment
+    // --------------------------------------------
+    &.section-align {
         &-left {
             text-align: left;
         }
@@ -12,7 +34,9 @@
             text-align: right;
         }
     }
-
+    // --------------------------------------------
+    // Navigation
+    // --------------------------------------------
     &.nav-sections {
         .accordion-wrapper {
             display: inline-flex;

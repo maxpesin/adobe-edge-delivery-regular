@@ -44,36 +44,46 @@
       },
       {
         "component": "multiselect",
-        "name": "style",
-        "label": "Style",
+        "name": "classes",
+        "value": [],
+        "label": "Style Options",
+        "valueType": "array",
         "options": [
           {
-            "name": "Text Align Left",
-            "value": "text-align-left"
+            "name": "Align Left",
+            "value": "section-align-left"
           },
           {
-            "name": "Text Align Center",
-            "value": "text-align-center"
+            "name": "Align Center",
+            "value": "section-align-center"
           },
           {
-            "name": "Text Align Right",
-            "value": "text-align-right"
+            "name": "Align Right",
+            "value": "section-align-right"
           },
           {
             "name": "Background White",
-            "value": "bg-white"
+            "value": "section-bg-white"
           },
           {
             "name": "Background White Smoke",
-            "value": "bg-white-smoke"
+            "value": "section-bg-white-smoke"
           },
           {
             "name": "Background Light Gray",
-            "value": "bg-light-gray"
+            "value": "section-bg-light-gray"
           },
           {
             "name": "No Padding",
-            "value": "no-padding"
+            "value": "section-padding-none"
+          },
+          {
+            "name": "Padding top None",
+            "value": "section-padding-top-0"
+          },
+          {
+            "name": "Padding bottom None",
+            "value": "section-padding-bottom-0"
           }
         ]
       }
@@ -264,7 +274,7 @@
         "component": "multiselect",
         "name": "classes",
         "value": [],
-        "label": "Style",
+        "label": "Style Options",
         "valueType": "array",
         "options": [
           {
@@ -327,7 +337,8 @@
       {
         "component": "select",
         "name": "classes",
-        "label": "Quote Styles",
+        "value": "",
+        "label": "Style Options",
         "valueType": "string",
         "options": [
           {
@@ -336,11 +347,11 @@
           },
           {
             "name": "Solid",
-            "value": "solid"
+            "value": "quote-block-solid"
           },
           {
             "name": "Hollow",
-            "value": "hollow"
+            "value": "quote-block-hollow"
           }
         ]
       },
@@ -366,7 +377,8 @@
       {
         "component": "select",
         "name": "classes",
-        "label": "Hero Styles",
+        "value": "",
+        "label": "Style Options",
         "valueType": "string",
         "options": [
           {
@@ -376,10 +388,6 @@
           {
             "name": "Position Absolute",
             "value": "position-absolute"
-          },
-          {
-            "name": "Hollow",
-            "value": "hollow"
           }
         ]
       },
@@ -412,7 +420,8 @@
       {
         "component": "select",
         "name": "classes",
-        "label": "Teaser Styles",
+        "value": "",
+        "label": "Style Options",
         "valueType": "string",
         "options": [
           {
