@@ -1,12 +1,21 @@
-.section.section-text-align-left {
+.section.section-padding-none {
+  padding: 0;
+}
+.section.section-padding-top-0 {
+  padding-top: 0;
+}
+.section.section-padding-bottom-0 {
+  padding-bottom: 0;
+}
+.section.section-align-left {
   text-align: left;
 }
-.section.section-text-align-center {
+.section.section-align-center {
   text-align: center;
 }
-.section.section-text-align-right {
+.section.section-align-right {
   text-align: right;
 }
-.section.nav-section .accordion-wrapper {
+.section.nav-sections .accordion-wrapper {
   display: inline-flex;
 }
