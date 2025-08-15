@@ -145,10 +145,18 @@
                     display: flex;
                     flex-direction: column;
                     flex-basis: 25%;
+
+                    // @media (width >= $breakpoint-xl) {
+                    //     flex-basis: 50%;
+                    // }
                 }
 
                 > :first-child {
-                    flex-basis: 50%;
+                    flex-basis: 100%;
+
+                    @media (width >= $breakpoint-xl) {
+                        flex-basis: 50%;
+                    }
 
                     .cards-card-body {
                         order: 1;
@@ -172,6 +180,10 @@
                             width: 500px;
                         }
                     }
+                }
+
+                > :nth-child(2) {
+                    border-right: 1px solid #333;
                 }
             }
 
