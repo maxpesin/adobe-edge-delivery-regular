@@ -12,9 +12,13 @@
         margin: 1rem 0;
 
         blockquote {
-            font-size: 32px;
+            font-size: 21px;
             position: relative;
             margin: 0;
+
+            @media (width >= $breakpoint-lg) {
+                font-size: 32px;
+            }
 
             &:before {
                 content: "“";
@@ -32,15 +36,22 @@
             display: inline-flex;
             align-items: center;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: 1px;
             padding-top: 5px;
-            // margin: 0;
+            
+            @media (width >= $breakpoint-lg) {
+                font-size: 16px;
+            }
 
             &:before {
                 content: "-";
-                font-size: 16px;
+                font-size: 14px;
+
+                @media (width >= $breakpoint-lg) {
+                    font-size: 16px;
+                }
             }
 
             p {
