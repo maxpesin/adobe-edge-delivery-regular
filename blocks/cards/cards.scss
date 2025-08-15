@@ -136,20 +136,29 @@
             text-align: center;
 
             ul {
-                grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
 
-                @media (width >= $breakpoint-lg) {
-                    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+                > * {
+                    flex-basis: 25%;
+                }
+
+                > :first-child {
+                    flex-basis: 50%;
                 }
             }
 
             .cards-card-image {
-                max-height: 98px;
+                // max-height: 98px;
                 max-width: 137px;
-                margin-bottom: 40px;
+                margin: 0 auto 40px;
             }
 
             .cards-card-body {
+                margin: 0;
+
                 .button-container a {
                     color: var(--color-trex-green);
                     background: unset;
@@ -157,7 +166,7 @@
                     letter-spacing: 1px;
                     text-decoration: underline;
                     text-underline-offset: 6px;
-                    padding: 0 0 0 6px;
+                    padding: 0 0 6px 0;
                     margin: 0;
 
                 }
