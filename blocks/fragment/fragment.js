@@ -10,8 +10,6 @@ import {
 
 import {
   loadSections,
-  decorateBlocks,
-  loadBlocks,
 } from '../../scripts/aem.js';
 
 /**
@@ -38,7 +36,7 @@ export async function loadFragment(path) {
       resetAttributeBase('source', 'srcset');
 
       decorateMain(main);
-      await loadSections(main); // keep your known-good off-DOM load
+      await loadSections(main);
       return main;
     }
   }
@@ -55,15 +53,6 @@ export default async function decorate(block) {
       block.classList.add(...fragmentSection.classList);
       block.classList.remove('section');
       block.replaceChildren(...fragmentSection.childNodes);
-
-      // revive only nested CARDS blocks that arrived pre-marked as "loaded"
-      const nestedCards = block.querySelectorAll('.block.cards');
-      if (nestedCards.length) {
-        nestedCards.forEach((b) => b.removeAttribute('data-block-status'));
-        // hydrate just this subtree; other blocks stay untouched since they keep their status
-        decorateBlocks(block);
-        await loadBlocks(block);
-      }
     }
   }
 }
