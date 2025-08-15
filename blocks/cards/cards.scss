@@ -21,6 +21,7 @@
 
                     .cards-card-image {
                         order: 2;
+                        padding-bottom: 16px;
 
                         img {
                             width: 80%;
@@ -39,16 +40,25 @@
 
                             p {
                                 font-size: 14px;
+                                font-weight: 600;
                                 letter-spacing: 1px;
-                                padding-bottom: 20px;
+                                padding: 0 5px 20px 5px;
                                 margin: 0;
+
+                                &:before,
+                                &:after {
+                                    content: "—";
+                                    color: #8dc63f;
+                                    font-size: 14px;
+                                    letter-spacing: 1px;
+                                    text-transform: uppercase;
+                                }
                             }
                         }
 
                         &:last-of-type {
                             order: 3;
                             width: 60%;
-                            padding-top: 16px;
                             margin: auto;
 
                             p {
