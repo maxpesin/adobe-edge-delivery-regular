@@ -178,7 +178,6 @@
         "component": "select",
         "name": "classes",
         "label": "Style Options",
-        "value": "",
         "valueType": "string",
         "options": [
           {
