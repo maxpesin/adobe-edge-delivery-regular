@@ -13,12 +13,18 @@
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-image {
   order: 2;
 }
+.cards-wrapper .block.cards.cards-block-callout ul li .cards-card-image img {
+  width: 80%;
+}
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body p {
   color: var(--color-trex-green);
   text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:first-of-type {
   order: 1;
+  margin: 0;
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:first-of-type p {
   font-size: 14px;
@@ -26,6 +32,9 @@
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type {
   order: 3;
+  width: 60%;
+  padding-top: 16px;
+  margin: auto;
 }
 .cards-wrapper .block.cards.cards-block-callout ul li .cards-card-body:last-of-type p {
   font-size: 32px;
