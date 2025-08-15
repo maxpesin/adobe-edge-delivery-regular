@@ -135,7 +135,7 @@
         &.cards-block-conversion-cta {
             text-align: center;
 
-            .cards-wrapper & {
+            main > .section > .cards-wrapper > & {
                 margin: 0;
                 padding: 0;
             }
