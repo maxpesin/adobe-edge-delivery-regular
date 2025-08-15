@@ -256,7 +256,7 @@
     "fields": [
       {
         "component": "multiselect",
-        "name": "classes",
+        "name": "style",
         "value": [],
         "label": "Style Options",
         "valueType": "array",
