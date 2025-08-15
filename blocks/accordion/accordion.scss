@@ -12,16 +12,16 @@
                 font-weight: 600;
                 line-height: 1.33;
                 cursor: pointer;
-            }
-            
-            &:after {
-                content: '';
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background: url('../../icons/icon-arrow-up.png') no-repeat center;
-                background-size: contain;
-                rotate: 180deg;
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: url('../../icons/icon-arrow-up.png') no-repeat center;
+                    background-size: contain;
+                    rotate: 180deg;
+                }
             }
         }
 

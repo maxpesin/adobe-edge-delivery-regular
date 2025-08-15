@@ -7,7 +7,7 @@
   line-height: 1.33;
   cursor: pointer;
 }
-.accordion-wrapper .accordion > div:first-child:after {
+.accordion-wrapper .accordion > div:first-child p:after {
   content: "";
   display: inline-block;
   width: 20px;
