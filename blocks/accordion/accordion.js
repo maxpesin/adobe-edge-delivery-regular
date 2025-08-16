@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  console.log("🚀 ~ decorate ~ block:", block)
+  // console.log("🚀 ~ decorate ~ block:", block)
 
   //TODO Opening one closes to the OTHER
   
@@ -9,7 +9,7 @@ export default function decorate(block) {
     const body = 
       block.querySelector('div[data-aue-prop="body"]') ||
       block.querySelector(':scope > div:nth-of-type(2)');
-    console.log("🚀 ~ decorate ~ body:", body)
+    // console.log("🚀 ~ decorate ~ body:", body)
 
     if (body) {
       // header.classList.add('accordion-header');

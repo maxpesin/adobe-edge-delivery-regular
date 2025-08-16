@@ -4,10 +4,14 @@ export default function decorate(block) {
   if (!block.classList.contains('image-link')) return;
 
   const [firstRow, secondRow] = block.querySelectorAll(':scope > div');
+  console.log("🚀 ~ decorate ~ secondRow:", secondRow)
+  console.log("🚀 ~ decorate ~ firstRow:", firstRow)
   if (!firstRow || !secondRow) return;
 
   const picture = firstRow.querySelector('picture');
+  console.log("🚀 ~ decorate ~ picture:", picture)
   const link = secondRow.querySelector('a[href]');
+  console.log("🚀 ~ decorate ~ link:", link)
   if (!picture || !link) {
     // nothing useful to do; nuke the empty link row if it has no content
     if (secondRow.textContent.trim() === '') secondRow.remove();
