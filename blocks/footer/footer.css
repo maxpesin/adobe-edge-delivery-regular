@@ -49,6 +49,14 @@ footer .footer.block .section:nth-child(3) .accordion.block.open a {
   font-size: 14px;
   text-decoration: none;
 }
+footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United States"] :before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../icons/USFlag.svg") no-repeat center;
+  background-size: contain;
+}
 footer .footer.block .section:nth-child(3) .accordion.block p {
   font-size: 14px;
   font-weight: 400;

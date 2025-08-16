@@ -67,6 +67,17 @@ footer {
                         a {
                             font-size: 14px;
                             text-decoration: none;
+
+                            &[title="United States"] {
+                                :before {
+                                    content: '';
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    background: url('../../icons/USFlag.svg') no-repeat center;
+                                    background-size: contain;
+                                }
+                            }
                         }
                     }
 
