@@ -130,8 +130,9 @@
             {
         "component": "select",
         "name": "classes",
-        "label": "Text Styles",
-        "valueType": "string[]",
+        "value": "",
+        "label": "Stype Options",
+        "valueType": "string",
         "options": [
           {
             "name": "default",
