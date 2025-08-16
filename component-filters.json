@@ -10,7 +10,7 @@
     "components": [
       "text",
       "image",
-      "imageLink",
+      "imagelink",
       "button",
       "title",
       "hero",
@@ -39,7 +39,7 @@
     "components": [
       "text",
       "image",
-      "imageLink",
+      "imagelink",
       "button",
       "title"
     ]

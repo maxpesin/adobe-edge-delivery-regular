@@ -416,7 +416,7 @@
     ]
   },
   {
-    "id": "imageLink",
+    "id": "imagelink",
     "fields": [
       {
         "component": "select",
