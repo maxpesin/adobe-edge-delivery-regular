@@ -1,7 +1,7 @@
 /* blocks/image-link/image-link.js */
 /* eslint-env browser */
 export default function decorate(block) {
-  if (!block.classList.contains('imagelink')) return;
+  if (!block.classList.contains('image-link')) return;
 
   const [firstRow, secondRow] = block.querySelectorAll(':scope > div');
   console.log("🚀 ~ decorate ~ secondRow:", secondRow)

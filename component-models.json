@@ -431,7 +431,7 @@
           },
           {
             "name": "Image Link Style",
-            "value": "image-link-style"
+            "value": "imagelink-style"
           }
         ]
       },
