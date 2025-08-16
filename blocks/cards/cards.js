@@ -1,67 +1,71 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
-/* 
-    block parameter name can be anything
-    representing default html snippet we discuss above.
-*/
 export default function decorate(block) {
-  // 0) Promote block-level styles/classes from the authoring crumb row, then remove that row.
-  const crumb = block.querySelector('[data-aue-prop="style"]');
-  console.log("🚀 ~ decorate ~ crumb:", crumb)
+  // If authoring wrapped rows in a UL already, use it
+  let ul = block.querySelector(':scope > ul');
+  const searchRoot = ul || block;
+
+  // 0) Promote styles from crumb, then remove the crumb row
+  const crumb = searchRoot.querySelector('[data-aue-prop="style"]');
   if (crumb) {
     const raw = (crumb.textContent || '').trim();
-    const tokens = raw.split(/[,\s]+/).map(s => s.trim()).filter(Boolean);
-    console.log("🚀 ~ decorate ~ tokens:", tokens)
-    tokens.forEach(cls => block.classList.add(cls));
+    raw.split(/[,\s]+/)
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .forEach((cls) => block.classList.add(cls));
+
+    // Remove the row that contains the crumb
+    if (ul) {
+      const li = crumb.closest('li');
+      if (li && li.parentElement === ul) li.remove();
+    } else {
+      let row = crumb;
+      while (row && row.parentElement !== block) row = row.parentElement;
+      if (row && row.parentElement === block) row.remove();
+    }
   }
 
-    // remove the top-level row that contains the crumb, before we rebuild the UL
-    let row = crumb;
-    while (row && row.parentElement !== block) row = row.parentElement;
-    if (row && row.parentElement === block) row.remove();
+  // 1) Build UL only if it doesn't already exist
+  if (!ul) {
+    ul = document.createElement('ul');
 
-  // 1) Build UL/LI structure from remaining rows
-  const ul = document.createElement('ul');
+    [...block.children].forEach((row) => {
+      const li = document.createElement('li');
+      moveInstrumentation(row, li);
 
-  [...block.children].forEach((row) => {
-    const li = document.createElement('li');
-    moveInstrumentation(row, li);
+      while (row.firstElementChild) li.append(row.firstElementChild);
 
-    while (row.firstElementChild) li.append(row.firstElementChild);
+      [...li.children].forEach((div) => {
+        if (div.children.length === 1 && div.querySelector('picture')) {
+          div.className = 'cards-card-image';
+        } else {
+          div.className = 'cards-card-body';
+        }
+      });
 
-    // classify child divs
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) {
-        div.className = 'cards-card-image';
-      } else {
-        div.className = 'cards-card-body';
-      }
+      ul.append(li);
     });
 
-    /* append li to ul*/
-    ul.append(li);
-  });
+    block.textContent = '';
+    block.append(ul);
+  } else {
+    // Ensure authoring shape gets the same classnames
+    ul.querySelectorAll(':scope > li').forEach((li) => {
+      [...li.children].forEach((div) => {
+        if (div.children.length === 1 && div.querySelector('picture')) {
+          div.classList.add('cards-card-image');
+        } else {
+          div.classList.add('cards-card-body');
+        }
+      });
+    });
+  }
 
-    // 2) If the first li's body has no children, remove that li
-  // const firstLi = ul.querySelector(':scope > li');
-  // if (firstLi) {
-  //   const firstBody = firstLi.querySelector(':scope > .cards-card-body');
-  //   if (firstBody && firstBody.children.length === 0) {
-  //     firstLi.remove();
-  //   }
-  // }
-  
-  /* get all img tags within ul and update properties*/
+  // 2) Optimize pictures
   ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
-    moveInstrumentation(img, optimizedPic.querySelector('img'));
-    img.closest('picture').replaceWith(optimizedPic);
+    const optimized = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+    moveInstrumentation(img, optimized.querySelector('img'));
+    img.closest('picture').replaceWith(optimized);
   });
-
-  // make block empty to removed ealier html code or structure.
-  block.textContent = '';
-
-  // append brand new updated HTML structure having ul and li's tags.
-  block.append(ul);
 }
