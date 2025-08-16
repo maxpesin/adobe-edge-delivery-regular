@@ -7,21 +7,19 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 */
 export default function decorate(block) {
   // 0) Promote block-level styles/classes from the authoring crumb row, then remove that row.
-  // 0) Always treat the first row as the crumb row
-  const firstRow = block.firstElementChild;
-
-  if (firstRow) {
-    const crumb = firstRow.querySelector('[data-aue-prop="style"]');
-    if (crumb) {
-      const raw = (crumb.textContent || '').trim();
-      raw.split(/[,\s]+/)
-        .map((s) => s.trim())
-        .filter(Boolean)
-        .forEach((cls) => block.classList.add(cls));
-    }
-    // Remove the first row unconditionally, even if no styles were found
-    firstRow.remove();
+  const crumb = block.querySelector('[data-aue-prop="style"]');
+  console.log("🚀 ~ decorate ~ crumb:", crumb)
+  if (crumb) {
+    const raw = (crumb.textContent || '').trim();
+    const tokens = raw.split(/[,\s]+/).map(s => s.trim()).filter(Boolean);
+    console.log("🚀 ~ decorate ~ tokens:", tokens)
+    tokens.forEach(cls => block.classList.add(cls));
   }
+
+    // remove the top-level row that contains the crumb, before we rebuild the UL
+    let row = crumb;
+    while (row && row.parentElement !== block) row = row.parentElement;
+    if (row && row.parentElement === block) row.remove();
 
   // 1) Build UL/LI structure from remaining rows
   const ul = document.createElement('ul');
