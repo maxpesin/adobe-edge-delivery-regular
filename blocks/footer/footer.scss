@@ -64,9 +64,22 @@ footer {
                             margin-bottom: 38px;
                         }
 
+                        li {
+                            display: flex;
+                            padding: 10px 15px;
+                        }
+
                         a {
+                            width: 100%;
                             font-size: 14px;
                             text-decoration: none;
+                            padding: 10px 15px;
+                            transition: all 0.3s;
+
+                            &:hover,
+                            &:focus {
+                                background-color: #bbb;
+                            }
 
                             &[title="United States"] {
                                 &:before {
@@ -75,6 +88,28 @@ footer {
                                     width: 20px;
                                     height: 20px;
                                     background: url('../../icons/USFlag.svg') no-repeat center;
+                                    background-size: contain;
+                                }
+                            }
+
+                            &[title="United Kingdom"] {
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    background: url('../../icons/UnitedKingdomFlag.svg') no-repeat center;
+                                    background-size: contain;
+                                }
+                            }
+
+                            &[title="Mexico"] {
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    background: url('../../icons/MexicoFlag.svg') no-repeat center;
                                     background-size: contain;
                                 }
                             }

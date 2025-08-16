@@ -45,9 +45,19 @@ footer .footer.block .section:nth-child(3) .accordion.block.open ul {
   padding: 0;
   margin-bottom: 38px;
 }
+footer .footer.block .section:nth-child(3) .accordion.block.open li {
+  display: flex;
+  padding: 10px 15px;
+}
 footer .footer.block .section:nth-child(3) .accordion.block.open a {
+  width: 100%;
   font-size: 14px;
   text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+footer .footer.block .section:nth-child(3) .accordion.block.open a:hover, footer .footer.block .section:nth-child(3) .accordion.block.open a:focus {
+  background-color: #bbb;
 }
 footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United States"]:before {
   content: "";
@@ -55,6 +65,22 @@ footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United
   width: 20px;
   height: 20px;
   background: url("../../icons/USFlag.svg") no-repeat center;
+  background-size: contain;
+}
+footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United Kingdom"]:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../icons/UnitedKingdomFlag.svg") no-repeat center;
+  background-size: contain;
+}
+footer .footer.block .section:nth-child(3) .accordion.block.open a[title=Mexico]:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../icons/MexicoFlag.svg") no-repeat center;
   background-size: contain;
 }
 footer .footer.block .section:nth-child(3) .accordion.block p {
