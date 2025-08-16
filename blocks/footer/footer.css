@@ -113,8 +113,9 @@ footer .footer.block > div {
   max-width: 1200px;
   padding: 40px 24px 24px;
 }
-@media (width >= lg) {
-  footer .footer.block > div footer .footer > div {
+@media (width >= md) {
+  footer .footer.block > div {
+    display: block;
     padding: 40px 32px 24px;
   }
 }

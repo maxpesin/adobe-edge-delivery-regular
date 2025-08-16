@@ -150,10 +150,9 @@ footer {
             max-width: 1200px;
             padding: 40px 24px 24px;
 
-            @media (width >= lg) {
-                footer .footer > div {
-                    padding: 40px 32px 24px;
-                }
+            @media (width >= md) {
+                display: block;
+                padding: 40px 32px 24px;
             }
 
             p {
