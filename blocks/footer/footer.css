@@ -21,10 +21,23 @@ footer .footer.block .section:nth-child(3) .accordion.block {
   background: white;
   padding: 10px 15px;
   margin-bottom: 12px;
+  position: relative;
+}
+footer .footer.block .section:nth-child(3) .accordion.block > div:first-child p:after {
+  width: 14px;
+  height: 14px;
+  rotate: 360deg;
+}
+footer .footer.block .section:nth-child(3) .accordion.block.open > div:first-child p:after {
+  rotate: 180deg;
 }
 footer .footer.block .section:nth-child(3) .accordion.block p {
   font-size: 14px;
   font-weight: 400;
+}
+footer .footer.block .section:nth-child(3) .accordion.block .accordion-body {
+  position: absolute;
+  bottom: 0;
 }
 footer .footer.block .section:nth-child(4) {
   width: calc(30% - 16px);

@@ -28,10 +28,32 @@ footer {
                     background: white;
                     padding: 10px 15px;
                     margin-bottom: 12px;
+                    position: relative;
+
+                    > div:first-child {
+                        p:after {
+                            width: 14px;
+                            height: 14px;
+                            rotate: 360deg;
+                        }
+                    }
+
+                    &.open {
+                        > div:first-child {
+                            p:after {
+                                rotate: 180deg;
+                            }
+                        }
+                    }
 
                     p {
                         font-size: 14px;
                         font-weight: 400;
+                    }
+
+                    .accordion-body {
+                        position: absolute;
+                        bottom: 0;
                     }
                 }
             }
