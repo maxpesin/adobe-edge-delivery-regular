@@ -31,6 +31,7 @@ footer .footer.block .section:nth-child(3) .accordion.block {
   padding: 10px 15px;
   margin-bottom: 12px;
   position: relative;
+  cursor: pointer;
 }
 footer .footer.block .section:nth-child(3) .accordion.block > div:first-child p:after {
   width: 14px;
