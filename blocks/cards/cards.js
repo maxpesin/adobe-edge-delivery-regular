@@ -62,6 +62,47 @@ export default function decorate(block) {
     });
   }
 
+    // 1.5) Social-icons handler
+  if (block.classList.contains('cards-block-social-icons')) {
+    ul.querySelectorAll(':scope > li').forEach((li) => {
+      // top-level bodies only
+      const bodies = [...li.querySelectorAll(':scope > div.cards-card-body')];
+      if (!bodies.length) return;
+
+      const lastBody = bodies[bodies.length - 1];
+      let href = (lastBody.textContent || '').trim();
+
+      if (!href) {
+        bodies.forEach((el) => el.remove());
+        return;
+      }
+
+      // normalize URL a bit
+      if (/^www\./i.test(href)) href = `https://${href}`;
+      if (!/^[a-z][a-z0-9+.-]*:/i.test(href) && /^[^/\s]+\.[^/\s]+/.test(href)) {
+        href = `https://${href}`;
+      }
+
+      const imgDiv = li.querySelector(':scope > div.cards-card-image');
+      if (imgDiv) {
+        // avoid double-wrapping
+        if (!imgDiv.parentElement || imgDiv.parentElement.tagName !== 'A') {
+          const a = document.createElement('a');
+          a.href = href;
+          a.target = '_blank';
+          a.rel = 'noopener';
+
+          imgDiv.parentNode.insertBefore(a, imgDiv);
+          a.appendChild(imgDiv);
+        }
+      }
+
+      // remove all body divs for this li
+      bodies.forEach((el) => el.remove());
+    });
+  }
+
+
   // 2) Optimize pictures
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimized = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
