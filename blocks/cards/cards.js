@@ -2,28 +2,28 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  // If authoring wrapped rows in a UL already, use it
   let ul = block.querySelector(':scope > ul');
-  const searchRoot = ul || block;
 
-  // 0) Promote styles from crumb, then remove the crumb row
-  const crumb = searchRoot.querySelector('[data-aue-prop="style"]');
-  if (crumb) {
-    const raw = (crumb.textContent || '').trim();
-    raw.split(/[,\s]+/)
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .forEach((cls) => block.classList.add(cls));
+  const parseTokens = (txt) => (txt || '')
+    .split(/[,\s]+/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+    // keep only class-safe tokens to avoid garbage
+    .filter((s) => /^[A-Za-z_][\w-]*$/.test(s));
 
-    // Remove the row that contains the crumb
-    if (ul) {
-      const li = crumb.closest('li');
-      if (li && li.parentElement === ul) li.remove();
-    } else {
-      let row = crumb;
-      while (row && row.parentElement !== block) row = row.parentElement;
-      if (row && row.parentElement === block) row.remove();
-    }
+  const addClasses = (tokens) => {
+    [...new Set(tokens)].forEach((cls) => block.classList.add(cls));
+  };
+
+  // 0) Single source of truth: first row/LI holds default "cards-block" and friends
+  const sourceRow = ul
+    ? ul.querySelector(':scope > li')
+    : block.firstElementChild;
+
+  if (sourceRow) {
+    const tokens = parseTokens(sourceRow.textContent);
+    if (tokens.length) addClasses(tokens);
+    sourceRow.remove();
   }
 
   // 1) Build UL only if it doesn't already exist
