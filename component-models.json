@@ -281,6 +281,10 @@
           {
             "name": "Cards Conversion CTA",
             "value": "cards-block-conversion-cta"
+          },
+          {
+            "name": "Cards Social Icons",
+            "value": "cards-block-social-icons"
           }
         ]
       }
