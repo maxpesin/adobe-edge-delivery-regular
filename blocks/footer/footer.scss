@@ -58,6 +58,16 @@ footer {
                                 rotate: 180deg;
                             }
                         }
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin-bottom: 38px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                            text-decoration: none;
+                        }
                     }
 
                     p {
@@ -66,8 +76,13 @@ footer {
                     }
 
                     .accordion-body {
+                        width: 100%;
+                        background: white;
                         position: absolute;
                         bottom: 0;
+                        left: 0;
+                        padding: 0;
+                        margin-bottom: 38px;
                     }
                 }
             }
