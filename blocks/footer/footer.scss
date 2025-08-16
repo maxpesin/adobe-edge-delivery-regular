@@ -8,6 +8,23 @@ footer {
 
     .footer.block {
 
+        > div {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 1200px;
+            padding: 40px 24px 24px;
+
+            @media (width >= $breakpoint-md) {
+                display: block;
+                padding: 40px 32px 24px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
         .cards-block-social-icons {
             > ul {
                 display: flex;
@@ -142,23 +159,6 @@ footer {
                 margin-left: 16px;
             }
         } 
-
-        > div {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            max-width: 1200px;
-            padding: 40px 24px 24px;
-
-            @media (width >= md) {
-                display: block;
-                padding: 40px 32px 24px;
-            }
-
-            p {
-                margin: 0;
-            }
-        }
 
         .block.columns {
             > div {
