@@ -3,34 +3,53 @@
 
 footer,
 .section-footer {
-  background-color: #333;
-  color: white;
-  font-size: var(--body-font-size-xs);
+    background-color: #333;
+    color: white;
+    font-size: var(--body-font-size-xs);
 
-  .block.columns {
+    .block.columns {
     > div {
         align-items: start;
+
+        .text {
+            p {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 0.8px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            li {
+                line-height: 1.43;
+                padding-bottom: 5px;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
-  }
+    }
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
-}
+    footer .footer > div {
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 24px 24px;
+    }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
+    footer .footer p {
+    margin: 0;
+    }
 
-footer .footer p {
-  margin: 0;
-}
-
-@media (width >= 900px) {
-  footer .footer > div {
+    @media (width >= 900px) {
+    footer .footer > div {
     padding: 40px 32px 24px;
-  }
+    }
+    }
 }
