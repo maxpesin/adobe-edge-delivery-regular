@@ -7,7 +7,7 @@ footer {
     font-size: var(--body-font-size-xs);
 
     .footer.block {
-        section {
+        .section {
             &:not(:first-child) {
                 // width: 33%;
                 display: inline-flex;
