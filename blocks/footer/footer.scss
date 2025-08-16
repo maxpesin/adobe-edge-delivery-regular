@@ -56,16 +56,16 @@ footer {
                     text-decoration: none;
                 }
 
-                &:not(:first-child) {
-                    .text {
-                        font-size: 12px;
-                        border: none;
-                        padding: 0;
-                        text-transform: unset;
-                        letter-spacing: unset;
-                        font-weight: unset;
-                        margin-bottom: 0;
-                    }
+            }
+            &:not(:first-child) {
+                .text {
+                    font-size: 12px;
+                    border: none;
+                    padding: 0;
+                    text-transform: unset;
+                    letter-spacing: unset;
+                    font-weight: unset;
+                    margin-bottom: 0;
                 }
             }
         }

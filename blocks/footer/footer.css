@@ -43,7 +43,7 @@ footer .footer .block.columns > div a {
   font-size: 14px;
   text-decoration: none;
 }
-footer .footer .block.columns > div:not(:first-child) .text {
+footer .footer .block.columns:not(:first-child) .text {
   font-size: 12px;
   border: none;
   padding: 0;
