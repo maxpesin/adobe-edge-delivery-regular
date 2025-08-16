@@ -1,34 +1,38 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
+// /* eslint-env browser */
+// export default function decorate(block) {
+//   // Only run for this block flavor
+//   if (!block.classList.contains('image-link')) return;
 
-export default function decorate(block) {
-  if (!block.classList.contains('image-link')) return;
+//   // Expect exactly two top-level rows: [0] with picture, [1] with link
+//   const rows = [...block.querySelectorAll(':scope > div')];
+//   const first = rows[0];
+//   const second = rows[1];
+//   if (!first || !second) return;
 
-  const [first, second] = block.querySelectorAll(':scope > div');
-  if (!first || !second) return;
+//   const picture = first.querySelector('picture');
+//   const link = second.querySelector('a');
 
-  const picture = first.querySelector('picture');
-  let link = second.querySelector('a');
-  if (!picture || !link) return;
+//   if (!picture || !link) {
+//     // If authoring forgot either piece, remove the orphan row to avoid random text blobs
+//     if (second && second.textContent.trim() === '') second.remove();
+//     return;
+//   }
 
-  // Optional: optimize the image (only if you actually want responsive sources)
-  // const img = picture.querySelector('img');
-  // if (img) {
-  //   const optimized = createOptimizedPicture(img.src, img.alt);
-  //   moveInstrumentation(img, optimized.querySelector('img'));
-  //   picture.replaceWith(optimized);
-  //   // re-select picture after replacement
-  //   link = second.querySelector('a');
-  // }
+//   // If the picture is already wrapped, just update attrs from the editor-provided link
+//   if (picture.parentElement && picture.parentElement.tagName === 'A') {
+//     const existing = picture.parentElement;
+//     existing.href = link.href;
+//     if (link.title) existing.title = link.title;
+//     second.remove();
+//     return;
+//   }
 
-  // Wrap picture with the existing <a>, preserving any attrs on <a>.
-  link.textContent = '';
-  picture.parentNode.insertBefore(link, picture);
-  link.appendChild(picture);
+//   // Move the editor-provided <a> in front of the picture, then stuff the picture inside it
+//   // Don’t clone: keep any tracking/instrumentation attrs already on the <a>.
+//   link.textContent = ''; // no visible URL string inside the button image
+//   picture.parentNode.insertBefore(link, picture);
+//   link.appendChild(picture);
 
-  // Optional: if the second div had any instrumentation attrs you care about,
-  // move them onto the <a> before removing the div.
-  moveInstrumentation(second, link, ['data-aue-resource','data-aue-type','data-aue-behavior','data-aue-label']);
-
-  second.remove();
-}
+//   // Kill the now-empty second row
+//   second.remove();
+// }
