@@ -3,21 +3,21 @@ footer {
   color: white;
   font-size: var(--body-font-size-xs);
 }
-footer .footer.block > section:not(:first-child) {
+footer .footer.block section:not(:first-child) {
   display: inline-flex;
   flex-direction: column;
   font-size: 12px;
 }
-footer .footer.block > section:not(:first-child):nth-child(2) {
+footer .footer.block section:nth-child(2) {
   width: calc(33% - 16px);
   margin-right: 16px;
 }
-footer .footer.block > section:not(:first-child):nth-child(3) {
+footer .footer.block section:nth-child(3) {
   width: calc(33% - 32px);
   margin-right: 16px;
   margin-left: 16px;
 }
-footer .footer.block > section:not(:first-child):nth-child(4) {
+footer .footer.block section:nth-child(4) {
   width: calc(33% - 16px);
   margin-left: 16px;
 }
