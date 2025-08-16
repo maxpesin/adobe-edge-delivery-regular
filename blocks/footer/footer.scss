@@ -51,6 +51,11 @@ footer {
                 vertical-align: top;
                 width: 100%;
                 margin: 0 auto;
+                text-align: center;
+
+                @media (width >= $breakpoint-md) {
+                    text-align: left;
+                }
             }
 
             &:nth-child(2) {
@@ -63,11 +68,13 @@ footer {
             }
             &:nth-child(3) {
                 order: 2;
+                padding-bottom: 30px;
 
                 @media (width >= $breakpoint-md) {
                     width: calc(25% - 32px);
                     margin-right: 16px;
                     margin-left: 16px;
+                    padding-bottom: 0;
                 }
 
                 .accordion.block {
