@@ -1,7 +1,7 @@
 @use "../../styles/breakpoints.scss" as *;
 // sass blocks/text/text.scss blocks/text/text.css --no-source-map 
 
-.text-wrapper {
+// .text-wrapper {
     .text {
         &.text-font-size-21 {
             p,h1,h2,h3,h4,h5,h6 {
@@ -13,6 +13,7 @@
 
         &.text-top-divider {
             border-top: 1px solid #797979;
+            padding-top: 24px;
         }
 
         &.text-bottom-divider {
@@ -26,4 +27,4 @@
             }
         }
     }
-}
+// }

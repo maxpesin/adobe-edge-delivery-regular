@@ -1,17 +1,13 @@
-.text-wrapper .text.text-font-size-21 p, .text-wrapper .text.text-font-size-21 h1, .text-wrapper .text.text-font-size-21 h2, .text-wrapper .text.text-font-size-21 h3, .text-wrapper .text.text-font-size-21 h4, .text-wrapper .text.text-font-size-21 h5, .text-wrapper .text.text-font-size-21 h6 {
+.text.text-font-size-21 p, .text.text-font-size-21 h1, .text.text-font-size-21 h2, .text.text-font-size-21 h3, .text.text-font-size-21 h4, .text.text-font-size-21 h5, .text.text-font-size-21 h6 {
   font-size: 21px;
   line-height: 1.38;
   font-weight: 400;
 }
-.text-wrapper .text.text-top-divider::before {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 1px;
-  background-color: var(--color-light-x11-grey);
-  margin: 40px auto 0;
+.text.text-top-divider {
+  border-top: 1px solid #797979;
+  padding-top: 24px;
 }
-.text-wrapper .text.text-bottom-divider::after {
+.text.text-bottom-divider::after {
   content: "";
   display: block;
   width: 25%;
