@@ -3,7 +3,7 @@
 
 .text-wrapper {
     .text {
-        &.font-size-21 {
+        &.text-font-size-21 {
             p,h1,h2,h3,h4,h5,h6 {
                 font-size: 21px;
                 line-height: 1.38;
@@ -11,7 +11,18 @@
             }
         }
 
-        &.after-divider {
+        &.text-top-divider {
+            &::before {
+                content: "";
+                display: block;
+                width: 25%;
+                height: 1px;
+                background-color: var(--color-light-x11-grey);
+                margin: 40px auto 0;
+            }
+        }
+
+        &.text-bottom-divider {
             &::after {
                 content: "";
                 display: block;

@@ -140,15 +140,15 @@
           },
           {
             "name": "Font Size 21px",
-            "value": "font-size-21"
+            "value": "text-font-size-21"
           },
           {
-            "name": "Before Divider",
-            "value": "before-divider"
+            "name": "Top Divider",
+            "value": "text-top-divider"
           },
           {
-            "name": "After Divider",
-            "value": "after-divider"
+            "name": "Bottom Divider",
+            "value": "text-bottom-divider"
           }
         ]
       },
