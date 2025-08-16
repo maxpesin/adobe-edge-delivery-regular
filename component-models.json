@@ -84,6 +84,10 @@
           {
             "name": "Padding bottom None",
             "value": "section-padding-bottom-0"
+          },
+          {
+            "name": "section Footer",
+            "value": "section-footer"
           }
         ]
       }

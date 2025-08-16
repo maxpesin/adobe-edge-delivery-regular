@@ -1,17 +1,22 @@
+@use "../../styles/breakpoints.scss" as *;
+// sass blocks/footer/footer.scss blocks/footer/footer.css --no-source-map
+
 footer,
 .section-footer {
   background-color: #333;
   color: white;
   font-size: var(--body-font-size-xs);
-}
-footer .block.columns > div,
-.section-footer .block.columns > div {
-  align-items: start;
-}
-footer a,
-.section-footer a {
-  color: white;
-  text-decoration: none;
+
+  .block.columns {
+    > div {
+        align-items: start;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 footer .footer > div {
