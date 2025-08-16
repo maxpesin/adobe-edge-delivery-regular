@@ -49,7 +49,7 @@ footer .footer.block .section:nth-child(3) .accordion.block.open a {
   font-size: 14px;
   text-decoration: none;
 }
-footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United States"] :before {
+footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United States"]:before {
   content: "";
   display: block;
   width: 20px;

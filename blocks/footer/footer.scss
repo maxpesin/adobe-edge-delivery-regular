@@ -69,7 +69,7 @@ footer {
                             text-decoration: none;
 
                             &[title="United States"] {
-                                :before {
+                                &:before {
                                     content: '';
                                     display: block;
                                     width: 20px;
