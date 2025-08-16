@@ -49,6 +49,13 @@ export default function decorate(block) {
 
     block.textContent = '';
     block.append(ul);
+
+    // Remove any empty <li> elements (e.g., from unselected style rows or accidental empty entries)
+    [...ul.children].forEach((li) => {
+      if (!li.textContent.trim() && !li.querySelector('img')) {
+        li.remove();
+      }
+    });
   } else {
     // Normalize classes for authoring shape without deleting anything.
     ul.querySelectorAll(':scope > li').forEach((li) => {
