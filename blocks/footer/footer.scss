@@ -61,15 +61,15 @@ footer {
                         ul {
                             list-style: none;
                             padding: 0;
-                            margin-bottom: 38px;
                         }
 
                         li {
                             display: flex;
-                            padding: 10px 15px;
                         }
 
                         a {
+                            display: inline-flex;
+                            gap: 10px;
                             width: 100%;
                             font-size: 14px;
                             text-decoration: none;
@@ -84,7 +84,6 @@ footer {
                             &[title="United States"] {
                                 &:before {
                                     content: '';
-                                    display: block;
                                     width: 20px;
                                     height: 20px;
                                     background: url('../../icons/USFlag.svg') no-repeat center;
@@ -95,7 +94,6 @@ footer {
                             &[title="United Kingdom"] {
                                 &:before {
                                     content: '';
-                                    display: block;
                                     width: 20px;
                                     height: 20px;
                                     background: url('../../icons/UnitedKingdomFlag.svg') no-repeat center;
@@ -106,7 +104,6 @@ footer {
                             &[title="Mexico"] {
                                 &:before {
                                     content: '';
-                                    display: block;
                                     width: 20px;
                                     height: 20px;
                                     background: url('../../icons/MexicoFlag.svg') no-repeat center;
