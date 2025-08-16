@@ -61,14 +61,16 @@ footer {
 
         .columns-wrapper {
             &:not(:first-child) {
-                .text {
-                    font-size: 12px;
-                    border: none;
-                    padding: 0;
-                    text-transform: unset;
-                    letter-spacing: unset;
-                    font-weight: unset;
-                    margin-bottom: 0;
+                > div {
+                    .text {
+                        font-size: 12px;
+                        border-top: none;
+                        padding-top: 0;
+                        text-transform: unset;
+                        letter-spacing: unset;
+                        font-weight: unset;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }

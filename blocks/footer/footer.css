@@ -43,10 +43,10 @@ footer .footer .block.columns > div a {
   font-size: 14px;
   text-decoration: none;
 }
-footer .footer .columns-wrapper:not(:first-child) .text {
+footer .footer .columns-wrapper:not(:first-child) > div .text {
   font-size: 12px;
-  border: none;
-  padding: 0;
+  border-top: none;
+  padding-top: 0;
   text-transform: unset;
   letter-spacing: unset;
   font-weight: unset;
