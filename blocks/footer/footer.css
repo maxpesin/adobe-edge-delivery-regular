@@ -20,18 +20,41 @@ footer .footer.block > div {
 footer .footer.block > div p {
   margin: 0;
 }
-footer .footer.block .cards-block-social-icons > ul {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
+footer .footer.block .section:first-child .block.columns > div {
+  align-items: start;
 }
-footer .footer.block .cards-block-social-icons .cards-card-image img {
-  width: 30px;
+footer .footer.block .section:first-child .block.columns > div > div {
+  border-top: 1px solid #797979;
+  padding-top: 24px;
 }
-@media (width >= 768px) {
-  footer .footer.block .cards-block-social-icons .cards-card-image img {
-    width: 24px;
-  }
+footer .footer.block .section:first-child .block.columns > div > div p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  margin-bottom: 22px;
+}
+footer .footer.block .section:first-child .block.columns > div > div ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer.block .section:first-child .block.columns > div > div li {
+  line-height: 1.43;
+  padding-bottom: 5px;
+}
+footer .footer.block .section:first-child .block.columns > div a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+footer .footer.block .section:first-child .columns-wrapper:not(:first-child) > div > div {
+  font-size: 12px;
+  border-top: none;
+  padding-top: 0;
+  text-transform: unset;
+  letter-spacing: unset;
+  font-weight: unset;
+  margin-bottom: 0;
 }
 footer .footer.block .section:not(:first-child) {
   display: inline-flex;
@@ -147,39 +170,16 @@ footer .footer.block .section:nth-child(4) {
     padding: 0;
   }
 }
-footer .footer.block .block.columns > div {
-  align-items: start;
+footer .footer.block .cards-block-social-icons > ul {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
 }
-footer .footer.block .block.columns > div .text {
-  border-top: 1px solid #797979;
-  padding-top: 24px;
+footer .footer.block .cards-block-social-icons .cards-card-image img {
+  width: 30px;
 }
-footer .footer.block .block.columns > div .text p {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  margin-bottom: 22px;
-}
-footer .footer.block .block.columns > div .text ul {
-  list-style: none;
-  padding: 0;
-}
-footer .footer.block .block.columns > div .text li {
-  line-height: 1.43;
-  padding-bottom: 5px;
-}
-footer .footer.block .block.columns > div a {
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-}
-footer .footer.block .columns-wrapper:not(:first-child) > div .text {
-  font-size: 12px;
-  border-top: none;
-  padding-top: 0;
-  text-transform: unset;
-  letter-spacing: unset;
-  font-weight: unset;
-  margin-bottom: 0;
+@media (width >= 768px) {
+  footer .footer.block .cards-block-social-icons .cards-card-image img {
+    width: 24px;
+  }
 }
