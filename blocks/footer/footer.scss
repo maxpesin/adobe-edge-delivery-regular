@@ -1,8 +1,7 @@
 @use "../../styles/breakpoints.scss" as *;
 // sass blocks/footer/footer.scss blocks/footer/footer.css --no-source-map
 
-footer,
-.section-footer {
+footer {
     background-color: #333;
     color: white;
     font-size: var(--body-font-size-xs);

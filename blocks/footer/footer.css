@@ -1,48 +1,39 @@
-footer,
-.section-footer {
+footer {
   background-color: #333;
   color: white;
   font-size: var(--body-font-size-xs);
 }
-footer .footer > div,
-.section-footer .footer > div {
+footer .footer > div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
 }
 @media (width >= lg) {
-  footer .footer > div footer .footer > div,
-  .section-footer .footer > div footer .footer > div {
+  footer .footer > div footer .footer > div {
     padding: 40px 32px 24px;
   }
 }
-footer .footer > div p,
-.section-footer .footer > div p {
+footer .footer > div p {
   margin: 0;
 }
-footer .footer .block.columns > div,
-.section-footer .footer .block.columns > div {
+footer .footer .block.columns > div {
   align-items: start;
 }
-footer .footer .block.columns > div .text p,
-.section-footer .footer .block.columns > div .text p {
+footer .footer .block.columns > div .text p {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.8px;
 }
-footer .footer .block.columns > div .text ul,
-.section-footer .footer .block.columns > div .text ul {
+footer .footer .block.columns > div .text ul {
   list-style: none;
   padding: 0;
 }
-footer .footer .block.columns > div .text li,
-.section-footer .footer .block.columns > div .text li {
+footer .footer .block.columns > div .text li {
   line-height: 1.43;
   padding-bottom: 5px;
 }
-footer .footer .block.columns > div a,
-.section-footer .footer .block.columns > div a {
+footer .footer .block.columns > div a {
   color: white;
   text-decoration: none;
 }
