@@ -30,12 +30,13 @@ footer {
                 .text {
                     border-top: 1px solid #797979;
                     padding-top: 24px;
-                    
+
                     p {
                         text-transform: uppercase;
                         font-size: 13px;
                         font-weight: 600;
                         letter-spacing: 0.8px;
+                        margin-bottom: 22px;
                     }
 
                     ul {
@@ -51,7 +52,20 @@ footer {
 
                 a {
                     color: white;
+                    font-size: 14px;
                     text-decoration: none;
+                }
+
+                &:not(:first-child) {
+                    .text {
+                        font-size: 12px;
+                        border: none;
+                        padding: 0;
+                        text-transform: unset;
+                        letter-spacing: unset;
+                        font-weight: unset;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
