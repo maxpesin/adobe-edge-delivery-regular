@@ -7,6 +7,19 @@ footer {
     font-size: var(--body-font-size-xs);
 
     .footer.block {
+
+        .cards-block-social-icons {
+            > ul {
+                display: flex;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .cards-card-image img {
+                width: 24px;
+            }
+        }
+
         .section {
             &:not(:first-child) {
                 // width: 33%;
