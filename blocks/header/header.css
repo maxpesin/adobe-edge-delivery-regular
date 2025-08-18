@@ -1,16 +1,23 @@
+.block.header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block.header nav .nav-hamburger {
+  width: 50px;
+}
 @media (width >= 992px) {
-  .block.header .nav-hamburger {
+  .block.header nav .nav-hamburger {
     display: none;
     visibility: hidden;
   }
 }
-.block.header .nav-hamburger-icon {
+.block.header nav .nav-hamburger-icon {
   box-sizing: border-box;
   display: block;
   position: relative;
   width: 20px;
 }
-.block.header .nav-hamburger-icon:before, .block.header .nav-hamburger-icon:after {
+.block.header nav .nav-hamburger-icon:before, .block.header nav .nav-hamburger-icon:after {
   content: "";
   position: absolute;
   background: currentcolor;
@@ -19,8 +26,12 @@
   position: relative;
   width: 20px;
 }
-.block.header .test-class {
-  display: none;
+.block.header nav .nav-brand {
+  width: calc(100% - 150px);
+}
+.block.header nav .nav-sections {
+  display: flex;
+  width: 100px;
 }
 
 header nav[aria-expanded=false] .nav-hamburger-icon,

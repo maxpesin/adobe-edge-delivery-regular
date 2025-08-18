@@ -1,33 +1,46 @@
 @use "../../styles/breakpoints.scss" as *;
 
 .block.header {
-    .nav-hamburger {
-        @media (width >= $breakpoint-lg) {
-            display: none;
-            visibility: hidden;
-        }
-    }
 
-    .nav-hamburger-icon {
-        box-sizing: border-box;
-        display: block;
-        position: relative;
-        width: 20px;
-        
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            background: currentcolor;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+
+        .nav-hamburger {
+            width: 50px;
+            
+            @media (width >= $breakpoint-lg) {
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        .nav-hamburger-icon {
             box-sizing: border-box;
             display: block;
             position: relative;
-            width: 20px; 
-        }
-    }
+            width: 20px;
 
-    .test-class {
-        display: none;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                background: currentcolor;
+                box-sizing: border-box;
+                display: block;
+                position: relative;
+                width: 20px; 
+            }
+        }
+
+        .nav-brand {
+            width: calc(100% - 150px);
+        }
+
+        .nav-sections {
+            display: flex;
+            width: 100px;
+        }
     }
 }
 
