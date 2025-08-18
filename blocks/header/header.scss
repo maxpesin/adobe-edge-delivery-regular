@@ -9,6 +9,11 @@
     }
 
     .nav-hamburger-icon {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        width: 20px;
+        
         &:before,
         &:after {
             content: '';

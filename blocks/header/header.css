@@ -4,6 +4,12 @@
     visibility: hidden;
   }
 }
+.block.header .nav-hamburger-icon {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  width: 20px;
+}
 .block.header .nav-hamburger-icon:before, .block.header .nav-hamburger-icon:after {
   content: "";
   position: absolute;
