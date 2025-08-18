@@ -1,5 +1,9 @@
+.header-wrapper .block.header {
+  background: var(--color-white-smoke);
+}
 .block.header nav {
   display: flex;
+  justify-content: end;
   flex-wrap: wrap;
   margin: auto;
 }
@@ -65,6 +69,9 @@
   padding: 0.5em 1.2em;
   line-height: 1.44;
   border: none;
+}
+.block.header nav .nav-brand .block.image-link img {
+  width: 136px;
 }
 .block.header nav .nav-brand .block.image-link > div:nth-child(2) {
   display: none;

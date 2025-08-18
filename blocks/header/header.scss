@@ -1,10 +1,14 @@
 @use "../../styles/breakpoints.scss" as *;
 
 .block.header {
+    .header-wrapper & {
+        background: var(--color-white-smoke);
+    }
     nav {
-                display: flex;
+        display: flex;
+        justify-content: end;
         flex-wrap: wrap;
-            margin: auto;
+        margin: auto;
 
     @media (width >= $breakpoint-md) {
         max-width: 720px;
@@ -72,6 +76,9 @@
             }
 
             .block.image-link {
+                img {
+                    width: 136px;
+                }
                 > div:nth-child(2) {
                     display: none;
                 }
