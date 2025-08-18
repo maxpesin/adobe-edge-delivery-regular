@@ -1,26 +1,27 @@
+.block.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
 @media (width >= 768px) {
-  .block.header {
+  .block.header nav {
     max-width: 720px;
   }
 }
 @media (width >= 992px) {
-  .block.header {
+  .block.header nav {
     max-width: 960px;
   }
 }
 @media (width >= 1200px) {
-  .block.header {
+  .block.header nav {
     max-width: 1140px;
   }
 }
 @media (width >= 1400px) {
-  .block.header {
+  .block.header nav {
     max-width: 1320px;
   }
-}
-.block.header nav {
-  display: flex;
-  flex-wrap: wrap;
 }
 .block.header nav .nav-hamburger {
   width: 50px;
@@ -58,6 +59,15 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
+  background: var(--color-white);
+  color: var(--color-trex-green);
+  margin: auto;
+  padding: 0.5em 1.2em;
+  line-height: 1.44;
+  border: none;
+}
+.block.header nav .nav-brand .block.image-link > div:nth-child(2) {
+  display: none;
 }
 .block.header nav .nav-sections {
   display: flex;
