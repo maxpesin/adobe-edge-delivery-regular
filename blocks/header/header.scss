@@ -1,6 +1,6 @@
 @use "../../styles/breakpoints.scss" as *;
 
-.header-wrapper & {
+.header-wrapper {
     background: var(--color-white-smoke);
 }
 
