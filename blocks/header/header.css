@@ -1,119 +1,17 @@
-.header-wrapper .block.header {
-  background: var(--color-white-smoke);
-}
-.block.header nav {
-  display: flex;
-  justify-content: end;
-  flex-wrap: wrap;
-  margin: auto;
-}
-@media (width >= 768px) {
-  .block.header nav {
-    max-width: 720px;
-  }
-}
-@media (width >= 992px) {
-  .block.header nav {
-    max-width: 960px;
-  }
-}
-@media (width >= 1200px) {
-  .block.header nav {
-    max-width: 1140px;
-  }
-}
-@media (width >= 1400px) {
-  .block.header nav {
-    max-width: 1320px;
-  }
-}
-.block.header nav .nav-hamburger {
-  width: 50px;
-}
-@media (width >= 992px) {
-  .block.header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
-.block.header nav .nav-hamburger-icon {
-  box-sizing: border-box;
+/* Error: Top-level selectors may not contain the parent selector "&".
+ *   ,
+ * 3 | .header-wrapper & {
+ *   |                 ^
+ *   '
+ *   blocks/header/header.scss 3:17  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  position: relative;
-  width: 20px;
-}
-.block.header nav .nav-hamburger-icon:before, .block.header nav .nav-hamburger-icon:after {
-  content: "";
-  position: absolute;
-  background: currentcolor;
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  width: 20px;
-}
-.block.header nav .nav-brand {
-  display: inline-flex;
-  width: calc(100% - 150px);
-}
-.block.header nav .nav-brand .text-wrapper {
-  white-space: nowrap;
-}
-.block.header nav .nav-brand .text-wrapper a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  background: var(--color-white);
-  color: var(--color-trex-green);
-  margin: auto;
-  padding: 0.5em 1.2em;
-  line-height: 1.44;
-  border: none;
-}
-.block.header nav .nav-brand .block.image-link img {
-  width: 136px;
-}
-.block.header nav .nav-brand .block.image-link > div:nth-child(2) {
-  display: none;
-}
-.block.header nav .nav-sections {
-  display: flex;
-  width: 100px;
-}
-
-header nav[aria-expanded=false] .nav-hamburger-icon,
-header nav[aria-expanded=false] .nav-hamburger-icon::before,
-header nav[aria-expanded=false] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
-}
-
-header nav[aria-expanded=false] .nav-hamburger-icon::before {
-  top: -6px;
-}
-
-header nav[aria-expanded=false] .nav-hamburger-icon::after {
-  top: 6px;
-}
-
-header nav[aria-expanded=true] .nav-hamburger-icon {
-  height: 22px;
-}
-
-header nav[aria-expanded=true] .nav-hamburger-icon::before,
-header nav[aria-expanded=true] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
-}
-
-header nav[aria-expanded=true] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Top-level selectors may not contain the parent selector "&".\a   \2577 \a 3 \2502  .header-wrapper & {\a   \2502                  ^\a   \2575 \a   blocks/header/header.scss 3:17  root stylesheet';
 }
