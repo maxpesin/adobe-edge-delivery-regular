@@ -27,7 +27,17 @@
   width: 20px;
 }
 .block.header nav .nav-brand {
+  display: inline-flex;
   width: calc(100% - 150px);
+}
+.block.header nav .nav-brand .text-wrapper {
+  white-space: nowrap;
+}
+.block.header nav .nav-brand .text-wrapper a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
 }
 .block.header nav .nav-sections {
   display: flex;

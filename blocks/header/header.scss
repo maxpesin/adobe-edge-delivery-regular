@@ -8,7 +8,7 @@
 
         .nav-hamburger {
             width: 50px;
-            
+
             @media (width >= $breakpoint-lg) {
                 display: none;
                 visibility: hidden;
@@ -34,7 +34,19 @@
         }
 
         .nav-brand {
+            display: inline-flex;
             width: calc(100% - 150px);
+
+            .text-wrapper {
+                white-space: nowrap;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
         }
 
         .nav-sections {
