@@ -2,6 +2,21 @@
 
 .block.header {
 
+    @media (width >= $breakpoint-md) {
+        max-width: 720px;
+    }
+
+    @media (width >= $breakpoint-lg) {
+        max-width: 960px;
+    }
+
+    @media (width >= $breakpoint-xl) {
+        max-width: 1140px;
+    }
+
+    @media (width >= $breakpoint-xxl) {
+        max-width: 1320px;
+    }
     nav {
         display: flex;
         flex-wrap: wrap;
