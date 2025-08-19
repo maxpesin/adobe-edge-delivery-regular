@@ -65,7 +65,8 @@
 .block.header nav .nav-hamburger button {
   background: transparent;
   color: #00493d;
-  margin: 0;
+  margin: 5px 0 0;
+  padding: 16px 10px 11px;
 }
 .block.header nav .nav-hamburger button:focus, .block.header nav .nav-hamburger button:active {
   border: none;
