@@ -51,6 +51,7 @@
     }
 }
 
+/* Utility Navigation */
 main {
     > div:first-child {
         &.section.fragment-container {
@@ -68,9 +69,9 @@ main {
                 max-width: 960px;
             }
 
-            @media (width >= $breakpoint-xl) {
-                max-width: 1000px;
-            }
+            // @media (width >= $breakpoint-xl) {
+            //     max-width: 1000px;
+            // }
 
             // @media (width >= $breakpoint-xxl) {
             //     max-width: 1000px;
