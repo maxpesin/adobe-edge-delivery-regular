@@ -2,6 +2,10 @@
 
 .header-wrapper {
     background: var(--color-white-smoke);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    height: 58px;
 }
 
 .block.header {
@@ -75,6 +79,7 @@
                     padding: 0.5em 1.2em;
                     line-height: 1.44;
                     border: none;
+                    letter-spacing: 1px;
                 }
             }
 
@@ -91,7 +96,17 @@
         .nav-sections {
             display: flex;
             width: 100px;
+
+            .block.accordion {
+                > div:first-child {
+                    p {
+                        white-space: nowrap
+                        ;
+                    }
+                }
+            }
         }
+
     }
 }
 

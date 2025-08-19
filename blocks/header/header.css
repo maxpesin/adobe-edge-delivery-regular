@@ -1,5 +1,9 @@
 .header-wrapper {
   background: var(--color-white-smoke);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 58px;
 }
 
 .block.header nav {
@@ -71,6 +75,7 @@
   padding: 0.5em 1.2em;
   line-height: 1.44;
   border: none;
+  letter-spacing: 1px;
 }
 .block.header nav .nav-brand .block.image-link img {
   width: 136px;
@@ -81,6 +86,9 @@
 .block.header nav .nav-sections {
   display: flex;
   width: 100px;
+}
+.block.header nav .nav-sections .block.accordion > div:first-child p {
+  white-space: nowrap;
 }
 
 header nav[aria-expanded=false] .nav-hamburger-icon,
