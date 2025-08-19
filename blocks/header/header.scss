@@ -41,8 +41,8 @@
             height: inherit;
 
             @media (width >= $breakpoint-lg) {
-                // display: none;
-                // visibility: hidden;
+                display: none;
+                visibility: hidden;
             }
 
             button {
