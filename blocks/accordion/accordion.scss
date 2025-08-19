@@ -54,7 +54,7 @@
 main {
     > div:first-child {
         &.section.fragment-container {
-            .fragment-wrapper {
+            .fragment-wrapper > div {
             display: flex;
             width: 100%;
             margin: 0 auto;

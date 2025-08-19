@@ -27,52 +27,52 @@
   padding-left: 10px;
 }
 
-main > div:first-child.section.fragment-container .fragment-wrapper {
+main > div:first-child.section.fragment-container .fragment-wrapper > div {
   display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 58px 0 0;
 }
 @media (width >= 768px) {
-  main > div:first-child.section.fragment-container .fragment-wrapper {
+  main > div:first-child.section.fragment-container .fragment-wrapper > div {
     max-width: 720px;
   }
 }
 @media (width >= 992px) {
-  main > div:first-child.section.fragment-container .fragment-wrapper {
+  main > div:first-child.section.fragment-container .fragment-wrapper > div {
     max-width: 960px;
   }
 }
 @media (width >= 1200px) {
-  main > div:first-child.section.fragment-container .fragment-wrapper {
+  main > div:first-child.section.fragment-container .fragment-wrapper > div {
     max-width: 1000px;
   }
 }
-main > div:first-child.section.fragment-container .fragment-wrapper > .accordion-wrapper {
+main > div:first-child.section.fragment-container .fragment-wrapper > div > .accordion-wrapper {
   margin: 35px 0 25px;
   flex: 1;
   position: relative;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper > .text-wrapper {
+main > div:first-child.section.fragment-container .fragment-wrapper > div > .text-wrapper {
   margin: 35px 0 0;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper > .text-wrapper .button-container {
+main > div:first-child.section.fragment-container .fragment-wrapper > div > .text-wrapper .button-container {
   margin: 0;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper > div:last-child .button-container a {
+main > div:first-child.section.fragment-container .fragment-wrapper > div > div:last-child .button-container a {
   border: none;
   background: transparent;
   margin: 0;
   padding: 0;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:first-child p {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:first-child p {
   white-space: nowrap;
   font-weight: 400;
   margin: 0;
   position: relative;
   justify-content: center;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:first-child p:after {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:first-child p:after {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid;
@@ -85,29 +85,29 @@ main > div:first-child.section.fragment-container .fragment-wrapper .block.accor
   rotate: 360deg;
   margin-left: 10px;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion.open > div:first-child p:after {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion.open > div:first-child p:after {
   rotate: 180deg;
   transform: translateY(0);
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:nth-child(2) {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) {
   position: absolute;
   width: 100%;
   background: white;
   margin-top: 25px;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:nth-child(2) .accordion-body {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) .accordion-body {
   margin: 0;
   padding: 0;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:nth-child(2) ul {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:nth-child(2) a {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) a {
   text-decoration: none;
   color: #333;
 }
-main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:nth-child(2) a:hover, main > div:first-child.section.fragment-container .fragment-wrapper .block.accordion > div:nth-child(2) a:focus {
+main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) a:hover, main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) a:focus {
   text-decoration: underline;
 }
