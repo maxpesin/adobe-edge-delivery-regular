@@ -117,11 +117,17 @@
   border-top: 5px solid;
   position: absolute;
   right: 36px;
+  top: -8px;
+  rotate: 0deg;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
   background-image: unset;
   width: unset;
-  margin: 0;
+  margin: 360deg;
+  transform: translateY(100%);
+}
+.block.header nav .nav-sections .block.accordion .open > div:first-child p:after {
+  rotate: 180deg;
 }
 
 header nav[aria-expanded=false] .nav-hamburger-icon,

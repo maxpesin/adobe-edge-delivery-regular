@@ -139,12 +139,22 @@
                             // margin-top: -3px;
                             position: absolute;
                             right: 36px;
-                            // top: 50%;
+                            top: -8px;
+                            rotate: 0deg;
                             -webkit-transform: translateY(50%);
                             transform: translateY(50%);
                             background-image: unset;
                             width: unset;
-                            margin: 0;
+                            margin: 360deg;
+                            transform: translateY(100%);
+                        }
+                    }
+                }
+
+                .open {
+                    > div:first-child {
+                        p:after {
+                            rotate: 180deg;
                         }
                     }
                 }
