@@ -127,6 +127,14 @@
                     margin: 0;
                     height: 24px;
                 }
+                .text-wrapper {
+                    a {
+                        border: none;
+                        background: transparent;
+                        display: revert;
+                        padding: 0;
+                    }
+                }
             }
 
             .block.accordion {

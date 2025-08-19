@@ -78,6 +78,7 @@ main {
             .accordion-wrapper {
                 margin: 35px 0 0;
                 flex: 1;
+                position: relative;
             }
 
             .block.accordion {
@@ -100,9 +101,9 @@ main {
                             border-left: 5px solid transparent;
                             border-right: 5px solid transparent;
                             border-top: 5px solid;
-                            position: absolute;
-                            right: -20px;
-                            top: 3px;
+                            // position: absolute;
+                            // right: -20px;
+                            // top: 3px;
                             rotate: 0deg;
                             -webkit-transform: translateY(50%);
                             transform: translateY(50%);
@@ -110,7 +111,7 @@ main {
                             width: unset;
                             height: 4px;
                             rotate: 360deg;
-                            transform: translateY(100%);
+                            // transform: translateY(100%);
                         }
                     }
                 }
@@ -119,13 +120,16 @@ main {
                     > div:first-child {
                         p:after {
                             rotate: 180deg;
-                            top: 16px;
+                            transform: translateY(0);
                         }
                     }
                 }
 
                 > div:nth-child(2) {
                     position: absolute;
+                    width: 100%;
+                    background: white;
+                    margin-top: 27px;
 
                     .accordion-body {
                         margin: 0;

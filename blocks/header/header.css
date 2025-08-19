@@ -110,6 +110,12 @@
   margin: 0;
   height: 24px;
 }
+.block.header nav .nav-sections > div:nth-child(2) .text-wrapper a {
+  border: none;
+  background: transparent;
+  display: revert;
+  padding: 0;
+}
 .block.header nav .nav-sections .block.accordion > div:first-child p {
   white-space: nowrap;
   text-transform: uppercase;
