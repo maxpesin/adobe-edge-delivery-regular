@@ -127,7 +127,6 @@
 }
 .block.header nav .nav-brand .block.image-link {
   width: 85px;
-  position: relative;
 }
 @media (width >= 768px) {
   .block.header nav .nav-brand .block.image-link {
