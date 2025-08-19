@@ -127,15 +127,26 @@
   letter-spacing: 1px;
 }
 .block.header nav .nav-brand .block.image-link {
-  width: 136px;
+  width: 85px;
+}
+@media (width >= 992px) {
+  .block.header nav .nav-brand .block.image-link {
+    width: 136px;
+  }
 }
 .block.header nav .nav-brand .block.image-link a {
   position: absolute;
   background: transparent;
-  top: 12px;
+  top: 4px;
+  left: 0;
   border: none;
   margin: 0;
   padding: 0;
+}
+@media (width >= 992px) {
+  .block.header nav .nav-brand .block.image-link a {
+    top: 12px;
+  }
 }
 .block.header nav .nav-brand .block.image-link img {
   width: 136px;

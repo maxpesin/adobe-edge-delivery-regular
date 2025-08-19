@@ -151,15 +151,24 @@
             }
 
             .block.image-link {
-                width: 136px;
+                width: 85px;
+
+                    @media (width >= $breakpoint-lg) {
+                        width: 136px;
+                    }
 
                 a {
                     position: absolute;
                     background: transparent;
-                    top: 12px;
+                    top: 4px;
+                    left: 0;
                     border: none;
                     margin: 0;
                     padding: 0;
+
+                    @media (width >= $breakpoint-lg) {
+                        top: 12px;
+                    }
                 }
 
                 img {
