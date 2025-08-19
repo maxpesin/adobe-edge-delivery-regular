@@ -48,14 +48,22 @@ main > div:first-child.section.accordion-container {
     max-width: 1000px;
   }
 }
-main > div:first-child.section.accordion-container .accordion-wrapper {
-  margin: 35px 0 0;
+main > div:first-child.section.accordion-container > .accordion-wrapper {
+  margin: 35px 0 25px;
   flex: 1;
   position: relative;
+}
+main > div:first-child.section.accordion-container > .text-wrapper {
+  margin: 35px 0 0;
+}
+main > div:first-child.section.accordion-container > .text-wrapper .button-container {
+  margin: 0;
 }
 main > div:first-child.section.accordion-container > div:last-child .button-container a {
   border: none;
   background: transparent;
+  margin: 0;
+  padding: 0;
 }
 main > div:first-child.section.accordion-container .block.accordion > div:first-child p {
   white-space: nowrap;

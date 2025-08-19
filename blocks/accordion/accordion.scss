@@ -75,16 +75,25 @@ main {
             //     max-width: 1000px;
             // }
 
-            .accordion-wrapper {
-                margin: 35px 0 0;
+            > .accordion-wrapper {
+                margin: 35px 0 25px;
                 flex: 1;
                 position: relative;
+            }
+            > .text-wrapper {
+                margin: 35px 0 0;
+
+                .button-container {
+                    margin: 0;
+                }
             }
 
             > div:last-child {
                 .button-container a {
                     border: none;
                     background: transparent;
+                    margin: 0;
+                    padding: 0;
                 }
             }
 
