@@ -167,6 +167,10 @@
   font-weight: 600;
   text-decoration: none;
 }
+.block.header nav .nav-tools {
+  display: inline-flex;
+  justify-content: space-around;
+}
 
 header nav[aria-expanded=false] .nav-hamburger-icon,
 header nav[aria-expanded=false] .nav-hamburger-icon::before,

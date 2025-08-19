@@ -321,6 +321,23 @@
     "id": "accordion",
     "fields": [
       {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Style Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Call to Action Button",
+            "value": "accordion-cta-button"
+          }
+        ]
+      },
+      {
           "component": "text",
           "name": "title",
           "label": "Accordion Title"
