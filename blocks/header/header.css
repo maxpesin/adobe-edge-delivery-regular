@@ -68,6 +68,7 @@
 }
 .block.header nav .nav-brand .text-wrapper p {
   margin: 0;
+  height: 34px;
 }
 .block.header nav .nav-brand .text-wrapper a {
   text-decoration: none;
