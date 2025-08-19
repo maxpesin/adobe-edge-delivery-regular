@@ -33,6 +33,10 @@
         max-width: 1320px;
     }
 
+    .nav-hamburger-icon {
+        cursor: pointer;
+    }
+
     &[aria-expanded='false'] {
         .nav-hamburger-icon {
             &:before {
@@ -75,8 +79,10 @@
             button {
                 background: transparent;
                 color: #00493d;
+                margin: 0;
 
-                &:focus {
+                &:focus,
+                &:active {
                     border: none;
                 }
             }
@@ -105,13 +111,14 @@
         .nav-brand {
             height: inherit;
             display: inline-flex;
-            width: calc(100% - 200px);
+            width: calc(100% - 100px);
             justify-content: center;
             align-items: center;
             height: inherit;
             // gap: 20px;
 
             @media (width >= $breakpoint-lg) {
+                width: calc(100% - 200px);
                 gap: 20px;
             }
 
@@ -170,8 +177,12 @@
             height: inherit;
             display: flex;
             align-items: center;
-            width: 150px;
+            width: 50px;
             justify-content: end;
+
+            @media (width >= $breakpoint-lg) {
+                width: 150px;
+            }
 
             > div:first-child {
                 width: 150px;
