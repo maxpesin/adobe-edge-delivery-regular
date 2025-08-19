@@ -84,10 +84,16 @@
 .block.header nav .nav-brand .block.image-link {
   width: 136px;
 }
+.block.header nav .nav-brand .block.image-link a {
+  position: absolute;
+  background: transparent;
+  top: 12px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 .block.header nav .nav-brand .block.image-link img {
   width: 136px;
-  position: absolute;
-  top: 14px;
 }
 .block.header nav .nav-brand .block.image-link > div:nth-child(2) {
   display: none;

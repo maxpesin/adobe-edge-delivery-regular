@@ -97,10 +97,17 @@
             .block.image-link {
                 width: 136px;
 
+                a {
+                    position: absolute;
+                    background: transparent;
+                    top: 12px;
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
                 img {
                     width: 136px;
-                    position: absolute;
-                    top: 14px;
                 }
                 > div:nth-child(2) {
                     display: none;
