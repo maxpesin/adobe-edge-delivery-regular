@@ -31,13 +31,39 @@ main > div:first-child.section.accordion-container {
   display: inline-flex;
   width: 100%;
 }
+@media (width >= 768px) {
+  main > div:first-child.section.accordion-container {
+    max-width: 720px;
+  }
+}
+@media (width >= 992px) {
+  main > div:first-child.section.accordion-container {
+    max-width: 960px;
+  }
+}
+@media (width >= 1200px) {
+  main > div:first-child.section.accordion-container {
+    max-width: 1140px;
+  }
+}
+@media (width >= 1400px) {
+  main > div:first-child.section.accordion-container {
+    max-width: 1320px;
+  }
+}
+main > div:first-child.section.accordion-container .block.accordion > div:first-child p {
+  white-space: nowrap;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+}
 main > div:first-child.section.accordion-container .block.accordion > div:first-child p:after {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid;
   position: absolute;
-  right: 36px;
-  top: -4px;
+  right: -20px;
+  top: 3px;
   rotate: 0deg;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
@@ -50,4 +76,12 @@ main > div:first-child.section.accordion-container .block.accordion > div:first-
 main > div:first-child.section.accordion-container .block.accordion.open > div:first-child p:after {
   rotate: 180deg;
   top: 10px;
+}
+main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) {
+  position: absolute;
+}
+main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
