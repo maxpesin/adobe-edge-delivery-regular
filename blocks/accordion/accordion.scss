@@ -154,6 +154,8 @@ main {
                     width: 100%;
                     background: white;
                     margin-top: 25px;
+                    text-align: left;
+                    padding: 32px 40px;
 
                     .accordion-body {
                         margin: 0;
@@ -164,6 +166,12 @@ main {
                         list-style: none;
                         padding: 0;
                         margin: 0;
+                    }
+
+                    li {
+                        white-space: nowrap;
+                        margin-top: 16px;
+                        padding-bottom: 4px;
                     }
 
                     a {
