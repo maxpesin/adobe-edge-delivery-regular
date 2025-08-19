@@ -158,6 +158,31 @@
                         }
                     }
                 }
+
+                > div:nth-child(2) {
+                    position: absolute;
+                    padding: 0;
+                    width: 112px;
+                    text-align: center;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        background: #ecede8;
+
+                    }
+
+                    li {
+                        margin: 8px auto;
+                    }
+
+                    a {
+                        text-transform: uppercase;
+                        font-weight: 14px;
+                        text-decoration: none
+                    }
+                }
             }
         }
 
