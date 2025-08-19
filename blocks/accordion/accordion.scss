@@ -53,7 +53,8 @@
 
 main {
     > div:first-child {
-        &.section.accordion-container{
+        &.section.fragment-container {
+            .fragment-wrapper {
             display: flex;
             width: 100%;
             margin: 0 auto;
@@ -146,7 +147,7 @@ main {
                     position: absolute;
                     width: 100%;
                     background: white;
-                    margin-top: 27px;
+                    margin-top: 25px;
 
                     .accordion-body {
                         margin: 0;
@@ -170,6 +171,8 @@ main {
                     }
                 }
             }
+            }
+
 
         }
     }
