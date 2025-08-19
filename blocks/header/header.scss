@@ -79,7 +79,7 @@
             button {
                 background: transparent;
                 color: #00493d;
-                margin: 5px 0 0;
+                // margin: 5px 0 0;
                 padding: 16px 10px 11px;
 
                 &:focus,
@@ -152,10 +152,15 @@
 
             .block.image-link {
                 width: 85px;
+                position: relative;
 
-                    @media (width >= $breakpoint-lg) {
+                    @media (width >= $breakpoint-md) {
                         width: 136px;
                     }
+
+                    // @media (width >= $breakpoint-lg) {
+                    //     width: 136px;
+                    // }
 
                 a {
                     position: absolute;
@@ -166,7 +171,7 @@
                     margin: 0;
                     padding: 0;
 
-                    @media (width >= $breakpoint-lg) {
+                    @media (width >= $breakpoint-md) {
                         top: 12px;
                         left: unset;
                     }
@@ -175,7 +180,7 @@
                 img {
                     width: 85px;
 
-                    @media (width >= $breakpoint-lg) {
+                    @media (width >= $breakpoint-md) {
                         width: 136px;
                     }
                 }
