@@ -68,12 +68,12 @@ main {
             }
 
             @media (width >= $breakpoint-xl) {
-                max-width: 1140px;
+                max-width: 1000px;
             }
 
-            @media (width >= $breakpoint-xxl) {
-                max-width: 1320px;
-            }
+            // @media (width >= $breakpoint-xxl) {
+            //     max-width: 1000px;
+            // }
 
             .accordion-wrapper {
                 margin: 35px 0 0;
