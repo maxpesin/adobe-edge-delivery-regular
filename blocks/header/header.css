@@ -149,7 +149,12 @@
   }
 }
 .block.header nav .nav-brand .block.image-link img {
-  width: 136px;
+  width: 85px;
+}
+@media (width >= 992px) {
+  .block.header nav .nav-brand .block.image-link img {
+    width: 136px;
+  }
 }
 .block.header nav .nav-brand .block.image-link > div:nth-child(2) {
   display: none;

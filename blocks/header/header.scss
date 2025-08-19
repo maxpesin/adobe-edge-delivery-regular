@@ -172,7 +172,11 @@
                 }
 
                 img {
-                    width: 136px;
+                    width: 85px;
+
+                    @media (width >= $breakpoint-lg) {
+                        width: 136px;
+                    }
                 }
                 > div:nth-child(2) {
                     display: none;
