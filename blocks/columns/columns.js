@@ -3,6 +3,7 @@
 import { decorateBlocks, loadBlocks } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
+  console.log("🚀 ~ decorate ~ block:", block)
   // how many columns in the first row (for styling hooks)
   const cols = [...(block.firstElementChild?.children || [])];
   if (cols.length) block.classList.add(`columns-${cols.length}-cols`);
