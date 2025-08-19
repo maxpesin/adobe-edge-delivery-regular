@@ -53,7 +53,7 @@
 
 main {
     > div:first-child {
-        &:has(.accordion-container) {
+        &.section.accordion-container{
             display: inline-flex;
             width: 100%;
 
