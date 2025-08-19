@@ -64,9 +64,15 @@
             display: inline-flex;
             width: calc(100% - 150px);
             justify-content: center;
+            align-items: center;
+            height: 58px;
 
             .text-wrapper {
                 white-space: nowrap;
+
+                p {
+                    margin: 0;
+                }
 
                 a {
                     text-decoration: none;
@@ -84,8 +90,12 @@
             }
 
             .block.image-link {
+                width: 136px;
+
                 img {
                     width: 136px;
+                    position: absolute;
+                    top: 14px;
                 }
                 > div:nth-child(2) {
                     display: none;
@@ -100,8 +110,10 @@
             .block.accordion {
                 > div:first-child {
                     p {
-                        white-space: nowrap
-                        ;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        letter-spacing: 1px;
                     }
                 }
             }
