@@ -139,13 +139,13 @@
                             // margin-top: -3px;
                             position: absolute;
                             right: 36px;
-                            top: -8px;
+                            top: -20px;
                             rotate: 0deg;
                             -webkit-transform: translateY(50%);
                             transform: translateY(50%);
                             background-image: unset;
                             width: unset;
-                            margin: 360deg;
+                            rotate: 360deg;
                             transform: translateY(100%);
                         }
                     }
@@ -164,6 +164,7 @@
                     padding: 0;
                     width: 112px;
                     text-align: center;
+                    margin-top: 20px;
 
                     ul {
                         list-style: none;
@@ -175,7 +176,14 @@
                     }
 
                     li {
-                        margin: 8px auto;
+                        margin: 0 auto;
+
+                        &:first-child {
+                            padding: 8px 0 4px;
+                        }
+                        &:nth-child(2) {
+                            padding: 4px 0 8px;
+                        }
                     }
 
                     a {
