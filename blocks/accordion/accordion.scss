@@ -81,6 +81,13 @@ main {
                 position: relative;
             }
 
+            > div:last-child {
+                .button-container a {
+                    border: none;
+                    background: transparent;
+                }
+            }
+
             .block.accordion {
                 > div:first-child {
                     // padding-top: 25px;
@@ -111,6 +118,7 @@ main {
                             width: unset;
                             height: 4px;
                             rotate: 360deg;
+                            margin-left: 10px;
                             // transform: translateY(100%);
                         }
                     }

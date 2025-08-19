@@ -53,6 +53,10 @@ main > div:first-child.section.accordion-container .accordion-wrapper {
   flex: 1;
   position: relative;
 }
+main > div:first-child.section.accordion-container > div:last-child .button-container a {
+  border: none;
+  background: transparent;
+}
 main > div:first-child.section.accordion-container .block.accordion > div:first-child p {
   white-space: nowrap;
   font-weight: 400;
@@ -71,6 +75,7 @@ main > div:first-child.section.accordion-container .block.accordion > div:first-
   width: unset;
   height: 4px;
   rotate: 360deg;
+  margin-left: 10px;
 }
 main > div:first-child.section.accordion-container .block.accordion.open > div:first-child p:after {
   rotate: 180deg;
