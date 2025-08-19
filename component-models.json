@@ -433,7 +433,7 @@
     ]
   },
   {
-    "id": "imagelink",
+    "id": "image-link",
     "fields": [
       {
         "component": "select",
@@ -448,7 +448,7 @@
           },
           {
             "name": "Image Link Style",
-            "value": "imagelink-style"
+            "value": "image-link-style"
           }
         ]
       },
