@@ -193,7 +193,7 @@
         },
         {
           "title": "Image Link",
-          "id": "imagelink",
+          "id": "image-link",
           "plugins": {
             "xwalk": {
               "page": {
