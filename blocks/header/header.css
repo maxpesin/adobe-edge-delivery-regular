@@ -153,13 +153,14 @@
   letter-spacing: 1px;
   margin: 0;
   position: relative;
+  justify-content: center;
 }
 .block.header nav .nav-sections .block.accordion > div:first-child p:after {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid;
   position: absolute;
-  right: 36px;
+  right: 12px;
   top: -4px;
   rotate: 0deg;
   -webkit-transform: translateY(50%);
