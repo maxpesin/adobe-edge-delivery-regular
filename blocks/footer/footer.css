@@ -20,6 +20,9 @@ footer .footer.block > div {
 footer .footer.block > div p {
   margin: 0;
 }
+footer .footer.block .section:first-child {
+  padding-bottom: 24px;
+}
 footer .footer.block .section:first-child .block.columns > div {
   align-items: start;
 }
@@ -27,7 +30,7 @@ footer .footer.block .section:first-child .block.columns > div > div {
   border-top: 1px solid #797979;
   padding-top: 24px;
 }
-footer .footer.block .section:first-child .block.columns > div > div p {
+footer .footer.block .section:first-child .block.columns > div > div p:first-child {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;
