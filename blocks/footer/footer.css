@@ -68,7 +68,9 @@ footer .footer.block .section:first-child .block.columns > div > div:last-child 
 footer .footer.block .section:first-child .block.columns > div a {
   color: white;
   font-size: 14px;
+  font-weight: 300;
   text-decoration: none;
+  text-transform: none;
 }
 footer .footer.block .section:first-child .columns-wrapper:not(:first-child) > div > div {
   font-size: 12px;
