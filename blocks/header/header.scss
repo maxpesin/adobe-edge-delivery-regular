@@ -136,15 +136,15 @@
                             border-right: 5px solid transparent;
                             border-top: 5px solid;
                             // content: "";
-                            margin-top: -3px;
+                            // margin-top: -3px;
                             position: absolute;
-                            right: 50px;
+                            right: 36px;
                             // top: 50%;
                             -webkit-transform: translateY(50%);
                             transform: translateY(50%);
                             background-image: unset;
-                            // width: unset;
-                            // hei
+                            width: unset;
+                            margin: 0;
                         }
                     }
                 }
