@@ -110,7 +110,16 @@
         .nav-sections {
             height: inherit;
             display: flex;
+            align-items: center;
             width: 150px;
+
+            > div:first-child {
+                width: 150px;
+            }
+
+            > div:nth-child(2) {
+                width: 50px;
+            }
 
             .block.accordion {
                 > div:first-child {
@@ -119,18 +128,20 @@
                         text-transform: uppercase;
                         font-size: 14px;
                         letter-spacing: 1px;
+                        margin: 0;
 
                         &:after {
                             border-left: 5px solid transparent;
                             border-right: 5px solid transparent;
                             border-top: 5px solid;
-                            content: "";
+                            content: "▼";
                             margin-top: -3px;
-                            position: absolute;
+                            // position: absolute;
                             right: 9pt;
                             top: 50%;
                             -webkit-transform: translateY(50%);
                             transform: translateY(50%);
+                            background-image: unset;
                         }
                     }
                 }
