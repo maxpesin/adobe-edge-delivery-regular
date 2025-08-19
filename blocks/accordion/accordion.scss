@@ -54,12 +54,16 @@
 /* Utility Navigation */
 main {
     > div:first-child {
+
         &.section.fragment-container {
-            .fragment-wrapper > div {
-            display: flex;
+            .fragment-wrapper {
+                padding: 58px 0 0;
+
+                > div {
             width: 100%;
             margin: 0 auto;
-            padding: 58px 0 0;
+            
+            display: none;
 
             @media (width >= $breakpoint-md) {
                 max-width: 720px;
@@ -67,6 +71,7 @@ main {
 
             @media (width >= $breakpoint-lg) {
                 max-width: 960px;
+                display: flex;
             }
 
             // @media (width >= $breakpoint-xl) {
@@ -173,6 +178,7 @@ main {
                 }
             }
             }
+            } 
 
 
         }

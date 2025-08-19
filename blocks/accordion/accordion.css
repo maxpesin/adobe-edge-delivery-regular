@@ -28,11 +28,13 @@
 }
 
 /* Utility Navigation */
+main > div:first-child.section.fragment-container .fragment-wrapper {
+  padding: 58px 0 0;
+}
 main > div:first-child.section.fragment-container .fragment-wrapper > div {
-  display: flex;
   width: 100%;
   margin: 0 auto;
-  padding: 58px 0 0;
+  display: none;
 }
 @media (width >= 768px) {
   main > div:first-child.section.fragment-container .fragment-wrapper > div {
@@ -42,6 +44,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div {
 @media (width >= 992px) {
   main > div:first-child.section.fragment-container .fragment-wrapper > div {
     max-width: 960px;
+    display: flex;
   }
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div > .accordion-wrapper {
