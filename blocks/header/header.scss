@@ -8,6 +8,8 @@
     height: 58px;
 }
 
+header nav[aria-expanded='false'] .nav-hamburger-icon
+
 .block.header {
 
     nav {
@@ -33,6 +35,33 @@
         max-width: 1320px;
     }
 
+    &[aria-expanded='false'] {
+        .nav-hamburger-icon {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url('../../icons/icon-hamburger.svg') no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+
+
+    &[aria-expanded='true'] {
+        .nav-hamburger-icon {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url('../../icons/icon-close.svg') no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+
 // --------------------------------------------
 // Navigation - Hamburger
 // --------------------------------------------
@@ -48,6 +77,10 @@
             button {
                 background: transparent;
                 color: #00493d;
+
+                &:focus {
+                    border: none;
+                }
             }
         }
 
@@ -78,7 +111,11 @@
             justify-content: center;
             align-items: center;
             height: inherit;
-            gap: 20px;
+            // gap: 20px;
+
+            @media (width >= $breakpoint-lg) {
+                gap: 20px;
+            }
 
             .text-wrapper {
                 white-space: nowrap;
@@ -270,39 +307,39 @@
 //   background: currentcolor;
 // }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
-}
+// header nav[aria-expanded='false'] .nav-hamburger-icon,
+// header nav[aria-expanded='false'] .nav-hamburger-icon::before,
+// header nav[aria-expanded='false'] .nav-hamburger-icon::after {
+//   height: 2px;
+//   border-radius: 2px;
+//   background: currentcolor;
+// }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-  top: -6px;
-}
+// header nav[aria-expanded='false'] .nav-hamburger-icon::before {
+//   top: -6px;
+// }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  top: 6px;
-}
+// header nav[aria-expanded='false'] .nav-hamburger-icon::after {
+//   top: 6px;
+// }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
-}
+// header nav[aria-expanded='true'] .nav-hamburger-icon {
+//   height: 22px;
+// }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
-}
+// header nav[aria-expanded='true'] .nav-hamburger-icon::before,
+// header nav[aria-expanded='true'] .nav-hamburger-icon::after {
+//   top: 3px;
+//   left: 1px;
+//   transform: rotate(45deg);
+//   transform-origin: 2px 1px;
+//   width: 24px;
+//   height: 2px;
+//   border-radius: 2px;
+// }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
-}
+// header nav[aria-expanded='true'] .nav-hamburger-icon::after {
+//   top: unset;
+//   bottom: 3px;
+//   transform: rotate(-45deg);
+// }
