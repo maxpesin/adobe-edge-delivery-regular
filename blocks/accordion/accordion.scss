@@ -88,8 +88,6 @@ main {
                             border-left: 5px solid transparent;
                             border-right: 5px solid transparent;
                             border-top: 5px solid;
-                            // content: "";
-                            // margin-top: -3px;
                             position: absolute;
                             right: -20px;
                             top: 3px;
@@ -109,7 +107,7 @@ main {
                     > div:first-child {
                         p:after {
                             rotate: 180deg;
-                            top: 10px;
+                            top: 16px;
                         }
                     }
                 }
@@ -117,10 +115,25 @@ main {
                 > div:nth-child(2) {
                     position: absolute;
 
+                    .accordion-body {
+                        margin: 0;
+                        padding: 0;
+                    }
+
                     ul {
                         list-style: none;
                         padding: 0;
                         margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+
+                        &:hover,
+                        &:focus {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }

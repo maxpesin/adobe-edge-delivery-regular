@@ -75,13 +75,24 @@ main > div:first-child.section.accordion-container .block.accordion > div:first-
 }
 main > div:first-child.section.accordion-container .block.accordion.open > div:first-child p:after {
   rotate: 180deg;
-  top: 10px;
+  top: 16px;
 }
 main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) {
   position: absolute;
+}
+main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) .accordion-body {
+  margin: 0;
+  padding: 0;
 }
 main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) a:hover, main > div:first-child.section.accordion-container .block.accordion > div:nth-child(2) a:focus {
+  text-decoration: underline;
 }
