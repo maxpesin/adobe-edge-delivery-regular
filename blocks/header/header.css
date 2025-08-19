@@ -126,7 +126,7 @@
   rotate: 360deg;
   transform: translateY(100%);
 }
-.block.header nav .nav-sections .block.accordion .open > div:first-child p:after {
+.block.header nav .nav-sections .block.accordion.open > div:first-child p:after {
   rotate: 180deg;
 }
 .block.header nav .nav-sections .block.accordion > div:nth-child(2) {
@@ -150,7 +150,7 @@
   padding: 8px 0 4px;
 }
 .block.header nav .nav-sections .block.accordion > div:nth-child(2) li:nth-child(2) {
-  padding: 4px 0 8px;
+  padding: 4px 0 12px;
 }
 .block.header nav .nav-sections .block.accordion > div:nth-child(2) a {
   text-transform: uppercase;

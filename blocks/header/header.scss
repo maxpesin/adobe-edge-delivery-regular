@@ -151,7 +151,7 @@
                     }
                 }
 
-                .open {
+                &.open {
                     > div:first-child {
                         p:after {
                             rotate: 180deg;
@@ -182,7 +182,7 @@
                             padding: 8px 0 4px;
                         }
                         &:nth-child(2) {
-                            padding: 4px 0 8px;
+                            padding: 4px 0 12px;
                         }
                     }
 
