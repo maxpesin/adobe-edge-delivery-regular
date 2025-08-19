@@ -52,6 +52,21 @@ footer {
                                 line-height: 1.43;
                                 padding-bottom: 5px;
                             }
+
+                            &:last-child {
+                                li:has(img) {
+                                    display: inline-flex;
+
+                                    a {
+                                        width: 40px;
+                                    }
+
+                                    img {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                            }
                         }
 
                         a {
@@ -151,40 +166,12 @@ footer {
                             text-decoration: none;
                             padding: 10px 15px;
                             transition: all 0.3s;
+                            height: 20px;
+                            align-items: center;
 
                             &:hover,
                             &:focus {
                                 background-color: #bbb;
-                            }
-
-                            &[title="United States"] {
-                                &:before {
-                                    content: '';
-                                    width: 20px;
-                                    height: 20px;
-                                    background: url('../../icons/USFlag.svg') no-repeat center;
-                                    background-size: contain;
-                                }
-                            }
-
-                            &[title="United Kingdom"] {
-                                &:before {
-                                    content: '';
-                                    width: 20px;
-                                    height: 20px;
-                                    background: url('../../icons/UnitedKingdomFlag.svg') no-repeat center;
-                                    background-size: contain;
-                                }
-                            }
-
-                            &[title="Mexico"] {
-                                &:before {
-                                    content: '';
-                                    width: 20px;
-                                    height: 20px;
-                                    background: url('../../icons/MexicoFlag.svg') no-repeat center;
-                                    background-size: contain;
-                                }
                             }
                         }
                     }

@@ -42,6 +42,16 @@ footer .footer.block .section:first-child .block.columns > div > div li {
   line-height: 1.43;
   padding-bottom: 5px;
 }
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) {
+  display: inline-flex;
+}
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) a {
+  width: 40px;
+}
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) img {
+  width: 40px;
+  height: 40px;
+}
 footer .footer.block .section:first-child .block.columns > div a {
   color: white;
   font-size: 14px;
@@ -121,30 +131,11 @@ footer .footer.block .section:nth-child(3) .accordion.block.open a {
   text-decoration: none;
   padding: 10px 15px;
   transition: all 0.3s;
+  height: 20px;
+  align-items: center;
 }
 footer .footer.block .section:nth-child(3) .accordion.block.open a:hover, footer .footer.block .section:nth-child(3) .accordion.block.open a:focus {
   background-color: #bbb;
-}
-footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United States"]:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../../icons/USFlag.svg") no-repeat center;
-  background-size: contain;
-}
-footer .footer.block .section:nth-child(3) .accordion.block.open a[title="United Kingdom"]:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../../icons/UnitedKingdomFlag.svg") no-repeat center;
-  background-size: contain;
-}
-footer .footer.block .section:nth-child(3) .accordion.block.open a[title=Mexico]:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../../icons/MexicoFlag.svg") no-repeat center;
-  background-size: contain;
 }
 footer .footer.block .section:nth-child(3) .accordion.block p {
   font-size: 14px;
