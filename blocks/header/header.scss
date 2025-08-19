@@ -129,19 +129,22 @@
                         font-size: 14px;
                         letter-spacing: 1px;
                         margin: 0;
+                        position: relative;
 
                         &:after {
                             border-left: 5px solid transparent;
                             border-right: 5px solid transparent;
                             border-top: 5px solid;
-                            content: "▼";
+                            // content: "";
                             margin-top: -3px;
-                            // position: absolute;
-                            right: 9pt;
-                            top: 50%;
+                            position: absolute;
+                            right: 50px;
+                            // top: 50%;
                             -webkit-transform: translateY(50%);
                             transform: translateY(50%);
                             background-image: unset;
+                            // width: unset;
+                            // hei
                         }
                     }
                 }
