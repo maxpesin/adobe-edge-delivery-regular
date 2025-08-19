@@ -35,12 +35,6 @@
 .block.header nav .nav-hamburger {
   width: 50px;
 }
-@media (width >= 992px) {
-  .block.header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
 .block.header nav .nav-hamburger-icon {
   box-sizing: border-box;
   display: block;
@@ -58,7 +52,7 @@
 }
 .block.header nav .nav-brand {
   display: inline-flex;
-  width: calc(100% - 150px);
+  width: calc(100% - 200px);
   justify-content: center;
   align-items: center;
   height: 58px;
@@ -96,7 +90,7 @@
 }
 .block.header nav .nav-sections {
   display: flex;
-  width: 100px;
+  width: 150px;
 }
 .block.header nav .nav-sections .block.accordion > div:first-child p {
   white-space: nowrap;
