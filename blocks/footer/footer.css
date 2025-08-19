@@ -48,8 +48,18 @@ footer .footer.block .section:first-child .block.columns > div > div:last-child 
 footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) a {
   width: 40px;
 }
-footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) img {
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) a:has(.icon-logo-the-home-depot) {
   width: 40px;
+}
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) a:has(.icon-logo-the-home-depot) img {
+  width: 40px;
+  height: 40px;
+}
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) a:has(.icon-logo-lowes) {
+  width: 60px;
+}
+footer .footer.block .section:first-child .block.columns > div > div:last-child li:has(img) a:has(.icon-logo-lowes) img {
+  width: 60px;
   height: 40px;
 }
 footer .footer.block .section:first-child .block.columns > div a {
