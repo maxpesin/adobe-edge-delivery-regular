@@ -54,8 +54,10 @@
 main {
     > div:first-child {
         &.section.accordion-container{
-            display: inline-flex;
+            display: flex;
             width: 100%;
+            margin: 0 auto;
+            padding: 58px 0 0;
 
             @media (width >= $breakpoint-md) {
                 max-width: 720px;
@@ -75,6 +77,10 @@ main {
 
             .block.accordion {
                 > div:first-child {
+                    // padding-top: 25px;
+                    // margin-top: 58px;
+                    // padding-bottom: 0;
+
                     p {
                         white-space: nowrap;
                         // text-transform: uppercase;

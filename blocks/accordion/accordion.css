@@ -28,8 +28,10 @@
 }
 
 main > div:first-child.section.accordion-container {
-  display: inline-flex;
+  display: flex;
   width: 100%;
+  margin: 0 auto;
+  padding: 58px 0 0;
 }
 @media (width >= 768px) {
   main > div:first-child.section.accordion-container {
