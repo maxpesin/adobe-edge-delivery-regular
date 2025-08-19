@@ -55,12 +55,14 @@ main > div:first-child.section.accordion-container {
 }
 main > div:first-child.section.accordion-container .accordion-wrapper {
   margin: 35px 0 0;
+  flex: 1;
 }
 main > div:first-child.section.accordion-container .block.accordion > div:first-child p {
   white-space: nowrap;
   font-weight: 400;
   margin: 0;
   position: relative;
+  justify-content: center;
 }
 main > div:first-child.section.accordion-container .block.accordion > div:first-child p:after {
   border-left: 5px solid transparent;
