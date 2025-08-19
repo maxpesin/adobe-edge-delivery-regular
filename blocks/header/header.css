@@ -66,6 +66,7 @@
   background: transparent;
   color: #00493d;
   padding: 16px 10px 11px;
+  margin: 0;
 }
 .block.header nav .nav-hamburger button:focus, .block.header nav .nav-hamburger button:active {
   border: none;
