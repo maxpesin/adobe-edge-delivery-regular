@@ -3,13 +3,15 @@
 import { decorateBlocks, loadBlocks } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
-  console.log("🚀 ~ decorate ~ block:", block)
+  console.log("🚀 ~ COLUMNS decorate ~ block:", block)
   // how many columns in the first row (for styling hooks)
   const cols = [...(block.firstElementChild?.children || [])];
+  console.log("🚀 ~ decorate ~ cols:", cols)
   if (cols.length) block.classList.add(`columns-${cols.length}-cols`);
 
   // tag rows/cols and mark image-only columns
   [...block.children].forEach((row) => {
+    console.log("🚀 ~ decorate ~ row:", row)
     // optional hooks if you care in CSS
     row.classList.add('columns-row');
 
@@ -33,5 +35,6 @@ export default async function decorate(block) {
 
   // load any nested blocks we just decorated
   const columns = [...block.querySelectorAll(':scope > div > div')];
+  console.log("🚀 ~ decorate ~ columns:", columns)
   await Promise.all(columns.map((col) => loadBlocks(col)));
 }
