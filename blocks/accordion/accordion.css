@@ -95,6 +95,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div .block
   margin-top: 25px;
   text-align: left;
   padding: 32px 40px;
+  z-index: 999;
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:nth-child(2) .accordion-body {
   margin: 0;
