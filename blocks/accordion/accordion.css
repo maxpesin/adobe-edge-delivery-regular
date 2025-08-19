@@ -26,3 +26,28 @@
   margin-top: 8px;
   padding-left: 10px;
 }
+
+main > div:first-child:has(.accordion-container) {
+  display: inline-flex;
+  width: 100%;
+}
+main > div:first-child:has(.accordion-container) .block.accordion > div:first-child p:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid;
+  position: absolute;
+  right: 36px;
+  top: -4px;
+  rotate: 0deg;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  background-image: unset;
+  width: unset;
+  height: 4px;
+  rotate: 360deg;
+  transform: translateY(100%);
+}
+main > div:first-child:has(.accordion-container) .block.accordion.open > div:first-child p:after {
+  rotate: 180deg;
+  top: 10px;
+}
