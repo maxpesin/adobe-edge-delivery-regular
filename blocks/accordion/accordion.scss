@@ -156,12 +156,13 @@ main {
 
                 > div:nth-child(2) {
                     position: absolute;
-                    width: 100%;
+                    // width: 100%;
                     background: white;
-                    margin-top: 27px;
+                    margin-top: 25px;
                     text-align: left;
                     padding: 32px 40px;
                     z-index: 999;
+                    left: -20px;
 
                     .accordion-body {
                         margin: 0;
