@@ -69,7 +69,7 @@
   margin: 0;
 }
 .block.header nav .nav-hamburger button:focus, .block.header nav .nav-hamburger button:hover {
-  border: none;
+  border: 1px solid transparent;
 }
 .block.header nav .nav-hamburger-icon {
   box-sizing: border-box;
