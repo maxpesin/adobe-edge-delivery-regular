@@ -172,6 +172,8 @@
                             font-size: 60px;
                             font-weight: 300;
                             text-transform: unset;
+                            margin-bottom: 0;
+                            color: var(--color-trex-green);
                         }
                     }
 
@@ -206,13 +208,14 @@
                     a {
                         color: var(--color-trex-green);
                         background: unset;
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 700;
                         letter-spacing: 1px;
                         text-decoration: underline;
                         text-underline-offset: 6px;
                         padding: 0 0 6px 0;
                         margin: 0;
+                        text-transform: uppercase;
 
                     }
                 }
