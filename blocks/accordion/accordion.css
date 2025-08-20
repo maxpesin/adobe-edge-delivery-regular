@@ -56,7 +56,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div > .acc
   padding: 25px 0 12px;
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div > .accordion-wrapper:nth-child(5) p {
-  margin: 0 32px 0 16px;
+  margin: 0 32px 0 16px !important;
   background: var(--color-trex-green);
   padding: 10px;
   color: white;
@@ -76,6 +76,9 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div > div:
 main > div:first-child.section.fragment-container .fragment-wrapper > div .accordion-wrapper:has(.open) {
   border-bottom: 2px solid var(--color-trex-green);
   padding: 35px 0 23px;
+}
+main > div:first-child.section.fragment-container .fragment-wrapper > div .accordion-wrapper:has(.open):nth-child(5) {
+  padding: 25px 0 12px;
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:first-child p {
   white-space: nowrap;

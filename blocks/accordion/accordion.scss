@@ -90,7 +90,7 @@ main {
                 &:nth-child(5) {
                     padding: 25px 0 12px;
                     p {
-                        margin: 0 32px 0 16px;
+                        margin: 0 32px 0 16px !important;
                         background: var(--color-trex-green);
                         padding: 10px;
                         color: white;
@@ -117,6 +117,10 @@ main {
             .accordion-wrapper:has(.open) {
                 border-bottom: 2px solid var(--color-trex-green);
                 padding: 35px 0 23px;
+
+                &:nth-child(5) {
+                    padding: 25px 0 12px;
+                }
             }
 
             .block.accordion {
