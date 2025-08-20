@@ -147,6 +147,7 @@
 }
 @media (width >= 768px) {
   .block.header nav .nav-brand .block.image-link a {
+    width: 136px;
     top: 12px;
     left: unset;
   }

@@ -175,6 +175,7 @@
                     padding: 0;
 
                     @media (width >= $breakpoint-md) {
+                        width: 136px;
                         top: 12px;
                         left: unset;
                     }
