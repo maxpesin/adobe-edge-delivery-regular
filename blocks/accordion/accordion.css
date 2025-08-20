@@ -66,6 +66,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div > div:
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div .accordion-wrapper:has(.open) {
   border-bottom: 2px solid var(--color-trex-green);
+  padding: 35px 0 23px;
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:first-child p {
   white-space: nowrap;
