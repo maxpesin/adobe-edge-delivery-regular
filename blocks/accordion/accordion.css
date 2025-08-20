@@ -61,6 +61,9 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div > .acc
   padding: 10px;
   color: white;
 }
+main > div:first-child.section.fragment-container .fragment-wrapper > div > .accordion-wrapper:nth-child(5) .accordion-body {
+  margin-top: 15px;
+}
 main > div:first-child.section.fragment-container .fragment-wrapper > div > .text-wrapper {
   margin: 35px 0 0;
 }
