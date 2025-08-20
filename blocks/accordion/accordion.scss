@@ -83,7 +83,7 @@ main {
             // }
 
             > .accordion-wrapper {
-                margin: 35px 0 25px;
+                padding: 35px 0 25px;
                 flex: 1;
                 position: relative;
             }
@@ -102,6 +102,10 @@ main {
                     margin: 0;
                     padding: 0;
                 }
+            }
+
+            .accordion-wrapper:has(.open) {
+                border-bottom: 2px solid var(--color-trex-green);
             }
 
             .block.accordion {
@@ -153,7 +157,7 @@ main {
                     position: absolute;
                     width: 100%;
                     background: white;
-                    margin-top: 25px;
+                    margin-top: 27px;
                     text-align: left;
                     padding: 32px 40px;
                     z-index: 999;

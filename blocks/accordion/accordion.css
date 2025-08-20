@@ -48,7 +48,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div {
   }
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div > .accordion-wrapper {
-  margin: 35px 0 25px;
+  padding: 35px 0 25px;
   flex: 1;
   position: relative;
 }
@@ -63,6 +63,9 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div > div:
   background: transparent;
   margin: 0;
   padding: 0;
+}
+main > div:first-child.section.fragment-container .fragment-wrapper > div .accordion-wrapper:has(.open) {
+  border-bottom: 2px solid var(--color-trex-green);
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div .block.accordion > div:first-child p {
   white-space: nowrap;
@@ -92,7 +95,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div .block
   position: absolute;
   width: 100%;
   background: white;
-  margin-top: 25px;
+  margin-top: 27px;
   text-align: left;
   padding: 32px 40px;
   z-index: 999;
