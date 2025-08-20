@@ -179,6 +179,7 @@
 
                 img {
                     width: 85px;
+                    height: auto;
 
                     @media (width >= $breakpoint-md) {
                         width: 136px;

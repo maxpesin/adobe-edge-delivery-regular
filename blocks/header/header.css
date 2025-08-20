@@ -154,6 +154,7 @@
 }
 .block.header nav .nav-brand .block.image-link img {
   width: 85px;
+  height: auto;
 }
 @media (width >= 768px) {
   .block.header nav .nav-brand .block.image-link img {
