@@ -62,7 +62,7 @@ main > div:first-child.section.fragment-container .fragment-wrapper > div > .acc
   color: white;
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div > .accordion-wrapper:nth-child(5) .accordion-body {
-  margin-top: 15px;
+  margin-top: 15px !important;
 }
 main > div:first-child.section.fragment-container .fragment-wrapper > div > .text-wrapper {
   margin: 35px 0 0;

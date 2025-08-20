@@ -135,10 +135,12 @@
   }
 }
 .block.header nav .nav-brand .block.image-link a {
+  width: 85px;
   position: absolute;
   background: transparent;
   top: 4px;
-  left: 0;
+  left: auto;
+  right: auto;
   border: none;
   margin: 0;
   padding: 0;
